@@ -231,7 +231,7 @@ def main():
 
     data = fetch_data(mode_selectbox)
 
-    url_file = pd.read_csv('D:/data_analysis/links/group links.csv')
+    url_file = pd.read_csv('./links/group links.csv')
     urls = set(url_file['GroupLink'])
 
     st.info('🍅Original Data🍎')
