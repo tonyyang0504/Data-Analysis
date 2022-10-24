@@ -145,7 +145,7 @@ def fetch_data(mode):
         files = [file for file in uploaded_files if file.name.endswith('.csv') or file.name.endswith('.txt')]
         return concat_uploaded_data(files)
     elif mode == 'Default Data':
-        path = 'D:/data_analysis/group_joiner_logs'
+        path = './group_joiner_logs'
         files = {file for file in os.listdir(path) if file.endswith('.csv') or file.endswith('.txt')}
         return concat_default_data(path=path, files=files)
     else:
