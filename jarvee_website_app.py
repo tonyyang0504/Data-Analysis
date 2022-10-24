@@ -1,8 +1,6 @@
 import pandas as pd
-import numpy as np
 import os
 import streamlit as st
-import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -58,21 +56,10 @@ def subplots_box(df):
     st.plotly_chart(fig)
 
 st.cache(suppress_st_warning=True)
-def plot_bar(df, color='blue'):
-    df.plot(kind='bar', color=color, figsize=(16, 8))
-    plt.show()
-
-st.cache(suppress_st_warning=True)
-def plot_box(df, color='blue'):
-    df.plot(kind='box', color=color, figsize=(16, 8))
-    plt.show()
-
-st.cache(suppress_st_warning=True)
 def plot_bars(df):
     fig = px.bar(df, barmode='group', height=500, width=800)
 
     st.plotly_chart(fig)
-
 
 @st.cache(suppress_st_warning=True)
 def concat_uploaded_data(files):
