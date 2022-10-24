@@ -1,6 +1,4 @@
-from itertools import count
 import pandas as pd
-import os
 
 
 class LogsProcess(object):
