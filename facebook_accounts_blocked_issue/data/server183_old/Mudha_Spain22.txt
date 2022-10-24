@@ -1,0 +1,11 @@
+﻿Date,Account,Status
+09/15/2022 10:16:05,Mudha_Spain22,Group Finder - Mudha_Spain22 - Extracting groups for 'DMarket cryptocurrency'
+09/15/2022 10:19:17,Mudha_Spain22,Group Finder - Mudha_Spain22 - Finished extracting groups for 'DMarket cryptocurrency'
+09/15/2022 11:01:37,Mudha_Spain22,Group Finder - Mudha_Spain22 - Extracting groups for 'Team Heretics Fan Token cryptocurrency'
+09/15/2022 11:05:07,Mudha_Spain22,Group Finder - Mudha_Spain22 - Finished extracting groups for 'Team Heretics Fan Token cryptocurrency'
+09/16/2022 01:48:26,Mudha_Spain22,Group Finder - Mudha_Spain22 - Extracting groups for 'TigerCash cryptocurrency'
+09/16/2022 01:50:10,Mudha_Spain22,Group Finder - Mudha_Spain22 - Finished extracting groups for 'TigerCash cryptocurrency'
+09/16/2022 04:00:52,Mudha_Spain22,Group Finder - Mudha_Spain22 - Extracting groups for 'Autonio cryptocurrency'
+09/16/2022 04:02:42,Mudha_Spain22,Group Finder - Mudha_Spain22 - Finished extracting groups for 'Autonio cryptocurrency'
+09/16/2022 05:04:05,Mudha_Spain22,Group Finder - Mudha_Spain22 - Extracting groups for 'Hashgard cryptocurrency'
+09/16/2022 05:05:53,Mudha_Spain22,Group Finder - Mudha_Spain22 - Finished extracting groups for 'Hashgard cryptocurrency'
