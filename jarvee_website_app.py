@@ -7,6 +7,7 @@ from plotly.subplots import make_subplots
 from jarvee_logs import GroupJoiner, Publishing, Bump
 
 
+pd.set_option('mode.chained_assignment', None)
 st.set_page_config(layout="wide")
 
 st.cache(suppress_st_warning=True)

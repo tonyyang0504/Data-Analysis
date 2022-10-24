@@ -1,6 +1,7 @@
 import pandas as pd
 
 
+pd.set_option('mode.chained_assignment', None)
 class LogsProcess(object):
     def __init__(self, data):
         self.data = data.copy()
