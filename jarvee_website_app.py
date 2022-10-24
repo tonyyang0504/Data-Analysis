@@ -75,7 +75,7 @@ def concat_uploaded_data(files):
                     name_list.append(name)
                 else:
                     continue
-            df = pd.concat(df_list)
+            df = pd.concat(df_list, ignore_index=True)
             st.success(f'👏You have uploaded {len(df_list)} files successfully.👏')
             return df
     else:
@@ -91,7 +91,7 @@ def concat_default_data(path, files):
                 df = pd.read_csv(os.path.join(path, file))
                 df['Robot'] = name
                 df_list.append(df)
-            df = pd.concat(df_list)
+            df = pd.concat(df_list, ignore_index=True)
             return df
     else:
         st.error('💥Please upload one file at least or select default files from sidebar to analyze💥')
