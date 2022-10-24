@@ -3,7 +3,7 @@ import pandas as pd
 
 class LogsProcess(object):
     def __init__(self, data):
-        self.data = data
+        self.data = data.copy()
         self.account = self.data.Account.unique()
         if 'Robot' in self.data:
             self.robot = self.data.Robot.unique()
