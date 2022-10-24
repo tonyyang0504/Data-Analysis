@@ -426,7 +426,7 @@ def main():
             error_distribution = data_analysis.error_distribution_by_account().unstack().fillna(0)
             error_distribution.index = error_distribution.index.map(lambda x: '_'.join(x))
 
-        codes = st.multiselect(f'Display the rate of selected error codes on {type_selectbox.lower()}',
+        codes = st.multiselect(f'🧋Display the rate of selected error codes on the {type_selectbox.lower()}🍫',
                                 error_distribution.columns.unique(),
                                 )
 
@@ -435,7 +435,7 @@ def main():
         if codes:
             plot_bars(codes_selected.T)
 
-        robots = st.multiselect(f'Display error distribution on the selected {type_selectbox.lower()}',
+        robots = st.multiselect(f'🎁Display the error distribution on the selected {type_selectbox.lower()}🎈',
                                     error_distribution.index.unique()
                                     )
         robots_selected = error_distribution.loc[robots, :]
