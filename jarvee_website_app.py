@@ -242,7 +242,7 @@ def main():
 
     with col2:
         st.download_button(
-                        label='♻️📥Click me to download the file📥♻️',
+                        label='♻️📥Click me to download the result📥♻️',
                         data=data.to_csv(),
                         file_name='The Original Data.csv',
                         mime='txt/csv')
@@ -417,33 +417,34 @@ def main():
         if count_specified_urls_checkbox:
             st.dataframe(count_specified_urls)
 
-        st.info('🎨Data Visualization🧩')
-        
-        if type_selectbox == 'Robot':
-            # error_distribution = activity.error_distribution_by_robot().unstack().fillna(0)
-            error_distribution = data_analysis.error_distribution_by_robot().unstack().fillna(0)
-        else:
-            # error_distribution = activity.error_distribution_by_account().unstack().fillna(0)
-            error_distribution = data_analysis.error_distribution_by_account().unstack().fillna(0)
-            error_distribution.index = error_distribution.index.map(lambda x: '_'.join(x))
+    st.info('🎨Data Visualization🧩')
+    
+    if type_selectbox == 'Robot':
+        # error_distribution = activity.error_distribution_by_robot().unstack().fillna(0)
+        error_distribution = data_analysis.error_distribution_by_robot().unstack().fillna(0)
+    else:
+        # error_distribution = activity.error_distribution_by_account().unstack().fillna(0)
+        error_distribution = data_analysis.error_distribution_by_account().unstack().fillna(0)
+        error_distribution.index = error_distribution.index.map(lambda x: '_'.join(x))
 
-        codes = st.multiselect(f'🧋Display the rate of selected error codes on the {type_selectbox.lower()}🍫',
-                                error_distribution.columns.unique(),
+    codes = st.multiselect(f'🧋Display the rate of selected error codes on the {type_selectbox.lower()}🍫',
+                            error_distribution.columns.unique(),
+                            )
+
+    codes_selected = error_distribution.loc[:, codes]
+
+    if codes:
+        plot_bars(codes_selected.T)
+
+    robots = st.multiselect(f'🎁Display the error distribution on the selected {type_selectbox.lower()}🎈',
+                                error_distribution.index.unique()
                                 )
+    robots_selected = error_distribution.loc[robots, :]
 
-        codes_selected = error_distribution.loc[:, codes]
-
-        if codes:
-            plot_bars(codes_selected.T)
-
-        robots = st.multiselect(f'🎁Display the error distribution on the selected {type_selectbox.lower()}🎈',
-                                    error_distribution.index.unique()
-                                    )
-        robots_selected = error_distribution.loc[robots, :]
-
-        if robots:
-            plot_bars(robots_selected.T)
+    if robots:
+        plot_bars(robots_selected.T)
 
 
-main()
+if __name__ == '__main__':
+    main()
 
