@@ -14,7 +14,6 @@ st.cache(suppress_st_warning=True)
 def simplify_index(df):
     simplified_df = df.copy()
     simplified_df.index = simplified_df.index.map(lambda x: x.split('.')[-1])
-    
     return simplified_df
 
 st.cache(suppress_st_warning=True)
@@ -27,7 +26,7 @@ def data_normalized(df, columns=None):
         max_rate = df.max()
         min_rate = df.min()
         df_normalized = df[(df > min_rate) & (df < max_rate)]
-    
+
     return df_normalized
 
 st.cache(suppress_st_warning=True)
@@ -40,7 +39,6 @@ def subplots_bar(df):
         fig.add_trace(go.Bar(x=df.index, y=df.iloc[:, row]), row=row + 1, col=1)
    
     fig.update_layout(height=800)
-
     st.plotly_chart(fig)
 
 st.cache(suppress_st_warning=True)
@@ -53,13 +51,11 @@ def subplots_box(df):
         fig.add_trace(go.Box(y=df.iloc[:, col]), row=1, col=col + 1)
    
     fig.update_layout(height=800)
-
     st.plotly_chart(fig)
 
 st.cache(suppress_st_warning=True)
 def plot_bars(df):
     fig = px.bar(df, barmode='group', height=500, width=800)
-
     st.plotly_chart(fig)
 
 @st.cache(suppress_st_warning=True)
@@ -122,7 +118,6 @@ def count_by_robot(activity):
     count_df.columns = ['Error', 'Total']
     count_df.insert(0, 'Finished', count_df['Total'] - count_df['Error'])
     count_df['Error Rate'] = (count_df['Error'] / count_df['Total']).round(2)
-
     return count_df
 
 st.cache(suppress_st_warning=True)
@@ -161,61 +156,51 @@ class DataAnalysis(object):
     st.cache(suppress_st_warning=True)
     def logs_related(self):
         df = self.activity.logs_related()
-
         return df
 
     st.cache(suppress_st_warning=True)
     def df_specified_total(self):
         df = self.activity.df_specified_total(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def df_specified_error(self):
         df = self.activity.df_specified_error(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def count_specified_by_robot(self):
         df = self.activity.count_specified_by_robot(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def count_specified_by_account(self):
         df = self.activity.count_specified_by_account(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def count_specified_urls_total(self):
         df = self.activity.count_specified_urls_total(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def count_specified_urls_total_by_robot(self):
         df = self.activity.count_specified_urls_total_by_robot(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def count_specified_urls_total_by_account(self):
         df = self.activity.count_specified_urls_total_by_account(self.urls)
-
         return df
 
     st.cache(suppress_st_warning=True)
     def error_distribution_by_robot(self):
         df = self.activity.error_distribution_by_robot()
-
         return df
     
     st.cache(suppress_st_warning=True)
     def error_distribution_by_account(self):
         df = self.activity.error_distribution_by_account()
-
         return df
 
 st.cache(suppress_st_warning=True)
@@ -239,7 +224,6 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         original_data_checkbox = st.checkbox('👈Click on me to see the original data👇')
-
     with col2:
         st.download_button(
                         label='♻️📥Click me to download the result📥♻️',
@@ -259,10 +243,8 @@ def main():
         logs_related = data_analysis.logs_related()
 
         col1, col2 = st.columns(2)
-
         with col1:
             activity_logs_checkbox = st.checkbox(f'👈Click on me to see {activity_selectbox.lower()} logs👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -281,10 +263,8 @@ def main():
         numbers = count_by_account(activity)
 
     col1, col2 = st.columns(2)
-
     with col1:
         n_activity_checkbox = st.checkbox(f'👈Click on me to see the result👇')
-
     with col2:
         st.download_button(
                             label=f'♻️📥Click me to download the result📥♻️',
@@ -301,10 +281,8 @@ def main():
         # df_specified_total = activity.df_specified_total(urls)
         df_specified_total = data_analysis.df_specified_total()
         col1, col2 = st.columns(2)
-
         with col1:
             total_logs_checkbox = st.checkbox(f'👈Click on me to see the total logs👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -318,10 +296,8 @@ def main():
         # df_specified_error = activity.df_specified_error(urls)
         df_specified_error = data_analysis.df_specified_error()
         col1, col2 = st.columns(2)
-
         with col1:
             error_logs_checkbox = st.checkbox(f'👈Click on me to see the error logs👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -340,10 +316,8 @@ def main():
             count_specified = data_analysis.count_specified_by_account()
             
         col1, col2 = st.columns(2)
-
         with col1:
             count_specified_checkbox = st.checkbox(f'👈Click on me to see the data by {type_selectbox.lower()}👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -381,10 +355,8 @@ def main():
         count_specified_urls_total = data_analysis.count_specified_urls_total()
 
         col1, col2 = st.columns(2)
-
         with col1:
             count_specified_urls_total_checkbox = st.checkbox(f'👈Click on me to see the number of joined the groups👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -403,10 +375,8 @@ def main():
             count_specified_urls = data_analysis.count_specified_urls_total_by_account()
 
         col1, col2 = st.columns(2)
-
         with col1:
             count_specified_urls_checkbox = st.checkbox(f'👈Click on me to see the result by {type_selectbox.lower()}👇')
-
         with col2:
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
