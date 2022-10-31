@@ -1,0 +1,174 @@
+Date,Account,Status
+10/23/2022 07:06:39,,Jarvee 3.3.1.1 is now active
+10/23/2022 07:17:49,Gen_Malaysia8,Change language to English - 'Gen_Malaysia8' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:17:49,Gen_Malaysia24,Change language to English - 'Gen_Malaysia24' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:17:49,Gen_Malaysia15,Change language to English - 'Gen_Malaysia15' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:17:49,Gen_Malaysia4,Change language to English - 'Gen_Malaysia4' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:18:14,Gen_Malaysia24,Change language to English - Error executing for the 'Gen_Malaysia24' account. : code  43  - Language dropdown not found URL: https://www.facebook.com/settings?tab=language&section=account&view
+10/23/2022 07:18:15,Gen_Malaysia15,Change language to English - Error executing for the 'Gen_Malaysia15' account. : code  43  - Language dropdown not found URL: https://www.facebook.com/settings?tab=language&section=account&view
+10/23/2022 07:18:15,Gen_Malaysia8,Change language to English - Error executing for the 'Gen_Malaysia8' account. : code  43  - Language dropdown not found URL: https://www.facebook.com/settings?tab=language&section=account&view
+10/23/2022 07:18:15,Gen_Malaysia4,Change language to English - Error executing for the 'Gen_Malaysia4' account. : code  43  - Language dropdown not found URL: https://www.facebook.com/settings?tab=language&section=account&view
+10/23/2022 07:18:16,Gen_Malaysia4,Synchronizing Groups for the 'Gen_Malaysia4' account.
+10/23/2022 07:18:16,Gen_Malaysia7,Change language to English - 'Gen_Malaysia7' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:18:16,Gen_Malaysia24,Birthday Sync - for the 'Gen_Malaysia24' account URL: https://www.facebook.com/me
+10/23/2022 07:18:40,Gen_Malaysia7,Change language to English - Error executing for the 'Gen_Malaysia7' account. : code  43  - Language dropdown not found URL: https://www.facebook.com/settings?tab=language&section=account&view
+10/23/2022 07:18:49,Gen_Malaysia7,Synchronizing Groups for the 'Gen_Malaysia7' account.
+10/23/2022 07:18:55,Gen_Malaysia24,Checking restrictions for the 'Gen_Malaysia24' account done. URL: https://www.facebook.com/me
+10/23/2022 07:18:55,Gen_Malaysia31,Change language to English - 'Gen_Malaysia31' - Executing using 'https://www.facebook.com/settings?tab=language&section=account&view'
+10/23/2022 07:19:14,Gen_Malaysia24,Checking restrictions for the 'Gen_Malaysia24' account
+10/23/2022 07:19:26,Gen_Malaysia31,Change language to English - Gen_Malaysia31 - Finished operation
+10/23/2022 07:19:29,Gen_Malaysia31,Birthday Sync - for the 'Gen_Malaysia31' account URL: https://www.facebook.com/me
+10/23/2022 07:19:33,Gen_Malaysia4,Finalized group synchronization for the 'Gen_Malaysia4' account.
+10/23/2022 07:19:35,Gen_Malaysia4,Birthday Sync - for the 'Gen_Malaysia4' account URL: https://www.facebook.com/me
+10/23/2022 07:19:44,Gen_Malaysia24,Checking restrictions for the 'Gen_Malaysia24' account done.
+10/23/2022 07:19:47,Gen_Malaysia24,Synchronizing Number of Followers for the 'Gen_Malaysia24' account
+10/23/2022 07:20:06,Gen_Malaysia7,Finalized group synchronization for the 'Gen_Malaysia7' account.
+10/23/2022 07:20:08,Gen_Malaysia31,Checking restrictions for the 'Gen_Malaysia31' account done. URL: https://www.facebook.com/me
+10/23/2022 07:20:08,Gen_Malaysia7,Birthday Sync - for the 'Gen_Malaysia7' account URL: https://www.facebook.com/me
+10/23/2022 07:20:08,Gen_Malaysia31,Checking restrictions for the 'Gen_Malaysia31' account
+10/23/2022 07:20:10,Gen_Malaysia24,Finalized Number of Followers synchronization for the 'Gen_Malaysia24' account.
+10/23/2022 07:20:11,Gen_Malaysia24,Synchronizing Groups for the 'Gen_Malaysia24' account.
+10/23/2022 07:20:16,Gen_Malaysia4,Checking restrictions for the 'Gen_Malaysia4' account done. URL: https://www.facebook.com/me
+10/23/2022 07:20:17,Gen_Malaysia4,Checking restrictions for the 'Gen_Malaysia4' account
+10/23/2022 07:20:28,Gen_Malaysia31,Checking restrictions for the 'Gen_Malaysia31' account done.
+10/23/2022 07:20:29,Gen_Malaysia31,Synchronizing Number of Followers for the 'Gen_Malaysia31' account
+10/23/2022 07:20:45,Gen_Malaysia4,Checking restrictions for the 'Gen_Malaysia4' account done.
+10/23/2022 07:20:51,Gen_Malaysia7,Checking restrictions for the 'Gen_Malaysia7' account done. URL: https://www.facebook.com/me
+10/23/2022 07:20:52,Gen_Malaysia31,Finalized Number of Followers synchronization for the 'Gen_Malaysia31' account.
+10/23/2022 07:20:54,Gen_Malaysia31,Synchronizing Groups for the 'Gen_Malaysia31' account.
+10/23/2022 07:20:54,Gen_Malaysia7,Checking restrictions for the 'Gen_Malaysia7' account
+10/23/2022 07:21:19,Gen_Malaysia24,Finalized group synchronization for the 'Gen_Malaysia24' account.
+10/23/2022 07:21:23,Gen_Malaysia7,Checking restrictions for the 'Gen_Malaysia7' account done.
+10/23/2022 07:22:04,Gen_Malaysia31,Finalized group synchronization for the 'Gen_Malaysia31' account.
+10/23/2022 07:24:03,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' -  is active
+10/23/2022 07:24:05,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/460183919270756'
+10/23/2022 07:24:14,Gen_Malaysia2,Group Joiner - 'Gen_Malaysia2' -  is active
+10/23/2022 07:24:14,Gen_Malaysia3,Group Joiner - 'Gen_Malaysia3' -  is active
+10/23/2022 07:24:14,Gen_Malaysia4,Group Joiner - 'Gen_Malaysia4' -  is active
+10/23/2022 07:24:14,Gen_Malaysia5,Group Joiner - 'Gen_Malaysia5' -  is active
+10/23/2022 07:24:14,Gen_Malaysia6,Group Joiner - 'Gen_Malaysia6' -  is active
+10/23/2022 07:24:14,Gen_Malaysia7,Group Joiner - 'Gen_Malaysia7' -  is active
+10/23/2022 07:24:14,Gen_Malaysia8,Group Joiner - 'Gen_Malaysia8' -  is active
+10/23/2022 07:24:14,Gen_Malaysia9,Group Joiner - 'Gen_Malaysia9' -  is active
+10/23/2022 07:24:14,Gen_Malaysia10,Group Joiner - 'Gen_Malaysia10' -  is active
+10/23/2022 07:24:14,Gen_Malaysia11,Group Joiner - 'Gen_Malaysia11' -  is active
+10/23/2022 07:24:14,Gen_Malaysia12,Group Joiner - 'Gen_Malaysia12' -  is active
+10/23/2022 07:24:14,Gen_Malaysia13,Group Joiner - 'Gen_Malaysia13' -  is active
+10/23/2022 07:24:14,Gen_Malaysia14,Group Joiner - 'Gen_Malaysia14' -  is active
+10/23/2022 07:24:14,Gen_Malaysia15,Group Joiner - 'Gen_Malaysia15' -  is active
+10/23/2022 07:24:14,Gen_Malaysia16,Group Joiner - 'Gen_Malaysia16' -  is active
+10/23/2022 07:24:14,Gen_Malaysia17,Group Joiner - 'Gen_Malaysia17' -  is active
+10/23/2022 07:24:14,Gen_Malaysia18,Group Joiner - 'Gen_Malaysia18' -  is active
+10/23/2022 07:24:14,Gen_Malaysia19,Group Joiner - 'Gen_Malaysia19' -  is active
+10/23/2022 07:24:14,Gen_Malaysia20,Group Joiner - 'Gen_Malaysia20' -  is active
+10/23/2022 07:24:14,Gen_Malaysia21,Group Joiner - 'Gen_Malaysia21' -  is active
+10/23/2022 07:24:14,Gen_Malaysia22,Group Joiner - 'Gen_Malaysia22' -  is active
+10/23/2022 07:24:14,Gen_Malaysia23,Group Joiner - 'Gen_Malaysia23' -  is active
+10/23/2022 07:24:14,Gen_Malaysia24,Group Joiner - 'Gen_Malaysia24' -  is active
+10/23/2022 07:24:14,Gen_Malaysia25,Group Joiner - 'Gen_Malaysia25' -  is active
+10/23/2022 07:24:14,Gen_Malaysia26,Group Joiner - 'Gen_Malaysia26' -  is active
+10/23/2022 07:24:14,Gen_Malaysia27,Group Joiner - 'Gen_Malaysia27' -  is active
+10/23/2022 07:24:14,Gen_Malaysia28,Group Joiner - 'Gen_Malaysia28' -  is active
+10/23/2022 07:24:14,Gen_Malaysia29,Group Joiner - 'Gen_Malaysia29' -  is active
+10/23/2022 07:24:14,Gen_Malaysia30,Group Joiner - 'Gen_Malaysia30' -  is active
+10/23/2022 07:24:14,Gen_Malaysia31,Group Joiner - 'Gen_Malaysia31' -  is active
+10/23/2022 07:24:14,Gen_Malaysia32,Group Joiner - 'Gen_Malaysia32' -  is active
+10/23/2022 07:24:14,Gen_Malaysia33,Group Joiner - 'Gen_Malaysia33' -  is active
+10/23/2022 07:24:14,Gen_Malaysia34,Group Joiner - 'Gen_Malaysia34' -  is active
+10/23/2022 07:24:14,Gen_Malaysia35,Group Joiner - 'Gen_Malaysia35' -  is active
+10/23/2022 07:24:15,Gen_Malaysia36,Group Joiner - 'Gen_Malaysia36' -  is active
+10/23/2022 07:24:15,Gen_Malaysia37,Group Joiner - 'Gen_Malaysia37' -  is active
+10/23/2022 07:24:15,Gen_Malaysia38,Group Joiner - 'Gen_Malaysia38' -  is active
+10/23/2022 07:24:15,Gen_Malaysia39,Group Joiner - 'Gen_Malaysia39' -  is active
+10/23/2022 07:24:15,Gen_Malaysia40,Group Joiner - 'Gen_Malaysia40' -  is active
+10/23/2022 07:24:15,Gen_Malaysia41,Group Joiner - 'Gen_Malaysia41' -  is active
+10/23/2022 07:24:15,Gen_Malaysia42,Group Joiner - 'Gen_Malaysia42' -  is active
+10/23/2022 07:24:15,Gen_Malaysia43,Group Joiner - 'Gen_Malaysia43' -  is active
+10/23/2022 07:24:15,Gen_Malaysia44,Group Joiner - 'Gen_Malaysia44' -  is active
+10/23/2022 07:24:15,Gen_Malaysia45,Group Joiner - 'Gen_Malaysia45' -  is active
+10/23/2022 07:24:15,Gen_Malaysia46,Group Joiner - 'Gen_Malaysia46' -  is active
+10/23/2022 07:24:15,Gen_Malaysia47,Group Joiner - 'Gen_Malaysia47' -  is active
+10/23/2022 07:24:15,Gen_Malaysia48,Group Joiner - 'Gen_Malaysia48' -  is active
+10/23/2022 07:24:15,Gen_Malaysia49,Group Joiner - 'Gen_Malaysia49' -  is active
+10/23/2022 07:24:15,Gen_Malaysia50,Group Joiner - 'Gen_Malaysia50' -  is active
+10/23/2022 07:24:15,Gen_Malaysia51,Group Joiner - 'Gen_Malaysia51' -  is active
+10/23/2022 07:24:15,Gen_Malaysia52,Group Joiner - 'Gen_Malaysia52' -  is active
+10/23/2022 07:24:15,Gen_Malaysia53,Group Joiner - 'Gen_Malaysia53' -  is active
+10/23/2022 07:24:15,Gen_Malaysia54,Group Joiner - 'Gen_Malaysia54' -  is active
+10/23/2022 07:24:15,Gen_Malaysia55,Group Joiner - 'Gen_Malaysia55' -  is active
+10/23/2022 07:24:15,Gen_Malaysia56,Group Joiner - 'Gen_Malaysia56' -  is active
+10/23/2022 07:24:15,Gen_Malaysia57,Group Joiner - 'Gen_Malaysia57' -  is active
+10/23/2022 07:24:15,Gen_Malaysia58,Group Joiner - 'Gen_Malaysia58' -  is active
+10/23/2022 07:24:15,Gen_Malaysia59,Group Joiner - 'Gen_Malaysia59' -  is active
+10/23/2022 07:24:15,Gen_Malaysia60,Group Joiner - 'Gen_Malaysia60' -  is active
+10/23/2022 07:24:15,Gen_Malaysia61,Group Joiner - 'Gen_Malaysia61' -  is active
+10/23/2022 07:24:15,Gen_Malaysia62,Group Joiner - 'Gen_Malaysia62' -  is active
+10/23/2022 07:24:15,Gen_Malaysia63,Group Joiner - 'Gen_Malaysia63' -  is active
+10/23/2022 07:24:15,Gen_Malaysia64,Group Joiner - 'Gen_Malaysia64' -  is active
+10/23/2022 07:24:15,Gen_Malaysia65,Group Joiner - 'Gen_Malaysia65' -  is active
+10/23/2022 07:24:15,Gen_Malaysia66,Group Joiner - 'Gen_Malaysia66' -  is active
+10/23/2022 07:24:15,Gen_Malaysia67,Group Joiner - 'Gen_Malaysia67' -  is active
+10/23/2022 07:24:15,Gen_Malaysia68,Group Joiner - 'Gen_Malaysia68' -  is active
+10/23/2022 07:24:15,Gen_Malaysia69,Group Joiner - 'Gen_Malaysia69' -  is active
+10/23/2022 07:24:15,Gen_Malaysia70,Group Joiner - 'Gen_Malaysia70' -  is active
+10/23/2022 07:25:12,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 08:07:13,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/660077308871811'
+10/23/2022 08:08:13,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 08:41:20,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/833087687822674'
+10/23/2022 08:42:26,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 09:17:58,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/651468046494962'
+10/23/2022 09:19:01,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 09:49:54,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/553820536427516'
+10/23/2022 09:50:34,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 10:25:29,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/429397949131253'
+10/23/2022 10:26:32,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 11:04:42,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/511640393799618'
+10/23/2022 11:05:43,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 11:38:18,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/5106606936106939'
+10/23/2022 11:39:23,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 12:20:51,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/619487189661079'
+10/23/2022 12:21:32,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 12:53:00,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/5646866088722297'
+10/23/2022 12:54:04,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 13:32:07,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/513992560177139'
+10/23/2022 13:33:08,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 14:15:28,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/478072124277063'
+10/23/2022 14:16:29,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 14:59:37,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/476335227849169'
+10/23/2022 15:00:44,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 15:43:14,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/416063824057495'
+10/23/2022 15:44:13,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/23/2022 16:19:24,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/605843741270804'
+10/23/2022 16:20:27,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 00:20:45,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/3298767307028463'
+10/24/2022 00:21:53,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 01:02:46,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/534733661727844'
+10/24/2022 01:03:44,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 01:48:14,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/627810285725361'
+10/24/2022 01:49:14,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 02:23:17,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/492319909620920'
+10/24/2022 02:23:54,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 03:09:10,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/5480564762061522'
+10/24/2022 03:10:10,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 03:48:40,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/3344076859208187'
+10/24/2022 03:49:38,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 04:30:51,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/5769754779751375'
+10/24/2022 04:31:47,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 05:03:29,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/471878828235426'
+10/24/2022 05:04:29,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 05:41:49,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/431887672302308'
+10/24/2022 05:42:47,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 06:14:42,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/1431949353999966'
+10/24/2022 06:15:40,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/24/2022 06:55:25,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/1145357409405618'
+10/24/2022 06:56:29,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/25/2022 00:23:19,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/669531141125476'
+10/25/2022 00:24:18,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/25/2022 01:08:37,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/1319216465597534'
+10/25/2022 01:09:34,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/25/2022 01:51:48,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/3070737906558681'
+10/25/2022 01:52:48,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/25/2022 02:28:46,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/1487781145028710'
+10/25/2022 02:29:20,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation
+10/25/2022 03:03:16,Gen_Malaysia1,Group Joiner - 'Gen_Malaysia1' - Executing using 'https://www.facebook.com/groups/708144980707745'
+10/25/2022 03:03:52,Gen_Malaysia1,Group Joiner - Gen_Malaysia1 - Finished operation

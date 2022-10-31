@@ -1,5 +1,8 @@
+from unittest import result
 import pandas as pd
 import os
+import threading
+import concurrent.futures
 import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
@@ -73,7 +76,10 @@ def concat_uploaded_data(files):
                 else:
                     continue
             df = pd.concat(df_list, ignore_index=True)
-            st.success(f'👏You have uploaded {len(df_list)} files successfully.👏')
+            if len(df_list) > 1:
+                st.success(f'👏You have uploaded {len(df_list)} files successfully.👏')
+            else:
+                st.success(f'👏You have uploaded {len(df_list)} file successfully.👏')
             return df
     else:
         st.error('💥Please upload one file at least or select default files from sidebar to analyze💥')
@@ -133,7 +139,8 @@ def count_by_account(activity):
 st.cache(suppress_st_warning=True)
 def open_data_analysis(activity, urls, type=None):
     return DataAnalysis(activity=activity, urls=urls, type=type)
-    
+
+st.cache(suppress_st_warning=True)
 def fetch_data(mode):
     if mode == 'Customized Data':
         st.info('📤Please upload one file at least📤')
@@ -147,63 +154,80 @@ def fetch_data(mode):
     else:
         st.error('Please select the data mode')
 
+st.cache(suppress_st_warning=True)
+def type_select(type_, function_by_robot, function_by_account, activity=None):
+    if type_ == 'Robot':
+        if activity:
+            result = function_by_robot(activity)
+        else:
+            result =  function_by_robot()
+    else:
+        if activity:
+            result = function_by_account(activity)
+        else:
+            result = function_by_account()
+    return result
+
+st.cache(suppress_st_warning=True)
+def layout(check_words, data, file_name):
+    col1, col2 = st.columns(2)
+    with col1:
+        checkbox = st.checkbox(check_words)
+    with col2:
+        st.download_button(
+                            label=f'♻️📥Click on me to download the result📥♻️',
+                            data=data.to_csv(),
+                            file_name=file_name,
+                            mime='txt/csv')
+    if checkbox:
+        st.dataframe(data)
+
 class DataAnalysis(object):
     def __init__(self, activity, urls, type=None):
         self.activity = activity
         self.type = type
         self.urls = urls
 
-    st.cache(suppress_st_warning=True)
     def logs_related(self):
         df = self.activity.logs_related()
         return df
 
-    st.cache(suppress_st_warning=True)
     def df_specified_total(self):
         df = self.activity.df_specified_total(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def df_specified_error(self):
         df = self.activity.df_specified_error(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def count_specified_by_robot(self):
         df = self.activity.count_specified_by_robot(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def count_specified_by_account(self):
         df = self.activity.count_specified_by_account(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def count_specified_urls_total(self):
         df = self.activity.count_specified_urls_total(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def count_specified_urls_total_by_robot(self):
         df = self.activity.count_specified_urls_total_by_robot(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def count_specified_urls_total_by_account(self):
         df = self.activity.count_specified_urls_total_by_account(self.urls)
         return df
 
-    st.cache(suppress_st_warning=True)
     def error_distribution_by_robot(self):
         df = self.activity.error_distribution_by_robot()
         return df
-    
-    st.cache(suppress_st_warning=True)
+
     def error_distribution_by_account(self):
         df = self.activity.error_distribution_by_account()
         return df
 
-st.cache(suppress_st_warning=True)
 def main():
     st.title('🎊Jarvee Logs Analysis App🎉')
     st.sidebar.info('🍩Please select the mode of logs🍧')
@@ -220,128 +244,55 @@ def main():
     url_file = pd.read_csv('./links/group links.csv')
     urls = set(url_file['GroupLink'])
 
-    st.info('🍅Original Data🍎')
-    col1, col2 = st.columns(2)
-    with col1:
-        original_data_checkbox = st.checkbox('👈Click on me to see the original data👇')
-    with col2:
-        st.download_button(
-                        label='♻️📥Click me to download the result📥♻️',
-                        data=data.to_csv(),
-                        file_name='The Original Data.csv',
-                        mime='txt/csv')
-
-    if original_data_checkbox:
-        st.dataframe(data)
-
     activity = confirm_activity(activity_selectbox, data)
     data_analysis = open_data_analysis(activity=activity, urls=urls, type=type_selectbox)
+
+    st.info('🍅Original Data🍎')
+    check_words = '👈Click on me to see the original data👇'
+    file_name = 'The Original Data.csv'
+    layout(check_words=check_words, data=data, file_name=file_name)
 
     if activity_selectbox == 'Group Joiner':
         st.warning(f'🐶{activity_selectbox} Logs🐻')
         # logs_related = activity.logs_related()
         logs_related = data_analysis.logs_related()
-
-        col1, col2 = st.columns(2)
-        with col1:
-            activity_logs_checkbox = st.checkbox(f'👈Click on me to see {activity_selectbox.lower()} logs👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=logs_related.to_csv(),
-                                file_name=f'{activity_selectbox} Data.csv',
-                                mime='txt/csv')
-
-        if activity_logs_checkbox:
-            st.dataframe(logs_related)
+        check_words = f'👈Click on me to see {activity_selectbox.lower()} logs👇'
+        file_name = f'{activity_selectbox} Data.csv'
+        layout(check_words=check_words, data=logs_related, file_name=file_name)
 
     st.success(f'🍆Number of {activity_selectbox}🥕')
-
-    if type_selectbox == 'Robot':
-        numbers = count_by_robot(activity)
-    else:
-        numbers = count_by_account(activity)
-
-    col1, col2 = st.columns(2)
-    with col1:
-        n_activity_checkbox = st.checkbox(f'👈Click on me to see the result👇')
-    with col2:
-        st.download_button(
-                            label=f'♻️📥Click me to download the result📥♻️',
-                            data=numbers.to_csv(),
-                            file_name=f'Number of {activity_selectbox} by {type_selectbox}.csv',
-                            mime='txt/csv')
-
-    if n_activity_checkbox:
-        st.dataframe(numbers)
+    numbers = type_select(type_selectbox, count_by_robot, count_by_account, activity)
+    check_words = f'👈Click on me to see the result👇'
+    file_name = f'Number of {activity_selectbox} by {type_selectbox}.csv'
+    layout(check_words=check_words, data=numbers, file_name=file_name)
 
     if activity_selectbox == 'Group Joiner':
         st.warning(f'🐝Data of {activity_selectbox} Joined Specified Groups🐜')
 
         # df_specified_total = activity.df_specified_total(urls)
         df_specified_total = data_analysis.df_specified_total()
-        col1, col2 = st.columns(2)
-        with col1:
-            total_logs_checkbox = st.checkbox(f'👈Click on me to see the total logs👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=df_specified_total.to_csv(),
-                                file_name=f'Total Logs of {activity_selectbox} Joined Specified Groups.csv',
-                                mime='txt/csv')
-
-        if  total_logs_checkbox:
-            st.dataframe(df_specified_total)
+        check_words = f'👈Click on me to see the total logs👇'
+        file_name = f'Total Logs of {activity_selectbox} Joined Specified Groups.csv'
+        layout(check_words=check_words, data=df_specified_total, file_name=file_name)
 
         # df_specified_error = activity.df_specified_error(urls)
         df_specified_error = data_analysis.df_specified_error()
-        col1, col2 = st.columns(2)
-        with col1:
-            error_logs_checkbox = st.checkbox(f'👈Click on me to see the error logs👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=df_specified_error.to_csv(),
-                                file_name=f'Error Logs of {activity_selectbox} Joined Specified Groups.csv',
-                                mime='txt/csv')
+        check_words = f'👈Click on me to see the error logs👇'
+        file_name = f'Error Logs of {activity_selectbox} Joined Specified Groups.csv'
+        layout(check_words=check_words, data=df_specified_error, file_name=file_name)
 
-        if error_logs_checkbox:
-            st.dataframe(df_specified_error)
-
-        if type_selectbox == 'Robot':
-            # count_specified = activity.count_specified_by_robot(urls)
-            count_specified = data_analysis.count_specified_by_robot()
-        else:
-            # count_specified = activity.count_specified_by_account(urls)
-            count_specified = data_analysis.count_specified_by_account()
-            
-        col1, col2 = st.columns(2)
-        with col1:
-            count_specified_checkbox = st.checkbox(f'👈Click on me to see the data by {type_selectbox.lower()}👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=count_specified.to_csv(),
-                                file_name=f'Number of {activity_selectbox} Joined Specified Groups.csv',
-                                mime='txt/csv')
-
-        if count_specified_checkbox:
-            st.dataframe(count_specified)
+        count_specified = type_select(type_selectbox, data_analysis.count_specified_by_robot, data_analysis.count_specified_by_account)
+        check_words = f'👈Click on me to see the data by {type_selectbox.lower()}👇'
+        file_name = f'Number of {activity_selectbox} Joined Specified Groups.csv'
+        layout(check_words=check_words, data=count_specified, file_name=file_name)
 
         st.error(f'🙈Number of {activity_selectbox} Joined Selected Groups🙊')
-
         urls_selected = st.multiselect('👇👇👇👇👇👇👇👇👇👇', urls)
 
         if urls_selected:
             data_analysis_specified = open_data_analysis(activity=activity, urls=urls_selected, type=type_selectbox)
-            if type_selectbox == 'Robot':
-                # count_selected = activity.count_specified_by_robot(urls_selected)
-                count_selected = data_analysis_specified.count_specified_by_robot()
-                st.dataframe(count_selected)
-            else:
-                # count_selected = activity.count_specified_by_account(urls_selected)
-                count_selected = data_analysis_specified.count_specified_by_account()
-                st.dataframe(count_selected)
+            count_selected = type_select(type_selectbox, data_analysis_specified.count_specified_by_robot, data_analysis_specified.count_specified_by_account)
+            st.dataframe(count_selected)
                 
             st.download_button(
                                 label=f'♻️📥Click me to download the result📥♻️',
@@ -350,51 +301,23 @@ def main():
                                 mime='txt/csv')
 
         st.success(f'🥪Number of joined the specified groups🍔')
-
         # count_specified_urls_total = activity.count_specified_urls_total(urls)
         count_specified_urls_total = data_analysis.count_specified_urls_total()
+        check_words = f'👈Click on me to see the number of joined the groups👇'
+        file_name = f'Number of Joined Specified Groups.csv'
+        layout(check_words=check_words, data=count_specified_urls_total, file_name=file_name)
 
-        col1, col2 = st.columns(2)
-        with col1:
-            count_specified_urls_total_checkbox = st.checkbox(f'👈Click on me to see the number of joined the groups👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=count_specified_urls_total.to_csv(),
-                                file_name=f'Number of Joined Specified Groups.csv',
-                                mime='txt/csv')
+        count_specified_urls = type_select(type_selectbox, data_analysis.count_specified_urls_total_by_robot, data_analysis.count_specified_urls_total_by_account)
+        check_words = f'👈Click on me to see the result by {type_selectbox.lower()}👇'
+        file_name = f'Number of Joined Specified Groups by {type_selectbox}.csv'
+        layout(check_words=check_words, data=count_specified_urls, file_name=file_name)
 
-        if count_specified_urls_total_checkbox:
-            st.dataframe(count_specified_urls_total)
-
-        if type_selectbox == 'Robot':
-            # count_specified_urls = activity.count_specified_urls_total_by_robot(urls)
-            count_specified_urls = data_analysis.count_specified_urls_total_by_robot()
-        else:
-            # count_specified_urls = activity.count_specified_urls_total_by_account(urls)
-            count_specified_urls = data_analysis.count_specified_urls_total_by_account()
-
-        col1, col2 = st.columns(2)
-        with col1:
-            count_specified_urls_checkbox = st.checkbox(f'👈Click on me to see the result by {type_selectbox.lower()}👇')
-        with col2:
-            st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
-                                data=count_specified_urls.to_csv(),
-                                file_name=f'Number of Joined Specified Groups by {type_selectbox}.csv',
-                                mime='txt/csv')
-
-        if count_specified_urls_checkbox:
-            st.dataframe(count_specified_urls)
-
+################################### Data Visualization ###################################
     st.info('🎨Data Visualization🧩')
-    
-    if type_selectbox == 'Robot':
-        # error_distribution = activity.error_distribution_by_robot().unstack().fillna(0)
-        error_distribution = data_analysis.error_distribution_by_robot().unstack().fillna(0)
-    else:
-        # error_distribution = activity.error_distribution_by_account().unstack().fillna(0)
-        error_distribution = data_analysis.error_distribution_by_account().unstack().fillna(0)
+    error_distribution = type_select(type_selectbox, data_analysis.error_distribution_by_robot, data_analysis.error_distribution_by_account)
+    error_distribution = error_distribution.unstack().fillna(0)
+
+    if type_selectbox != 'Robot':
         error_distribution.index = error_distribution.index.map(lambda x: '_'.join(x))
 
     codes = st.multiselect(f'🧋Display the rate of selected error codes on the {type_selectbox.lower()}🍫',
