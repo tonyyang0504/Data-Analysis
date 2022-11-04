@@ -24,7 +24,7 @@ def fetch_data(path, files):
             files_path = os.path.join(path, name, key)
             df = concat_default_data(files_path, value)
             df = df.copy()
-            df['Export Date'] = key
+            df['Export Date'] = key.split('/')[-1]
             df_list.append(df)
         df = pd.concat(df_list, ignore_index=True)
         df['Name'] = name
@@ -37,7 +37,6 @@ st.title('🎊Daily Work Result Analysis App🎉')
 
 base_path = os.getcwd()
 path = os.path.join(base_path, 'work_result')
-# path = './work_result'
 
 url_file = pd.read_csv('./links/group links.csv')
 urls = set(url_file['GroupLink'])
