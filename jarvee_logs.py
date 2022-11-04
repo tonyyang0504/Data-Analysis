@@ -158,8 +158,7 @@ class LogsProcess(object):
         count = df_code.shape[0] - 1
         return count
 
-    
-    
+
 class GroupJoiner(LogsProcess):
     def __init__(self, path):
         super(GroupJoiner, self).__init__(path)
@@ -214,6 +213,15 @@ class GroupJoiner(LogsProcess):
         count_specified_urls_error = df.groupby(['Url']).Status.count().astype('int64')
         count_specified_urls_error.rename('Number of Error Url', inplace=True)
         return count_specified_urls_error
+
+    def count_specified_urls_finished(self, urls):
+        count_specified_urls_total = self.count_specified_urls_total(urls)
+        count_specified_urls_error = self.count_specified_urls_error(urls)
+        count_df = pd.concat([count_specified_urls_total, count_specified_urls_error], axis=1).fillna(0).astype('int64')
+        count_df.columns = ['Total', 'Error']
+        count_specified_urls_finished = count_df['Total'] - count_df['Error']
+        count_specified_urls_finished.rename('Number of Finished Url', inplace=True)
+        return count_specified_urls_finished
 
     def count_specified_urls_total_by_robot(self, urls):
         df = self.df_specified_total(urls)
@@ -291,8 +299,6 @@ class GroupJoiner(LogsProcess):
         count_specified = self.count_specified_by_account(urls)
         count_specified_finished = count_specified['Finished']
         return count_specified_finished
-
-
 
 
 class Bump(LogsProcess):

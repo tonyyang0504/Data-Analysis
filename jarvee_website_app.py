@@ -1,22 +1,73 @@
 from unittest import result
 import pandas as pd
 import os
-import threading
-import concurrent.futures
 import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 from jarvee_logs import GroupJoiner, Publishing, Bump
 
-
 pd.set_option('mode.chained_assignment', None)
 st.set_page_config(layout="wide")
 
+class DataAnalysis(object):
+    def __init__(self, activity, urls=None, type=None):
+        self.activity = activity
+        self.type = type
+        self.urls = urls
+
+    def logs_related(self):
+        df = self.activity.logs_related()
+        return df
+
+    def df_specified_total(self):
+        df = self.activity.df_specified_total(self.urls)
+        return df
+
+    def df_specified_error(self):
+        df = self.activity.df_specified_error(self.urls)
+        return df
+
+    def count_specified_by_robot(self):
+        df = self.activity.count_specified_by_robot(self.urls)
+        return df
+
+    def count_specified_by_account(self):
+        df = self.activity.count_specified_by_account(self.urls)
+        return df
+
+    def count_specified_urls_total(self):
+        df = self.activity.count_specified_urls_total(self.urls)
+        return df
+
+    def count_specified_urls_error(self):
+        df = self.activity.count_specified_urls_error(self.urls)
+        return df
+
+
+    def count_specified_urls_finished(self):
+        df = self.activity.count_specified_urls_finished(self.urls)
+        return df
+
+    def count_specified_urls_total_by_robot(self):
+        df = self.activity.count_specified_urls_total_by_robot(self.urls)
+        return df
+
+    def count_specified_urls_total_by_account(self):
+        df = self.activity.count_specified_urls_total_by_account(self.urls)
+        return df
+
+    def error_distribution_by_robot(self):
+        df = self.activity.error_distribution_by_robot()
+        return df
+
+    def error_distribution_by_account(self):
+        df = self.activity.error_distribution_by_account()
+        return df
 st.cache(suppress_st_warning=True)
-def simplify_index(df):
+def simplify_index(df, separate):
     simplified_df = df.copy()
-    simplified_df.index = simplified_df.index.map(lambda x: x.split('.')[-1])
+    simplified_df.index = simplified_df.index.map(lambda x: x.split(separate)[-1])
     return simplified_df
 
 st.cache(suppress_st_warning=True)
@@ -101,11 +152,6 @@ def concat_default_data(path, files):
         st.stop()
         
 @st.cache(suppress_st_warning=True)
-def open_dataframe(data):
-    df = st.dataframe(data)
-    return df
-
-@st.cache(suppress_st_warning=True)
 def confirm_activity(activity_selectbox, data):
     if activity_selectbox == 'Group Joiner':
         activity = GroupJoiner(data)
@@ -178,55 +224,10 @@ def layout(check_words, data, file_name):
                             label=f'♻️📥Click on me to download the result📥♻️',
                             data=data.to_csv(),
                             file_name=file_name,
-                            mime='txt/csv')
+                            mime='txt/csv'
+                            )
     if checkbox:
         st.dataframe(data)
-
-class DataAnalysis(object):
-    def __init__(self, activity, urls, type=None):
-        self.activity = activity
-        self.type = type
-        self.urls = urls
-
-    def logs_related(self):
-        df = self.activity.logs_related()
-        return df
-
-    def df_specified_total(self):
-        df = self.activity.df_specified_total(self.urls)
-        return df
-
-    def df_specified_error(self):
-        df = self.activity.df_specified_error(self.urls)
-        return df
-
-    def count_specified_by_robot(self):
-        df = self.activity.count_specified_by_robot(self.urls)
-        return df
-
-    def count_specified_by_account(self):
-        df = self.activity.count_specified_by_account(self.urls)
-        return df
-
-    def count_specified_urls_total(self):
-        df = self.activity.count_specified_urls_total(self.urls)
-        return df
-
-    def count_specified_urls_total_by_robot(self):
-        df = self.activity.count_specified_urls_total_by_robot(self.urls)
-        return df
-
-    def count_specified_urls_total_by_account(self):
-        df = self.activity.count_specified_urls_total_by_account(self.urls)
-        return df
-
-    def error_distribution_by_robot(self):
-        df = self.activity.error_distribution_by_robot()
-        return df
-
-    def error_distribution_by_account(self):
-        df = self.activity.error_distribution_by_account()
-        return df
 
 def main():
     st.title('🎊Jarvee Logs Analysis App🎉')
@@ -261,7 +262,12 @@ def main():
         layout(check_words=check_words, data=logs_related, file_name=file_name)
 
     st.success(f'🍆Number of {activity_selectbox}🥕')
-    numbers = type_select(type_selectbox, count_by_robot, count_by_account, activity)
+    numbers = type_select(
+                          type_selectbox,
+                          count_by_robot,
+                          count_by_account,
+                          activity
+                          )
     check_words = f'👈Click on me to see the result👇'
     file_name = f'Number of {activity_selectbox} by {type_selectbox}.csv'
     layout(check_words=check_words, data=numbers, file_name=file_name)
@@ -281,7 +287,11 @@ def main():
         file_name = f'Error Logs of {activity_selectbox} Joined Specified Groups.csv'
         layout(check_words=check_words, data=df_specified_error, file_name=file_name)
 
-        count_specified = type_select(type_selectbox, data_analysis.count_specified_by_robot, data_analysis.count_specified_by_account)
+        count_specified = type_select(
+                                      type_selectbox,
+                                      data_analysis.count_specified_by_robot,
+                                      data_analysis.count_specified_by_account
+                                      )
         check_words = f'👈Click on me to see the data by {type_selectbox.lower()}👇'
         file_name = f'Number of {activity_selectbox} Joined Specified Groups.csv'
         layout(check_words=check_words, data=count_specified, file_name=file_name)
@@ -291,30 +301,42 @@ def main():
 
         if urls_selected:
             data_analysis_specified = open_data_analysis(activity=activity, urls=urls_selected, type=type_selectbox)
-            count_selected = type_select(type_selectbox, data_analysis_specified.count_specified_by_robot, data_analysis_specified.count_specified_by_account)
+            count_selected = type_select(
+                                         type_selectbox,
+                                         data_analysis_specified.count_specified_by_robot,
+                                         data_analysis_specified.count_specified_by_account
+                                         )
             st.dataframe(count_selected)
                 
             st.download_button(
-                                label=f'♻️📥Click me to download the result📥♻️',
+                                label=f'♻📥Click me to download the result📥♻️',
                                 data=count_selected.to_csv(),
                                 file_name=f'Number of {activity_selectbox} Joined Selected Groups by {type_selectbox.lower()}.csv',
                                 mime='txt/csv')
 
-        st.success(f'🥪Number of joined the specified groups🍔')
+        st.success('🥪Number of joined the specified groups🍔')
         # count_specified_urls_total = activity.count_specified_urls_total(urls)
         count_specified_urls_total = data_analysis.count_specified_urls_total()
         check_words = f'👈Click on me to see the number of joined the groups👇'
         file_name = f'Number of Joined Specified Groups.csv'
         layout(check_words=check_words, data=count_specified_urls_total, file_name=file_name)
 
-        count_specified_urls = type_select(type_selectbox, data_analysis.count_specified_urls_total_by_robot, data_analysis.count_specified_urls_total_by_account)
+        count_specified_urls = type_select(
+                                           type_selectbox,
+                                           data_analysis.count_specified_urls_total_by_robot,
+                                           data_analysis.count_specified_urls_total_by_account
+                                           )
         check_words = f'👈Click on me to see the result by {type_selectbox.lower()}👇'
         file_name = f'Number of Joined Specified Groups by {type_selectbox}.csv'
         layout(check_words=check_words, data=count_specified_urls, file_name=file_name)
 
 ################################### Data Visualization ###################################
     st.info('🎨Data Visualization🧩')
-    error_distribution = type_select(type_selectbox, data_analysis.error_distribution_by_robot, data_analysis.error_distribution_by_account)
+    error_distribution = type_select(
+                                     type_selectbox,
+                                     data_analysis.error_distribution_by_robot,
+                                     data_analysis.error_distribution_by_account
+                                     )
     error_distribution = error_distribution.unstack().fillna(0)
 
     if type_selectbox != 'Robot':
@@ -337,6 +359,24 @@ def main():
     if robots:
         plot_bars(robots_selected.T)
 
+    if mode_selectbox == 'Default Data':
+        st.success('Groups Report')
+        df = pd.read_excel('./facebook_groups_report.xlsx')
+
+        filtered = df.iloc[:,[3, -1]].dropna()
+        filtered.iloc[:, 0] = filtered.iloc[:, 0].str.strip('/')
+        filtered.columns = ['Url', 'Number of Record Url']
+
+        count_specified_urls_finished = data_analysis.count_specified_urls_finished()
+        count_specified_urls_finished = pd.DataFrame(count_specified_urls_finished)
+        count_specified_urls_finished.reset_index(inplace=True)
+        count_specified_urls_finished.columns = ['Url', 'Number of Finished Url']
+        results = filtered.merge(count_specified_urls_finished)
+        results['Diff'] = results['Number of Record Url'] - results['Number of Finished Url']
+        results.set_index('Url', inplace=True)
+        results = simplify_index(results, '/')
+        plot_bars(results[['Number of Record Url', 'Number of Finished Url']])
+        plot_bars(results['Diff'])
 
 if __name__ == '__main__':
     main()
