@@ -36,12 +36,13 @@ def fetch_data(path, files):
 st.title('🎊Daily Work Result Analysis App🎉')
 
 base_path = os.getcwd()
-# path = os.path.join(base_path, 'work_result')
-path = './work_result'
+path = os.path.join(base_path, 'work_result')
+# path = './work_result'
 
 url_file = pd.read_csv('./links/group links.csv')
 urls = set(url_file['GroupLink'])
-name_list = os.listdir(path)
+name_list = [name.split('/')[-1] for name in os.listdir(path)]
+
 
 files = fetch_files(path, name_list)
 data = fetch_data(path, files)
