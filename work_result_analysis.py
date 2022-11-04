@@ -33,7 +33,7 @@ def fetch_data(path, files):
     return data
 
 
-st.title('🎊Daily Work Result Analysis App🎉')
+st.title('🎊Daily Work Result Analysis🎉')
 
 base_path = os.getcwd()
 path = os.path.join(base_path, 'work_result')
@@ -48,7 +48,7 @@ data = fetch_data(path, files)
 
 daily_data = data.groupby(['Export Date', 'Name'])
 
-st.success('🐼Number of Joined Specified Groups per person per day🐻‍')
+st.success('🐼Number of Joined Specified Groups per person daily🐻‍')
 daily_data_list = []
 for i in list(daily_data):
     activity = confirm_activity('Group Joiner',i[1])
@@ -60,7 +60,7 @@ for i in list(daily_data):
 df = pd.concat(daily_data_list)
 
 dn_result = df.groupby(['Export Date', 'Name']).sum()[['Finished', 'Error', 'Total']]
-check_words = '👈Click on me to see the data per person per day👇'
+check_words = '👈Click on me to see the data per person daily👇'
 file_name = 'Number of Joined Specified Groups per person daily.csv'
 layout(check_words=check_words, data=dn_result, file_name=file_name)
 plot_bars(dn_result.unstack(fill_value=0)['Finished'])

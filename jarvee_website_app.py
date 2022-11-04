@@ -221,7 +221,7 @@ def layout(check_words, data, file_name):
         checkbox = st.checkbox(check_words)
     with col2:
         st.download_button(
-                            label=f'♻️📥Click on me to download the result📥♻️',
+                            label='📥Click on me to download the result📥',
                             data=data.to_csv(),
                             file_name=file_name,
                             mime='txt/csv'
