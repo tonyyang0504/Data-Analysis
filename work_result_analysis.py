@@ -33,64 +33,69 @@ def fetch_data(path, files):
     return data
 
 
-st.title('🎊Daily Work Result Analysis🎉')
+def main():
+    st.title('🎊Daily Work Result Analysis🎉')
 
-base_path = os.getcwd()
-path = os.path.join(base_path, 'work_result')
+    base_path = os.getcwd()
+    path = os.path.join(base_path, 'work_result')
 
-url_file = pd.read_csv('./links/group links.csv')
-urls = set(url_file['GroupLink'])
-name_list = [name.split('/')[-1] for name in os.listdir(path)]
+    url_file = pd.read_csv('./links/group links.csv')
+    urls = set(url_file['GroupLink'])
+    name_list = [name.split('/')[-1] for name in os.listdir(path)]
 
 
-files = fetch_files(path, name_list)
-data = fetch_data(path, files)
+    files = fetch_files(path, name_list)
+    data = fetch_data(path, files)
 
-daily_data = data.groupby(['Export Date', 'Name'])
+    daily_data = data.groupby(['Export Date', 'Name'])
 
-st.success('🐼Number of Joined Specified Groups per person daily🐻‍')
-daily_data_list = []
-for i in list(daily_data):
-    activity = confirm_activity('Group Joiner',i[1])
-    data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
-    result = data_analysis.count_specified_by_robot()
-    result['Export Date'] = i[0][0]
-    result['Name'] = i[0][1]
-    daily_data_list.append(result)
-df = pd.concat(daily_data_list)
+    st.success('🐼Number of Joined Specified Groups per person daily🐻‍')
+    daily_data_list = []
+    for i in list(daily_data):
+        activity = confirm_activity('Group Joiner',i[1])
+        data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
+        result = data_analysis.count_specified_by_robot()
+        result['Export Date'] = i[0][0]
+        result['Name'] = i[0][1]
+        daily_data_list.append(result)
+    df = pd.concat(daily_data_list)
 
-dn_result = df.groupby(['Export Date', 'Name']).sum()[['Finished', 'Error', 'Total']]
-check_words = '👈Click on me to see the data per person daily👇'
-file_name = 'Number of Joined Specified Groups per person daily.csv'
-layout(check_words=check_words, data=dn_result, file_name=file_name)
-plot_bars(dn_result.unstack(fill_value=0)['Finished'])
+    dn_result = df.groupby(['Export Date', 'Name']).sum()[['Finished', 'Error', 'Total']]
+    check_words = '👈Click on me to see the data per person daily👇'
+    file_name = 'Number of Joined Specified Groups per person daily.csv'
+    layout(check_words=check_words, data=dn_result, file_name=file_name)
+    plot_bars(dn_result.unstack(fill_value=0)['Finished'])
 
-st.info('🐢Number of Joined Specified Groups per day🦖')
-date_result = df.groupby(['Export Date']).sum()[['Finished', 'Error', 'Total']]
-check_words = '👈Click on me to see the data per day👇'
-file_name = 'Number of Joined Specified Groups per day.csv'
-layout(check_words=check_words, data=date_result, file_name=file_name)
-plot_bars(date_result['Finished'])
+    st.info('🐢Number of Joined Specified Groups per day🦖')
+    date_result = df.groupby(['Export Date']).sum()[['Finished', 'Error', 'Total']]
+    check_words = '👈Click on me to see the data per day👇'
+    file_name = 'Number of Joined Specified Groups per day.csv'
+    layout(check_words=check_words, data=date_result, file_name=file_name)
+    plot_bars(date_result['Finished'])
 
-st.warning('🍏Number of Joined Specified Groups per person🍑')
-name_result = df.groupby(['Name']).sum()[['Finished', 'Error', 'Total']]
-check_words = '👈Click on me to see the data per person👇'
-file_name = 'Number of Joined Specified Groups per person.csv'
-layout(check_words=check_words, data=name_result, file_name=file_name)
-plot_bars(name_result['Finished'])
+    st.warning('🍏Number of Joined Specified Groups per person🍑')
+    name_result = df.groupby(['Name']).sum()[['Finished', 'Error', 'Total']]
+    check_words = '👈Click on me to see the data per person👇'
+    file_name = 'Number of Joined Specified Groups per person.csv'
+    layout(check_words=check_words, data=name_result, file_name=file_name)
+    plot_bars(name_result['Finished'])
 
-st.error('🥪Number of joined the specified groups🍔')
-daily_data_list = []
-for i in list(daily_data):
-    activity = confirm_activity('Group Joiner',i[1])
-    data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
-    result = data_analysis.count_specified_urls_total()
-    daily_data_list.append(result)
-urls_data = pd.concat(daily_data_list)
-urls_data = urls_data.groupby('Url').sum()
+    st.error('🥪Number of joined the specified groups🍔')
+    daily_data_list = []
+    for i in list(daily_data):
+        activity = confirm_activity('Group Joiner',i[1])
+        data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
+        result = data_analysis.count_specified_urls_total()
+        daily_data_list.append(result)
+    urls_data = pd.concat(daily_data_list)
+    urls_data = urls_data.groupby('Url').sum()
 
-check_words = f'👈Click on me to see the number of joined the groups👇'
-file_name = f'Number of Joined Specified Groups.csv'
-layout(check_words=check_words, data=urls_data, file_name=file_name)
-urls_data = simplify_index(urls_data, '/')
-plot_bars(urls_data)
+    check_words = f'👈Click on me to see the number of joined the groups👇'
+    file_name = f'Number of Joined Specified Groups.csv'
+    layout(check_words=check_words, data=urls_data, file_name=file_name)
+    urls_data = simplify_index(urls_data, '/')
+    plot_bars(urls_data)
+
+
+if __name__ == '__main__':
+    main()

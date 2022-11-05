@@ -1,0 +1,619 @@
+﻿Date,Account,Status
+08/31/2022 05:15:58,,Jarvee 3.3.1.1 is now active
+08/31/2022 05:39:38,,Jarvee 3.3.1.1 is now active
+09/01/2022 00:01:05,,Jarvee 3.3.1.1 is now active
+09/01/2022 05:06:31,,Jarvee 3.3.1.1 is now active
+09/07/2022 11:28:50,,Jarvee 3.3.1.1 is now active
+09/08/2022 05:33:59,,Jarvee 3.3.1.1 is now active
+09/09/2022 08:03:33,,Jarvee 3.3.1.1 is now active
+11/04/2022 00:09:23,,Jarvee 3.3.1.1 is now active
+11/04/2022 00:15:21,Hank_Malaysia_127,Synchronizing Number of Followers for the 'Hank_Malaysia_127' account
+11/04/2022 00:15:46,Hank_Malaysia_127,Finalized Number of Followers synchronization for the 'Hank_Malaysia_127' account.
+11/04/2022 00:16:16,Hank_Malaysia_127,Birthday Sync - for the 'Hank_Malaysia_127' account URL: https://www.facebook.com/me
+11/04/2022 00:16:55,Hank_Malaysia_80,Synchronizing Groups for the 'Hank_Malaysia_80' account.
+11/04/2022 00:16:56,Hank_Malaysia_127,Checking restrictions for the 'Hank_Malaysia_127' account done. URL: https://www.facebook.com/me
+11/04/2022 00:16:58,Hank_Malaysia_127,Checking restrictions for the 'Hank_Malaysia_127' account
+11/04/2022 00:17:23,Hank_Malaysia_127,Checking restrictions for the 'Hank_Malaysia_127' account done.
+11/04/2022 00:18:13,Hank_Malaysia_80,Finalized group synchronization for the 'Hank_Malaysia_80' account.
+11/04/2022 00:18:14,Hank_Malaysia_80,Synchronizing Pages for the 'Hank_Malaysia_80' account.
+11/04/2022 00:19:12,Hank_Malaysia_80,Finalized pages synchronization for the 'Hank_Malaysia_80' account.
+11/04/2022 00:21:37,Hank_Malaysia_80,Birthday Sync - for the 'Hank_Malaysia_80' account URL: https://www.facebook.com/me
+11/04/2022 00:22:08,Hank_Malaysia_80,Birthday Sync - Error executing for the 'Hank_Malaysia_80' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 00:24:18,Hank_Malaysia_80,Checking restrictions for the 'Hank_Malaysia_80' account
+11/04/2022 00:24:45,Hank_Malaysia_80,Checking restrictions for the 'Hank_Malaysia_80' account done.
+11/04/2022 00:24:45,Hank_Malaysia_80,Synchronizing Number of Followers for the 'Hank_Malaysia_80' account
+11/04/2022 00:25:09,Hank_Malaysia_80,Finalized Number of Followers synchronization for the 'Hank_Malaysia_80' account.
+11/04/2022 00:25:40,Hank_Malaysia_109,Synchronizing Pages for the 'Hank_Malaysia_109' account.
+11/04/2022 00:26:38,Hank_Malaysia_109,Finalized pages synchronization for the 'Hank_Malaysia_109' account.
+11/04/2022 00:26:40,Hank_Malaysia_109,Birthday Sync - for the 'Hank_Malaysia_109' account URL: https://www.facebook.com/me
+11/04/2022 00:27:20,Hank_Malaysia_109,Checking restrictions for the 'Hank_Malaysia_109' account done. URL: https://www.facebook.com/me
+11/04/2022 00:27:23,Hank_Malaysia_109,Checking restrictions for the 'Hank_Malaysia_109' account
+11/04/2022 00:27:50,Hank_Malaysia_109,Checking restrictions for the 'Hank_Malaysia_109' account done.
+11/04/2022 00:27:53,Hank_Malaysia_109,Synchronizing Number of Followers for the 'Hank_Malaysia_109' account
+11/04/2022 00:28:14,Hank_Malaysia_109,Finalized Number of Followers synchronization for the 'Hank_Malaysia_109' account.
+11/04/2022 00:28:14,Hank_Malaysia_109,Synchronizing Groups for the 'Hank_Malaysia_109' account.
+11/04/2022 00:29:25,Hank_Malaysia_109,Finalized group synchronization for the 'Hank_Malaysia_109' account.
+11/04/2022 00:29:57,Hank_Malaysia_96,Synchronizing Pages for the 'Hank_Malaysia_96' account.
+11/04/2022 00:31:00,Hank_Malaysia_96,Finalized pages synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 00:31:01,Hank_Malaysia_96,Synchronizing Groups for the 'Hank_Malaysia_96' account.
+11/04/2022 00:32:11,Hank_Malaysia_96,Finalized group synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 00:32:14,Hank_Malaysia_96,Birthday Sync - for the 'Hank_Malaysia_96' account URL: https://www.facebook.com/me
+11/04/2022 00:32:54,Hank_Malaysia_96,Checking restrictions for the 'Hank_Malaysia_96' account done. URL: https://www.facebook.com/me
+11/04/2022 00:32:56,Hank_Malaysia_96,Checking restrictions for the 'Hank_Malaysia_96' account
+11/04/2022 00:33:23,Hank_Malaysia_96,Checking restrictions for the 'Hank_Malaysia_96' account done.
+11/04/2022 00:33:23,Hank_Malaysia_96,Synchronizing Number of Followers for the 'Hank_Malaysia_96' account
+11/04/2022 00:33:46,Hank_Malaysia_96,Finalized Number of Followers synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 00:34:18,Hank_Malaysia_76,Synchronizing Number of Followers for the 'Hank_Malaysia_76' account
+11/04/2022 00:34:35,Hank_Malaysia_76,Error synchronizing Number of Followers for the 'Hank_Malaysia_76' account. : code  3  - Not logged in Facebook. URL: https://www.facebook.com/me
+11/04/2022 00:34:36,Hank_Malaysia_76,Executing a Login operation for the 'Hank_Malaysia_76' account.
+11/04/2022 00:34:52,Hank_Malaysia_76,The Login operation for the 'Hank_Malaysia_76' account is finalized.
+11/04/2022 00:34:57,Hank_Malaysia_76,Executing a Check Login operation for the 'Hank_Malaysia_76' account.
+11/04/2022 00:35:13,Hank_Malaysia_76,Finalized a Check Login operation for the 'Hank_Malaysia_76' account.
+11/04/2022 00:35:13,Hank_Malaysia_76,Error executing Check Login Operation for 'Hank_Malaysia_76':  code 2  - Facebook Invalid Credentials
+11/04/2022 00:35:37,Hank_Malaysia_78,Synchronizing Groups for the 'Hank_Malaysia_78' account.
+11/04/2022 00:37:04,Hank_Malaysia_78,Finalized group synchronization for the 'Hank_Malaysia_78' account.
+11/04/2022 00:37:35,Hank_Malaysia_135,Synchronizing Number of Followers for the 'Hank_Malaysia_135' account
+11/04/2022 00:38:04,Hank_Malaysia_135,Finalized Number of Followers synchronization for the 'Hank_Malaysia_135' account.
+11/04/2022 00:38:05,Hank_Malaysia_135,Synchronizing Groups for the 'Hank_Malaysia_135' account.
+11/04/2022 00:39:18,Hank_Malaysia_135,Finalized group synchronization for the 'Hank_Malaysia_135' account.
+11/04/2022 00:39:18,Hank_Malaysia_135,Synchronizing Pages for the 'Hank_Malaysia_135' account.
+11/04/2022 00:40:15,Hank_Malaysia_135,Finalized pages synchronization for the 'Hank_Malaysia_135' account.
+11/04/2022 00:40:49,Hank_Malaysia_135,Birthday Sync - for the 'Hank_Malaysia_135' account URL: https://www.facebook.com/me
+11/04/2022 00:41:25,Hank_Malaysia_100,Synchronizing Pages for the 'Hank_Malaysia_100' account.
+11/04/2022 00:41:29,Hank_Malaysia_135,Checking restrictions for the 'Hank_Malaysia_135' account done. URL: https://www.facebook.com/me
+11/04/2022 00:41:31,Hank_Malaysia_135,Checking restrictions for the 'Hank_Malaysia_135' account
+11/04/2022 00:41:56,Hank_Malaysia_135,Checking restrictions for the 'Hank_Malaysia_135' account done.
+11/04/2022 00:42:26,Hank_Malaysia_100,Finalized pages synchronization for the 'Hank_Malaysia_100' account.
+11/04/2022 00:42:29,Hank_Malaysia_100,Synchronizing Groups for the 'Hank_Malaysia_100' account.
+11/04/2022 00:43:37,Hank_Malaysia_100,Finalized group synchronization for the 'Hank_Malaysia_100' account.
+11/04/2022 00:44:09,Hank_Malaysia_82,Synchronizing Pages for the 'Hank_Malaysia_82' account.
+11/04/2022 00:44:37,Hank_Malaysia_82,Error synchronizing pages for the 'Hank_Malaysia_82' account. : code  3  - Not logged in Facebook.
+11/04/2022 00:44:39,Hank_Malaysia_72,Synchronizing Groups for the 'Hank_Malaysia_72' account.
+11/04/2022 00:44:39,Hank_Malaysia_82,Executing a Login operation for the 'Hank_Malaysia_82' account.
+11/04/2022 00:44:56,Hank_Malaysia_82,The Login operation for the 'Hank_Malaysia_82' account is finalized.
+11/04/2022 00:45:00,Hank_Malaysia_82,Executing a Check Login operation for the 'Hank_Malaysia_82' account.
+11/04/2022 00:45:21,Hank_Malaysia_82,Finalized a Check Login operation for the 'Hank_Malaysia_82' account.
+11/04/2022 00:45:21,Hank_Malaysia_82,Error executing Check Login Operation for 'Hank_Malaysia_82':  code 2  - Facebook Invalid Credentials
+11/04/2022 00:45:57,Hank_Malaysia_72,Finalized group synchronization for the 'Hank_Malaysia_72' account.
+11/04/2022 00:47:05,Hank_Malaysia_115,Synchronizing Number of Followers for the 'Hank_Malaysia_115' account
+11/04/2022 00:47:30,Hank_Malaysia_115,Finalized Number of Followers synchronization for the 'Hank_Malaysia_115' account.
+11/04/2022 00:48:02,Hank_Malaysia_115,Birthday Sync - for the 'Hank_Malaysia_115' account URL: https://www.facebook.com/me
+11/04/2022 00:48:02,Hank_Malaysia_111,Synchronizing Number of Followers for the 'Hank_Malaysia_111' account
+11/04/2022 00:48:22,Hank_Malaysia_111,Finalized Number of Followers synchronization for the 'Hank_Malaysia_111' account.
+11/04/2022 00:48:23,Hank_Malaysia_111,Synchronizing Groups for the 'Hank_Malaysia_111' account.
+11/04/2022 00:48:41,Hank_Malaysia_115,Checking restrictions for the 'Hank_Malaysia_115' account done. URL: https://www.facebook.com/me
+11/04/2022 00:48:41,Hank_Malaysia_115,Checking restrictions for the 'Hank_Malaysia_115' account
+11/04/2022 00:49:06,Hank_Malaysia_115,Checking restrictions for the 'Hank_Malaysia_115' account done.
+11/04/2022 00:50:01,Hank_Malaysia_111,Birthday Sync - for the 'Hank_Malaysia_111' account URL: https://www.facebook.com/me
+11/04/2022 00:50:01,Hank_Malaysia_116,Synchronizing Number of Followers for the 'Hank_Malaysia_116' account
+11/04/2022 00:50:32,Hank_Malaysia_116,Finalized Number of Followers synchronization for the 'Hank_Malaysia_116' account.
+11/04/2022 00:50:34,Hank_Malaysia_116,Synchronizing Groups for the 'Hank_Malaysia_116' account.
+11/04/2022 00:50:40,Hank_Malaysia_111,Checking restrictions for the 'Hank_Malaysia_111' account done. URL: https://www.facebook.com/me
+11/04/2022 00:50:43,Hank_Malaysia_111,Checking restrictions for the 'Hank_Malaysia_111' account
+11/04/2022 00:51:11,Hank_Malaysia_111,Checking restrictions for the 'Hank_Malaysia_111' account done.
+11/04/2022 00:51:22,Hank_Malaysia_116,Finalized group synchronization for the 'Hank_Malaysia_116' account.
+11/04/2022 00:51:22,Hank_Malaysia_116,Synchronizing Pages for the 'Hank_Malaysia_116' account.
+11/04/2022 00:52:22,Hank_Malaysia_116,Finalized pages synchronization for the 'Hank_Malaysia_116' account.
+11/04/2022 00:52:41,Hank_Malaysia_116,Synchronizing Events for the 'Hank_Malaysia_116' account.
+11/04/2022 00:54:28,Hank_Malaysia_116,Finalized events synchronization for the 'Hank_Malaysia_116' account.
+11/04/2022 00:54:30,Hank_Malaysia_92,Synchronizing Pages for the 'Hank_Malaysia_92' account.
+11/04/2022 00:54:30,Hank_Malaysia_116,Birthday Sync - for the 'Hank_Malaysia_116' account URL: https://www.facebook.com/me
+11/04/2022 00:55:10,Hank_Malaysia_116,Checking restrictions for the 'Hank_Malaysia_116' account done. URL: https://www.facebook.com/me
+11/04/2022 00:55:13,Hank_Malaysia_116,Checking restrictions for the 'Hank_Malaysia_116' account
+11/04/2022 00:55:34,Hank_Malaysia_92,Finalized pages synchronization for the 'Hank_Malaysia_92' account.
+11/04/2022 00:55:40,Hank_Malaysia_116,Checking restrictions for the 'Hank_Malaysia_116' account done.
+11/04/2022 00:56:05,Hank_Malaysia_89,Synchronizing Pages for the 'Hank_Malaysia_89' account.
+11/04/2022 00:57:06,Hank_Malaysia_89,Finalized pages synchronization for the 'Hank_Malaysia_89' account.
+11/04/2022 00:57:38,Hank_Malaysia_79,Synchronizing Groups for the 'Hank_Malaysia_79' account.
+11/04/2022 00:58:33,Hank_Malaysia_79,Finalized group synchronization for the 'Hank_Malaysia_79' account.
+11/04/2022 01:00:46,Hank_Malaysia_104,Synchronizing Pages for the 'Hank_Malaysia_104' account.
+11/04/2022 01:01:43,Hank_Malaysia_104,Finalized pages synchronization for the 'Hank_Malaysia_104' account.
+11/04/2022 01:01:44,Hank_Malaysia_104,Birthday Sync - for the 'Hank_Malaysia_104' account URL: https://www.facebook.com/me
+11/04/2022 01:02:18,Hank_Malaysia_104,Birthday Sync - Error executing for the 'Hank_Malaysia_104' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 01:02:21,Hank_Malaysia_104,Checking restrictions for the 'Hank_Malaysia_104' account
+11/04/2022 01:02:48,Hank_Malaysia_104,Checking restrictions for the 'Hank_Malaysia_104' account done.
+11/04/2022 01:02:51,Hank_Malaysia_104,Synchronizing Number of Followers for the 'Hank_Malaysia_104' account
+11/04/2022 01:03:13,Hank_Malaysia_104,Finalized Number of Followers synchronization for the 'Hank_Malaysia_104' account.
+11/04/2022 01:03:45,Hank_Malaysia_139,Synchronizing Pages for the 'Hank_Malaysia_139' account.
+11/04/2022 01:04:44,Hank_Malaysia_139,Finalized pages synchronization for the 'Hank_Malaysia_139' account.
+11/04/2022 01:04:46,Hank_Malaysia_139,Birthday Sync - for the 'Hank_Malaysia_139' account URL: https://www.facebook.com/me
+11/04/2022 01:05:18,Hank_Malaysia_139,Birthday Sync - Error executing for the 'Hank_Malaysia_139' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 01:05:19,Hank_Malaysia_139,Checking restrictions for the 'Hank_Malaysia_139' account
+11/04/2022 01:05:44,Hank_Malaysia_139,Checking restrictions for the 'Hank_Malaysia_139' account done.
+11/04/2022 01:05:47,Hank_Malaysia_139,Synchronizing Number of Followers for the 'Hank_Malaysia_139' account
+11/04/2022 01:06:10,Hank_Malaysia_139,Finalized Number of Followers synchronization for the 'Hank_Malaysia_139' account.
+11/04/2022 01:06:11,Hank_Malaysia_139,Synchronizing Groups for the 'Hank_Malaysia_139' account.
+11/04/2022 01:07:38,Hank_Malaysia_139,Finalized group synchronization for the 'Hank_Malaysia_139' account.
+11/04/2022 01:08:06,Hank_Malaysia_90,Synchronizing Pages for the 'Hank_Malaysia_90' account.
+11/04/2022 01:09:09,Hank_Malaysia_90,Finalized pages synchronization for the 'Hank_Malaysia_90' account.
+11/04/2022 01:09:10,Hank_Malaysia_90,Birthday Sync - for the 'Hank_Malaysia_90' account URL: https://www.facebook.com/me
+11/04/2022 01:09:49,Hank_Malaysia_90,Checking restrictions for the 'Hank_Malaysia_90' account done. URL: https://www.facebook.com/me
+11/04/2022 01:09:49,Hank_Malaysia_90,Checking restrictions for the 'Hank_Malaysia_90' account
+11/04/2022 01:10:15,Hank_Malaysia_90,Checking restrictions for the 'Hank_Malaysia_90' account done.
+11/04/2022 01:10:17,Hank_Malaysia_90,Synchronizing Number of Followers for the 'Hank_Malaysia_90' account
+11/04/2022 01:10:37,Hank_Malaysia_90,Finalized Number of Followers synchronization for the 'Hank_Malaysia_90' account.
+11/04/2022 01:11:08,Hank_Malaysia_91,Synchronizing Number of Followers for the 'Hank_Malaysia_91' account
+11/04/2022 01:11:36,Hank_Malaysia_91,Finalized Number of Followers synchronization for the 'Hank_Malaysia_91' account.
+11/04/2022 01:11:38,Hank_Malaysia_91,Synchronizing Groups for the 'Hank_Malaysia_91' account.
+11/04/2022 01:12:58,Hank_Malaysia_91,Finalized group synchronization for the 'Hank_Malaysia_91' account.
+11/04/2022 01:13:30,Hank_Malaysia_91,Birthday Sync - for the 'Hank_Malaysia_91' account URL: https://www.facebook.com/me
+11/04/2022 01:13:33,Hank_Malaysia_112,Synchronizing Groups for the 'Hank_Malaysia_112' account.
+11/04/2022 01:14:13,Hank_Malaysia_91,Checking restrictions for the 'Hank_Malaysia_91' account done. URL: https://www.facebook.com/me
+11/04/2022 01:14:13,Hank_Malaysia_91,Checking restrictions for the 'Hank_Malaysia_91' account
+11/04/2022 01:14:41,Hank_Malaysia_91,Checking restrictions for the 'Hank_Malaysia_91' account done.
+11/04/2022 01:14:47,Hank_Malaysia_112,Finalized group synchronization for the 'Hank_Malaysia_112' account.
+11/04/2022 01:14:50,Hank_Malaysia_112,Synchronizing Pages for the 'Hank_Malaysia_112' account.
+11/04/2022 01:15:43,Hank_Malaysia_112,Finalized pages synchronization for the 'Hank_Malaysia_112' account.
+11/04/2022 01:15:44,Hank_Malaysia_112,Birthday Sync - for the 'Hank_Malaysia_112' account URL: https://www.facebook.com/me
+11/04/2022 01:16:12,Hank_Malaysia_112,Birthday Sync - Error executing for the 'Hank_Malaysia_112' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 01:16:14,Hank_Malaysia_112,Checking restrictions for the 'Hank_Malaysia_112' account
+11/04/2022 01:16:36,Hank_Malaysia_112,Checking restrictions for the 'Hank_Malaysia_112' account done.
+11/04/2022 01:16:39,Hank_Malaysia_112,Synchronizing Number of Followers for the 'Hank_Malaysia_112' account
+11/04/2022 01:16:54,Hank_Malaysia_112,Finalized Number of Followers synchronization for the 'Hank_Malaysia_112' account.
+11/04/2022 01:17:24,Hank_Malaysia_77,Synchronizing Groups for the 'Hank_Malaysia_77' account.
+11/04/2022 01:18:33,Hank_Malaysia_77,Finalized group synchronization for the 'Hank_Malaysia_77' account.
+11/04/2022 01:19:04,Hank_Malaysia_87,Synchronizing Pages for the 'Hank_Malaysia_87' account.
+11/04/2022 01:20:01,Hank_Malaysia_87,Finalized pages synchronization for the 'Hank_Malaysia_87' account.
+11/04/2022 01:20:02,Hank_Malaysia_87,Synchronizing Groups for the 'Hank_Malaysia_87' account.
+11/04/2022 01:21:05,Hank_Malaysia_87,Finalized group synchronization for the 'Hank_Malaysia_87' account.
+11/04/2022 01:21:06,Hank_Malaysia_87,Birthday Sync - for the 'Hank_Malaysia_87' account URL: https://www.facebook.com/me
+11/04/2022 01:21:45,Hank_Malaysia_87,Checking restrictions for the 'Hank_Malaysia_87' account done. URL: https://www.facebook.com/me
+11/04/2022 01:21:45,Hank_Malaysia_87,Checking restrictions for the 'Hank_Malaysia_87' account
+11/04/2022 01:22:11,Hank_Malaysia_87,Checking restrictions for the 'Hank_Malaysia_87' account done.
+11/04/2022 01:22:12,Hank_Malaysia_87,Synchronizing Number of Followers for the 'Hank_Malaysia_87' account
+11/04/2022 01:22:33,Hank_Malaysia_87,Finalized Number of Followers synchronization for the 'Hank_Malaysia_87' account.
+11/04/2022 01:23:55,Hank_Malaysia_121,Synchronizing Pages for the 'Hank_Malaysia_121' account.
+11/04/2022 01:24:56,Hank_Malaysia_121,Finalized pages synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 01:24:59,Hank_Malaysia_121,Synchronizing Groups for the 'Hank_Malaysia_121' account.
+11/04/2022 01:26:17,Hank_Malaysia_121,Finalized group synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 01:26:18,Hank_Malaysia_121,Birthday Sync - for the 'Hank_Malaysia_121' account URL: https://www.facebook.com/me
+11/04/2022 01:26:59,Hank_Malaysia_121,Checking restrictions for the 'Hank_Malaysia_121' account done. URL: https://www.facebook.com/me
+11/04/2022 01:27:00,Hank_Malaysia_121,Checking restrictions for the 'Hank_Malaysia_121' account
+11/04/2022 01:27:28,Hank_Malaysia_121,Checking restrictions for the 'Hank_Malaysia_121' account done.
+11/04/2022 01:27:31,Hank_Malaysia_121,Synchronizing Number of Followers for the 'Hank_Malaysia_121' account
+11/04/2022 01:27:54,Hank_Malaysia_121,Finalized Number of Followers synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 01:30:14,Hank_Malaysia_74,Synchronizing Pages for the 'Hank_Malaysia_74' account.
+11/04/2022 01:31:13,Hank_Malaysia_74,Finalized pages synchronization for the 'Hank_Malaysia_74' account.
+11/04/2022 01:31:45,Hank_Malaysia_119,Synchronizing Groups for the 'Hank_Malaysia_119' account.
+11/04/2022 01:32:59,Hank_Malaysia_119,Finalized group synchronization for the 'Hank_Malaysia_119' account.
+11/04/2022 01:33:01,Hank_Malaysia_119,Synchronizing Pages for the 'Hank_Malaysia_119' account.
+11/04/2022 01:34:03,Hank_Malaysia_119,Finalized pages synchronization for the 'Hank_Malaysia_119' account.
+11/04/2022 01:34:05,Hank_Malaysia_119,Birthday Sync - for the 'Hank_Malaysia_119' account URL: https://www.facebook.com/me
+11/04/2022 01:34:46,Hank_Malaysia_119,Checking restrictions for the 'Hank_Malaysia_119' account done. URL: https://www.facebook.com/me
+11/04/2022 01:34:47,Hank_Malaysia_119,Checking restrictions for the 'Hank_Malaysia_119' account
+11/04/2022 01:35:16,Hank_Malaysia_119,Checking restrictions for the 'Hank_Malaysia_119' account done.
+11/04/2022 01:35:18,Hank_Malaysia_119,Synchronizing Number of Followers for the 'Hank_Malaysia_119' account
+11/04/2022 01:35:39,Hank_Malaysia_119,Finalized Number of Followers synchronization for the 'Hank_Malaysia_119' account.
+11/04/2022 01:36:09,Hank_Malaysia_129,Synchronizing Number of Followers for the 'Hank_Malaysia_129' account
+11/04/2022 01:36:36,Hank_Malaysia_129,Finalized Number of Followers synchronization for the 'Hank_Malaysia_129' account.
+11/04/2022 01:36:37,Hank_Malaysia_129,Synchronizing Pages for the 'Hank_Malaysia_129' account.
+11/04/2022 01:37:33,Hank_Malaysia_129,Finalized pages synchronization for the 'Hank_Malaysia_129' account.
+11/04/2022 01:37:34,Hank_Malaysia_129,Synchronizing Groups for the 'Hank_Malaysia_129' account.
+11/04/2022 01:38:45,Hank_Malaysia_129,Finalized group synchronization for the 'Hank_Malaysia_129' account.
+11/04/2022 01:39:14,Hank_Malaysia_129,Birthday Sync - for the 'Hank_Malaysia_129' account URL: https://www.facebook.com/me
+11/04/2022 01:39:17,Hank_Malaysia_86,Synchronizing Groups for the 'Hank_Malaysia_86' account.
+11/04/2022 01:39:56,Hank_Malaysia_129,Checking restrictions for the 'Hank_Malaysia_129' account done. URL: https://www.facebook.com/me
+11/04/2022 01:39:57,Hank_Malaysia_129,Checking restrictions for the 'Hank_Malaysia_129' account
+11/04/2022 01:40:08,Hank_Malaysia_86,Finalized group synchronization for the 'Hank_Malaysia_86' account.
+11/04/2022 01:40:25,Hank_Malaysia_129,Checking restrictions for the 'Hank_Malaysia_129' account done.
+11/04/2022 01:41:06,Hank_Malaysia_120,Synchronizing Number of Followers for the 'Hank_Malaysia_120' account
+11/04/2022 01:41:35,Hank_Malaysia_120,Finalized Number of Followers synchronization for the 'Hank_Malaysia_120' account.
+11/04/2022 01:42:07,Hank_Malaysia_73,Synchronizing Number of Followers for the 'Hank_Malaysia_73' account
+11/04/2022 01:42:07,Hank_Malaysia_120,Birthday Sync - for the 'Hank_Malaysia_120' account URL: https://www.facebook.com/me
+11/04/2022 01:42:36,Hank_Malaysia_73,Finalized Number of Followers synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 01:42:37,Hank_Malaysia_73,Synchronizing Groups for the 'Hank_Malaysia_73' account.
+11/04/2022 01:42:46,Hank_Malaysia_120,Checking restrictions for the 'Hank_Malaysia_120' account done. URL: https://www.facebook.com/me
+11/04/2022 01:42:46,Hank_Malaysia_120,Checking restrictions for the 'Hank_Malaysia_120' account
+11/04/2022 01:43:13,Hank_Malaysia_120,Checking restrictions for the 'Hank_Malaysia_120' account done.
+11/04/2022 01:43:24,Hank_Malaysia_73,Finalized group synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 01:43:26,Hank_Malaysia_73,Synchronizing Pages for the 'Hank_Malaysia_73' account.
+11/04/2022 01:44:22,Hank_Malaysia_73,Finalized pages synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 01:44:54,Hank_Malaysia_73,Birthday Sync - for the 'Hank_Malaysia_73' account URL: https://www.facebook.com/me
+11/04/2022 01:44:57,Hank_Malaysia_97,Synchronizing Groups for the 'Hank_Malaysia_97' account.
+11/04/2022 01:45:36,Hank_Malaysia_73,Checking restrictions for the 'Hank_Malaysia_73' account done. URL: https://www.facebook.com/me
+11/04/2022 01:45:36,Hank_Malaysia_73,Checking restrictions for the 'Hank_Malaysia_73' account
+11/04/2022 01:46:06,Hank_Malaysia_73,Checking restrictions for the 'Hank_Malaysia_73' account done.
+11/04/2022 01:46:14,Hank_Malaysia_97,Finalized group synchronization for the 'Hank_Malaysia_97' account.
+11/04/2022 01:46:16,Hank_Malaysia_97,Birthday Sync - for the 'Hank_Malaysia_97' account URL: https://www.facebook.com/me
+11/04/2022 01:46:59,Hank_Malaysia_97,Checking restrictions for the 'Hank_Malaysia_97' account done. URL: https://www.facebook.com/me
+11/04/2022 01:47:01,Hank_Malaysia_97,Checking restrictions for the 'Hank_Malaysia_97' account
+11/04/2022 01:47:29,Hank_Malaysia_97,Checking restrictions for the 'Hank_Malaysia_97' account done.
+11/04/2022 01:47:32,Hank_Malaysia_97,Synchronizing Number of Followers for the 'Hank_Malaysia_97' account
+11/04/2022 01:47:53,Hank_Malaysia_97,Finalized Number of Followers synchronization for the 'Hank_Malaysia_97' account.
+11/04/2022 01:47:56,Hank_Malaysia_97,Synchronizing Pages for the 'Hank_Malaysia_97' account.
+11/04/2022 01:48:52,Hank_Malaysia_97,Finalized pages synchronization for the 'Hank_Malaysia_97' account.
+11/04/2022 01:49:24,Hank_Malaysia_88,Synchronizing Number of Followers for the 'Hank_Malaysia_88' account
+11/04/2022 01:49:45,Hank_Malaysia_88,Finalized Number of Followers synchronization for the 'Hank_Malaysia_88' account.
+11/04/2022 01:50:18,Hank_Malaysia_110,Synchronizing Pages for the 'Hank_Malaysia_110' account.
+11/04/2022 01:50:18,Hank_Malaysia_88,Birthday Sync - for the 'Hank_Malaysia_88' account URL: https://www.facebook.com/me
+11/04/2022 01:50:58,Hank_Malaysia_88,Checking restrictions for the 'Hank_Malaysia_88' account done. URL: https://www.facebook.com/me
+11/04/2022 01:51:01,Hank_Malaysia_88,Checking restrictions for the 'Hank_Malaysia_88' account
+11/04/2022 01:51:15,Hank_Malaysia_110,Finalized pages synchronization for the 'Hank_Malaysia_110' account.
+11/04/2022 01:51:16,Hank_Malaysia_110,Synchronizing Groups for the 'Hank_Malaysia_110' account.
+11/04/2022 01:51:29,Hank_Malaysia_88,Checking restrictions for the 'Hank_Malaysia_88' account done.
+11/04/2022 01:52:30,Hank_Malaysia_110,Finalized group synchronization for the 'Hank_Malaysia_110' account.
+11/04/2022 01:52:32,Hank_Malaysia_110,Birthday Sync - for the 'Hank_Malaysia_110' account URL: https://www.facebook.com/me
+11/04/2022 01:53:13,Hank_Malaysia_110,Checking restrictions for the 'Hank_Malaysia_110' account done. URL: https://www.facebook.com/me
+11/04/2022 01:53:14,Hank_Malaysia_110,Checking restrictions for the 'Hank_Malaysia_110' account
+11/04/2022 01:53:43,Hank_Malaysia_110,Checking restrictions for the 'Hank_Malaysia_110' account done.
+11/04/2022 01:53:45,Hank_Malaysia_110,Synchronizing Number of Followers for the 'Hank_Malaysia_110' account
+11/04/2022 01:54:07,Hank_Malaysia_110,Finalized Number of Followers synchronization for the 'Hank_Malaysia_110' account.
+11/04/2022 01:54:39,Hank_Malaysia_134,Synchronizing Pages for the 'Hank_Malaysia_134' account.
+11/04/2022 01:55:36,Hank_Malaysia_134,Finalized pages synchronization for the 'Hank_Malaysia_134' account.
+11/04/2022 01:55:37,Hank_Malaysia_134,Birthday Sync - for the 'Hank_Malaysia_134' account URL: https://www.facebook.com/me
+11/04/2022 01:56:16,Hank_Malaysia_134,Checking restrictions for the 'Hank_Malaysia_134' account done. URL: https://www.facebook.com/me
+11/04/2022 01:56:16,Hank_Malaysia_134,Checking restrictions for the 'Hank_Malaysia_134' account
+11/04/2022 01:56:41,Hank_Malaysia_134,Checking restrictions for the 'Hank_Malaysia_134' account done.
+11/04/2022 01:56:44,Hank_Malaysia_134,Synchronizing Number of Followers for the 'Hank_Malaysia_134' account
+11/04/2022 01:57:07,Hank_Malaysia_134,Finalized Number of Followers synchronization for the 'Hank_Malaysia_134' account.
+11/04/2022 01:57:38,Hank_Malaysia_105,Synchronizing Groups for the 'Hank_Malaysia_105' account.
+11/04/2022 01:58:52,Hank_Malaysia_105,Finalized group synchronization for the 'Hank_Malaysia_105' account.
+11/04/2022 01:59:58,Hank_Malaysia_126,Synchronizing Pages for the 'Hank_Malaysia_126' account.
+11/04/2022 02:00:56,Hank_Malaysia_126,Finalized pages synchronization for the 'Hank_Malaysia_126' account.
+11/04/2022 02:00:58,Hank_Malaysia_126,Synchronizing Groups for the 'Hank_Malaysia_126' account.
+11/04/2022 02:02:14,Hank_Malaysia_126,Finalized group synchronization for the 'Hank_Malaysia_126' account.
+11/04/2022 02:02:14,Hank_Malaysia_126,Birthday Sync - for the 'Hank_Malaysia_126' account URL: https://www.facebook.com/me
+11/04/2022 02:02:50,Hank_Malaysia_126,Birthday Sync - Error executing for the 'Hank_Malaysia_126' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 02:02:51,Hank_Malaysia_126,Checking restrictions for the 'Hank_Malaysia_126' account
+11/04/2022 02:03:19,Hank_Malaysia_126,Checking restrictions for the 'Hank_Malaysia_126' account done.
+11/04/2022 02:03:21,Hank_Malaysia_126,Synchronizing Number of Followers for the 'Hank_Malaysia_126' account
+11/04/2022 02:03:43,Hank_Malaysia_126,Finalized Number of Followers synchronization for the 'Hank_Malaysia_126' account.
+11/04/2022 02:04:16,Hank_Malaysia_138,Synchronizing Pages for the 'Hank_Malaysia_138' account.
+11/04/2022 02:05:14,Hank_Malaysia_138,Finalized pages synchronization for the 'Hank_Malaysia_138' account.
+11/04/2022 02:05:47,Hank_Malaysia_84,Synchronizing Groups for the 'Hank_Malaysia_84' account.
+11/04/2022 02:07:03,Hank_Malaysia_84,Finalized group synchronization for the 'Hank_Malaysia_84' account.
+11/04/2022 02:07:36,Hank_Malaysia_131,Synchronizing Number of Followers for the 'Hank_Malaysia_131' account
+11/04/2022 02:07:56,Hank_Malaysia_131,Finalized Number of Followers synchronization for the 'Hank_Malaysia_131' account.
+11/04/2022 02:07:57,Hank_Malaysia_131,Synchronizing Groups for the 'Hank_Malaysia_131' account.
+11/04/2022 02:09:05,Hank_Malaysia_131,Finalized group synchronization for the 'Hank_Malaysia_131' account.
+11/04/2022 02:09:07,Hank_Malaysia_131,Synchronizing Pages for the 'Hank_Malaysia_131' account.
+11/04/2022 02:10:04,Hank_Malaysia_131,Finalized pages synchronization for the 'Hank_Malaysia_131' account.
+11/04/2022 02:10:35,Hank_Malaysia_131,Birthday Sync - for the 'Hank_Malaysia_131' account URL: https://www.facebook.com/me
+11/04/2022 02:10:35,Hank_Malaysia_124,Synchronizing Groups for the 'Hank_Malaysia_124' account.
+11/04/2022 02:11:14,Hank_Malaysia_131,Checking restrictions for the 'Hank_Malaysia_131' account done. URL: https://www.facebook.com/me
+11/04/2022 02:11:14,Hank_Malaysia_131,Checking restrictions for the 'Hank_Malaysia_131' account
+11/04/2022 02:11:43,Hank_Malaysia_131,Checking restrictions for the 'Hank_Malaysia_131' account done.
+11/04/2022 02:11:50,Hank_Malaysia_124,Finalized group synchronization for the 'Hank_Malaysia_124' account.
+11/04/2022 02:12:21,Hank_Malaysia_123,Synchronizing Number of Followers for the 'Hank_Malaysia_123' account
+11/04/2022 02:12:46,Hank_Malaysia_123,Finalized Number of Followers synchronization for the 'Hank_Malaysia_123' account.
+11/04/2022 02:12:48,Hank_Malaysia_123,Synchronizing Pages for the 'Hank_Malaysia_123' account.
+11/04/2022 02:13:47,Hank_Malaysia_123,Finalized pages synchronization for the 'Hank_Malaysia_123' account.
+11/04/2022 02:14:19,Hank_Malaysia_123,Birthday Sync - for the 'Hank_Malaysia_123' account URL: https://www.facebook.com/me
+11/04/2022 02:14:19,Hank_Malaysia_113,Synchronizing Number of Followers for the 'Hank_Malaysia_113' account
+11/04/2022 02:14:41,Hank_Malaysia_113,Finalized Number of Followers synchronization for the 'Hank_Malaysia_113' account.
+11/04/2022 02:15:00,Hank_Malaysia_123,Checking restrictions for the 'Hank_Malaysia_123' account done. URL: https://www.facebook.com/me
+11/04/2022 02:15:02,Hank_Malaysia_123,Checking restrictions for the 'Hank_Malaysia_123' account
+11/04/2022 02:15:14,Hank_Malaysia_113,Birthday Sync - for the 'Hank_Malaysia_113' account URL: https://www.facebook.com/me
+11/04/2022 02:15:14,Hank_Malaysia_103,Synchronizing Pages for the 'Hank_Malaysia_103' account.
+11/04/2022 02:15:32,Hank_Malaysia_123,Checking restrictions for the 'Hank_Malaysia_123' account done.
+11/04/2022 02:15:56,Hank_Malaysia_113,Checking restrictions for the 'Hank_Malaysia_113' account done. URL: https://www.facebook.com/me
+11/04/2022 02:15:57,Hank_Malaysia_113,Checking restrictions for the 'Hank_Malaysia_113' account
+11/04/2022 02:16:22,Hank_Malaysia_103,Finalized pages synchronization for the 'Hank_Malaysia_103' account.
+11/04/2022 02:16:25,Hank_Malaysia_113,Checking restrictions for the 'Hank_Malaysia_113' account done.
+11/04/2022 02:16:54,Hank_Malaysia_94,Synchronizing Groups for the 'Hank_Malaysia_94' account.
+11/04/2022 02:18:10,Hank_Malaysia_94,Finalized group synchronization for the 'Hank_Malaysia_94' account.
+11/04/2022 02:18:10,Hank_Malaysia_94,Synchronizing Pages for the 'Hank_Malaysia_94' account.
+11/04/2022 02:19:08,Hank_Malaysia_94,Finalized pages synchronization for the 'Hank_Malaysia_94' account.
+11/04/2022 02:19:41,Hank_Malaysia_102,Synchronizing Pages for the 'Hank_Malaysia_102' account.
+11/04/2022 02:20:42,Hank_Malaysia_102,Finalized pages synchronization for the 'Hank_Malaysia_102' account.
+11/04/2022 02:20:44,Hank_Malaysia_102,Synchronizing Groups for the 'Hank_Malaysia_102' account.
+11/04/2022 02:21:58,Hank_Malaysia_102,Finalized group synchronization for the 'Hank_Malaysia_102' account.
+11/04/2022 02:22:01,Hank_Malaysia_102,Birthday Sync - for the 'Hank_Malaysia_102' account URL: https://www.facebook.com/me
+11/04/2022 02:22:39,Hank_Malaysia_102,Checking restrictions for the 'Hank_Malaysia_102' account done. URL: https://www.facebook.com/me
+11/04/2022 02:22:40,Hank_Malaysia_102,Checking restrictions for the 'Hank_Malaysia_102' account
+11/04/2022 02:23:08,Hank_Malaysia_102,Checking restrictions for the 'Hank_Malaysia_102' account done.
+11/04/2022 02:23:10,Hank_Malaysia_102,Synchronizing Number of Followers for the 'Hank_Malaysia_102' account
+11/04/2022 02:23:29,Hank_Malaysia_102,Finalized Number of Followers synchronization for the 'Hank_Malaysia_102' account.
+11/04/2022 02:24:02,Hank_Malaysia_132,Synchronizing Pages for the 'Hank_Malaysia_132' account.
+11/04/2022 02:25:00,Hank_Malaysia_132,Finalized pages synchronization for the 'Hank_Malaysia_132' account.
+11/04/2022 02:26:03,Hank_Malaysia_75,Synchronizing Groups for the 'Hank_Malaysia_75' account.
+11/04/2022 02:27:13,Hank_Malaysia_75,Finalized group synchronization for the 'Hank_Malaysia_75' account.
+11/04/2022 02:27:16,Hank_Malaysia_75,Birthday Sync - for the 'Hank_Malaysia_75' account URL: https://www.facebook.com/me
+11/04/2022 02:27:55,Hank_Malaysia_75,Checking restrictions for the 'Hank_Malaysia_75' account done. URL: https://www.facebook.com/me
+11/04/2022 02:27:55,Hank_Malaysia_75,Checking restrictions for the 'Hank_Malaysia_75' account
+11/04/2022 02:28:20,Hank_Malaysia_75,Checking restrictions for the 'Hank_Malaysia_75' account done.
+11/04/2022 02:28:20,Hank_Malaysia_75,Synchronizing Number of Followers for the 'Hank_Malaysia_75' account
+11/04/2022 02:28:41,Hank_Malaysia_75,Finalized Number of Followers synchronization for the 'Hank_Malaysia_75' account.
+11/04/2022 02:30:27,Hank_Malaysia_83,Synchronizing Pages for the 'Hank_Malaysia_83' account.
+11/04/2022 02:31:36,Hank_Malaysia_83,Finalized pages synchronization for the 'Hank_Malaysia_83' account.
+11/04/2022 02:33:17,Hank_Malaysia_85,Synchronizing Number of Followers for the 'Hank_Malaysia_85' account
+11/04/2022 02:33:40,Hank_Malaysia_85,Finalized Number of Followers synchronization for the 'Hank_Malaysia_85' account.
+11/04/2022 02:33:42,Hank_Malaysia_85,Synchronizing Pages for the 'Hank_Malaysia_85' account.
+11/04/2022 02:34:38,Hank_Malaysia_85,Finalized pages synchronization for the 'Hank_Malaysia_85' account.
+11/04/2022 02:35:09,Hank_Malaysia_85,Birthday Sync - for the 'Hank_Malaysia_85' account URL: https://www.facebook.com/me
+11/04/2022 02:35:50,Hank_Malaysia_85,Checking restrictions for the 'Hank_Malaysia_85' account done. URL: https://www.facebook.com/me
+11/04/2022 02:35:52,Hank_Malaysia_85,Checking restrictions for the 'Hank_Malaysia_85' account
+11/04/2022 02:36:21,Hank_Malaysia_85,Checking restrictions for the 'Hank_Malaysia_85' account done.
+11/04/2022 12:34:16,Hank_Malaysia_109,Synchronizing Pages for the 'Hank_Malaysia_109' account.
+11/04/2022 12:35:16,Hank_Malaysia_109,Finalized pages synchronization for the 'Hank_Malaysia_109' account.
+11/04/2022 12:35:16,Hank_Malaysia_109,Synchronizing Number of Followers for the 'Hank_Malaysia_109' account
+11/04/2022 12:35:36,Hank_Malaysia_109,Finalized Number of Followers synchronization for the 'Hank_Malaysia_109' account.
+11/04/2022 12:46:14,Hank_Malaysia_96,Synchronizing Pages for the 'Hank_Malaysia_96' account.
+11/04/2022 12:47:13,Hank_Malaysia_96,Finalized pages synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 12:47:15,Hank_Malaysia_96,Synchronizing Number of Followers for the 'Hank_Malaysia_96' account
+11/04/2022 12:47:36,Hank_Malaysia_96,Finalized Number of Followers synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 12:47:39,Hank_Malaysia_96,Synchronizing Groups for the 'Hank_Malaysia_96' account.
+11/04/2022 12:48:57,Hank_Malaysia_96,Finalized group synchronization for the 'Hank_Malaysia_96' account.
+11/04/2022 12:56:05,Hank_Malaysia_89,Synchronizing Number of Followers for the 'Hank_Malaysia_89' account
+11/04/2022 12:56:28,Hank_Malaysia_89,Finalized Number of Followers synchronization for the 'Hank_Malaysia_89' account.
+11/04/2022 12:57:00,Hank_Malaysia_92,Synchronizing Pages for the 'Hank_Malaysia_92' account.
+11/04/2022 12:57:00,Hank_Malaysia_89,Birthday Sync - for the 'Hank_Malaysia_89' account URL: https://www.facebook.com/me
+11/04/2022 12:57:40,Hank_Malaysia_89,Checking restrictions for the 'Hank_Malaysia_89' account done. URL: https://www.facebook.com/me
+11/04/2022 12:57:43,Hank_Malaysia_89,Checking restrictions for the 'Hank_Malaysia_89' account
+11/04/2022 12:57:59,Hank_Malaysia_92,Finalized pages synchronization for the 'Hank_Malaysia_92' account.
+11/04/2022 12:58:01,Hank_Malaysia_92,Synchronizing Groups for the 'Hank_Malaysia_92' account.
+11/04/2022 12:58:08,Hank_Malaysia_89,Checking restrictions for the 'Hank_Malaysia_89' account done.
+11/04/2022 13:00:07,Hank_Malaysia_92,Finalized group synchronization for the 'Hank_Malaysia_92' account.
+11/04/2022 13:28:39,Hank_Malaysia_72,Synchronizing Pages for the 'Hank_Malaysia_72' account.
+11/04/2022 13:29:37,Hank_Malaysia_72,Finalized pages synchronization for the 'Hank_Malaysia_72' account.
+11/04/2022 13:35:19,Hank_Malaysia_127,Synchronizing Pages for the 'Hank_Malaysia_127' account.
+11/04/2022 13:36:18,Hank_Malaysia_127,Finalized pages synchronization for the 'Hank_Malaysia_127' account.
+11/04/2022 13:50:05,Hank_Malaysia_135,Synchronizing Groups for the 'Hank_Malaysia_135' account.
+11/04/2022 13:52:26,Hank_Malaysia_135,Finalized group synchronization for the 'Hank_Malaysia_135' account.
+11/04/2022 13:54:17,Hank_Malaysia_97,Synchronizing Groups for the 'Hank_Malaysia_97' account.
+11/04/2022 13:56:39,Hank_Malaysia_97,Finalized group synchronization for the 'Hank_Malaysia_97' account.
+11/04/2022 13:57:13,Hank_Malaysia_90,Synchronizing Pages for the 'Hank_Malaysia_90' account.
+11/04/2022 13:58:11,Hank_Malaysia_90,Finalized pages synchronization for the 'Hank_Malaysia_90' account.
+11/04/2022 13:58:13,Hank_Malaysia_90,Synchronizing Groups for the 'Hank_Malaysia_90' account.
+11/04/2022 14:00:30,Hank_Malaysia_90,Finalized group synchronization for the 'Hank_Malaysia_90' account.
+11/04/2022 14:01:09,Hank_Malaysia_137,Synchronizing Groups for the 'Hank_Malaysia_137' account.
+11/04/2022 14:02:23,Hank_Malaysia_137,Finalized group synchronization for the 'Hank_Malaysia_137' account.
+11/04/2022 14:03:50,Hank_Malaysia_107,Synchronizing Pages for the 'Hank_Malaysia_107' account.
+11/04/2022 14:04:51,Hank_Malaysia_107,Finalized pages synchronization for the 'Hank_Malaysia_107' account.
+11/04/2022 14:04:54,Hank_Malaysia_107,Synchronizing Groups for the 'Hank_Malaysia_107' account.
+11/04/2022 14:07:56,Hank_Malaysia_107,Finalized group synchronization for the 'Hank_Malaysia_107' account.
+11/04/2022 14:07:59,Hank_Malaysia_107,Birthday Sync - for the 'Hank_Malaysia_107' account URL: https://www.facebook.com/me
+11/04/2022 14:08:39,Hank_Malaysia_107,Checking restrictions for the 'Hank_Malaysia_107' account done. URL: https://www.facebook.com/me
+11/04/2022 14:08:41,Hank_Malaysia_107,Checking restrictions for the 'Hank_Malaysia_107' account
+11/04/2022 14:09:10,Hank_Malaysia_107,Checking restrictions for the 'Hank_Malaysia_107' account done.
+11/04/2022 14:09:12,Hank_Malaysia_107,Synchronizing Number of Followers for the 'Hank_Malaysia_107' account
+11/04/2022 14:09:34,Hank_Malaysia_107,Finalized Number of Followers synchronization for the 'Hank_Malaysia_107' account.
+11/04/2022 14:10:36,Hank_Malaysia_111,Synchronizing Pages for the 'Hank_Malaysia_111' account.
+11/04/2022 14:11:36,Hank_Malaysia_111,Finalized pages synchronization for the 'Hank_Malaysia_111' account.
+11/04/2022 14:11:38,Hank_Malaysia_111,Synchronizing Number of Followers for the 'Hank_Malaysia_111' account
+11/04/2022 14:11:59,Hank_Malaysia_111,Finalized Number of Followers synchronization for the 'Hank_Malaysia_111' account.
+11/04/2022 14:12:02,Hank_Malaysia_111,Synchronizing Groups for the 'Hank_Malaysia_111' account.
+11/04/2022 14:14:39,Hank_Malaysia_128,Synchronizing Pages for the 'Hank_Malaysia_128' account.
+11/04/2022 14:15:38,Hank_Malaysia_128,Finalized pages synchronization for the 'Hank_Malaysia_128' account.
+11/04/2022 14:26:46,Hank_Malaysia_112,Synchronizing Number of Followers for the 'Hank_Malaysia_112' account
+11/04/2022 14:27:09,Hank_Malaysia_112,Finalized Number of Followers synchronization for the 'Hank_Malaysia_112' account.
+11/04/2022 14:27:11,Hank_Malaysia_112,Synchronizing Pages for the 'Hank_Malaysia_112' account.
+11/04/2022 14:28:08,Hank_Malaysia_112,Finalized pages synchronization for the 'Hank_Malaysia_112' account.
+11/04/2022 14:28:41,Hank_Malaysia_75,Synchronizing Groups for the 'Hank_Malaysia_75' account.
+11/04/2022 14:30:44,Hank_Malaysia_75,Finalized group synchronization for the 'Hank_Malaysia_75' account.
+11/04/2022 14:30:46,Hank_Malaysia_75,Synchronizing Number of Followers for the 'Hank_Malaysia_75' account
+11/04/2022 14:31:07,Hank_Malaysia_75,Finalized Number of Followers synchronization for the 'Hank_Malaysia_75' account.
+11/04/2022 14:34:15,Hank_Malaysia_103,Synchronizing Groups for the 'Hank_Malaysia_103' account.
+11/04/2022 14:35:44,Hank_Malaysia_103,Finalized group synchronization for the 'Hank_Malaysia_103' account.
+11/04/2022 14:35:46,Hank_Malaysia_103,Birthday Sync - for the 'Hank_Malaysia_103' account URL: https://www.facebook.com/me
+11/04/2022 14:36:26,Hank_Malaysia_103,Checking restrictions for the 'Hank_Malaysia_103' account done. URL: https://www.facebook.com/me
+11/04/2022 14:36:28,Hank_Malaysia_103,Checking restrictions for the 'Hank_Malaysia_103' account
+11/04/2022 14:36:57,Hank_Malaysia_103,Checking restrictions for the 'Hank_Malaysia_103' account done.
+11/04/2022 14:36:58,Hank_Malaysia_103,Synchronizing Number of Followers for the 'Hank_Malaysia_103' account
+11/04/2022 14:37:21,Hank_Malaysia_103,Finalized Number of Followers synchronization for the 'Hank_Malaysia_103' account.
+11/04/2022 14:37:23,Hank_Malaysia_103,Synchronizing Pages for the 'Hank_Malaysia_103' account.
+11/04/2022 14:38:22,Hank_Malaysia_103,Finalized pages synchronization for the 'Hank_Malaysia_103' account.
+11/04/2022 14:38:53,Hank_Malaysia_114,Synchronizing Number of Followers for the 'Hank_Malaysia_114' account
+11/04/2022 14:39:19,Hank_Malaysia_114,Finalized Number of Followers synchronization for the 'Hank_Malaysia_114' account.
+11/04/2022 14:39:51,Hank_Malaysia_114,Birthday Sync - for the 'Hank_Malaysia_114' account URL: https://www.facebook.com/me
+11/04/2022 14:40:33,Hank_Malaysia_114,Checking restrictions for the 'Hank_Malaysia_114' account done. URL: https://www.facebook.com/me
+11/04/2022 14:40:33,Hank_Malaysia_114,Checking restrictions for the 'Hank_Malaysia_114' account
+11/04/2022 14:41:00,Hank_Malaysia_114,Checking restrictions for the 'Hank_Malaysia_114' account done.
+11/04/2022 14:47:38,Hank_Malaysia_78,Synchronizing Pages for the 'Hank_Malaysia_78' account.
+11/04/2022 14:48:37,Hank_Malaysia_78,Finalized pages synchronization for the 'Hank_Malaysia_78' account.
+11/04/2022 14:48:38,Hank_Malaysia_78,Synchronizing Groups for the 'Hank_Malaysia_78' account.
+11/04/2022 14:51:06,Hank_Malaysia_78,Finalized group synchronization for the 'Hank_Malaysia_78' account.
+11/04/2022 14:51:07,Hank_Malaysia_78,Birthday Sync - for the 'Hank_Malaysia_78' account URL: https://www.facebook.com/me
+11/04/2022 14:51:47,Hank_Malaysia_78,Checking restrictions for the 'Hank_Malaysia_78' account done. URL: https://www.facebook.com/me
+11/04/2022 14:51:49,Hank_Malaysia_78,Checking restrictions for the 'Hank_Malaysia_78' account
+11/04/2022 14:52:18,Hank_Malaysia_78,Checking restrictions for the 'Hank_Malaysia_78' account done.
+11/04/2022 14:52:19,Hank_Malaysia_78,Synchronizing Number of Followers for the 'Hank_Malaysia_78' account
+11/04/2022 14:52:41,Hank_Malaysia_78,Finalized Number of Followers synchronization for the 'Hank_Malaysia_78' account.
+11/04/2022 14:53:14,Hank_Malaysia_81,Synchronizing Number of Followers for the 'Hank_Malaysia_81' account
+11/04/2022 14:53:36,Hank_Malaysia_81,Finalized Number of Followers synchronization for the 'Hank_Malaysia_81' account.
+11/04/2022 14:53:39,Hank_Malaysia_81,Synchronizing Groups for the 'Hank_Malaysia_81' account.
+11/04/2022 14:55:48,Hank_Malaysia_81,Finalized group synchronization for the 'Hank_Malaysia_81' account.
+11/04/2022 14:55:49,Hank_Malaysia_81,Synchronizing Pages for the 'Hank_Malaysia_81' account.
+11/04/2022 14:56:49,Hank_Malaysia_81,Finalized pages synchronization for the 'Hank_Malaysia_81' account.
+11/04/2022 14:57:17,Hank_Malaysia_81,Birthday Sync - for the 'Hank_Malaysia_81' account URL: https://www.facebook.com/me
+11/04/2022 14:57:20,Hank_Malaysia_132,Synchronizing Pages for the 'Hank_Malaysia_132' account.
+11/04/2022 14:57:57,Hank_Malaysia_81,Checking restrictions for the 'Hank_Malaysia_81' account done. URL: https://www.facebook.com/me
+11/04/2022 14:57:59,Hank_Malaysia_81,Checking restrictions for the 'Hank_Malaysia_81' account
+11/04/2022 14:58:16,Hank_Malaysia_132,Finalized pages synchronization for the 'Hank_Malaysia_132' account.
+11/04/2022 14:58:17,Hank_Malaysia_132,Birthday Sync - for the 'Hank_Malaysia_132' account URL: https://www.facebook.com/me
+11/04/2022 14:58:25,Hank_Malaysia_81,Checking restrictions for the 'Hank_Malaysia_81' account done.
+11/04/2022 14:58:46,Hank_Malaysia_132,Birthday Sync - Error executing for the 'Hank_Malaysia_132' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 14:58:48,Hank_Malaysia_132,Checking restrictions for the 'Hank_Malaysia_132' account
+11/04/2022 14:59:09,Hank_Malaysia_132,Checking restrictions for the 'Hank_Malaysia_132' account done.
+11/04/2022 14:59:12,Hank_Malaysia_132,Synchronizing Number of Followers for the 'Hank_Malaysia_132' account
+11/04/2022 14:59:28,Hank_Malaysia_132,Finalized Number of Followers synchronization for the 'Hank_Malaysia_132' account.
+11/04/2022 14:59:58,Hank_Malaysia_113,Synchronizing Groups for the 'Hank_Malaysia_113' account.
+11/04/2022 15:02:52,Hank_Malaysia_113,Finalized group synchronization for the 'Hank_Malaysia_113' account.
+11/04/2022 15:02:53,Hank_Malaysia_113,Synchronizing Pages for the 'Hank_Malaysia_113' account.
+11/04/2022 15:03:53,Hank_Malaysia_113,Finalized pages synchronization for the 'Hank_Malaysia_113' account.
+11/04/2022 15:04:24,Hank_Malaysia_136,Synchronizing Pages for the 'Hank_Malaysia_136' account.
+11/04/2022 15:05:24,Hank_Malaysia_136,Finalized pages synchronization for the 'Hank_Malaysia_136' account.
+11/04/2022 15:05:25,Hank_Malaysia_136,Synchronizing Groups for the 'Hank_Malaysia_136' account.
+11/04/2022 15:08:17,Hank_Malaysia_136,Finalized group synchronization for the 'Hank_Malaysia_136' account.
+11/04/2022 15:09:25,Hank_Malaysia_91,Synchronizing Number of Followers for the 'Hank_Malaysia_91' account
+11/04/2022 15:09:49,Hank_Malaysia_91,Finalized Number of Followers synchronization for the 'Hank_Malaysia_91' account.
+11/04/2022 15:10:56,Hank_Malaysia_130,Synchronizing Pages for the 'Hank_Malaysia_130' account.
+11/04/2022 15:11:54,Hank_Malaysia_130,Finalized pages synchronization for the 'Hank_Malaysia_130' account.
+11/04/2022 15:12:24,Hank_Malaysia_133,Synchronizing Number of Followers for the 'Hank_Malaysia_133' account
+11/04/2022 15:12:48,Hank_Malaysia_133,Finalized Number of Followers synchronization for the 'Hank_Malaysia_133' account.
+11/04/2022 15:12:48,Hank_Malaysia_133,Synchronizing Pages for the 'Hank_Malaysia_133' account.
+11/04/2022 15:13:47,Hank_Malaysia_133,Finalized pages synchronization for the 'Hank_Malaysia_133' account.
+11/04/2022 15:14:16,Hank_Malaysia_73,Synchronizing Groups for the 'Hank_Malaysia_73' account.
+11/04/2022 15:14:16,Hank_Malaysia_133,Birthday Sync - for the 'Hank_Malaysia_133' account URL: https://www.facebook.com/me
+11/04/2022 15:14:52,Hank_Malaysia_133,Birthday Sync - Error executing for the 'Hank_Malaysia_133' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 15:14:52,Hank_Malaysia_133,Checking restrictions for the 'Hank_Malaysia_133' account
+11/04/2022 15:15:18,Hank_Malaysia_133,Checking restrictions for the 'Hank_Malaysia_133' account done.
+11/04/2022 15:16:41,Hank_Malaysia_73,Finalized group synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 15:16:44,Hank_Malaysia_73,Synchronizing Number of Followers for the 'Hank_Malaysia_73' account
+11/04/2022 15:17:07,Hank_Malaysia_73,Finalized Number of Followers synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 15:17:09,Hank_Malaysia_73,Synchronizing Pages for the 'Hank_Malaysia_73' account.
+11/04/2022 15:18:09,Hank_Malaysia_73,Finalized pages synchronization for the 'Hank_Malaysia_73' account.
+11/04/2022 15:21:36,Hank_Malaysia_98,Synchronizing Pages for the 'Hank_Malaysia_98' account.
+11/04/2022 15:22:33,Hank_Malaysia_98,Finalized pages synchronization for the 'Hank_Malaysia_98' account.
+11/04/2022 15:22:33,Hank_Malaysia_98,Birthday Sync - for the 'Hank_Malaysia_98' account URL: https://www.facebook.com/me
+11/04/2022 15:23:10,Hank_Malaysia_98,Birthday Sync - Error executing for the 'Hank_Malaysia_98' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 15:23:10,Hank_Malaysia_98,Checking restrictions for the 'Hank_Malaysia_98' account
+11/04/2022 15:23:36,Hank_Malaysia_98,Checking restrictions for the 'Hank_Malaysia_98' account done.
+11/04/2022 15:23:37,Hank_Malaysia_98,Synchronizing Number of Followers for the 'Hank_Malaysia_98' account
+11/04/2022 15:24:00,Hank_Malaysia_98,Finalized Number of Followers synchronization for the 'Hank_Malaysia_98' account.
+11/04/2022 15:25:05,Hank_Malaysia_115,Synchronizing Number of Followers for the 'Hank_Malaysia_115' account
+11/04/2022 15:25:27,Hank_Malaysia_115,Finalized Number of Followers synchronization for the 'Hank_Malaysia_115' account.
+11/04/2022 15:25:29,Hank_Malaysia_115,Synchronizing Pages for the 'Hank_Malaysia_115' account.
+11/04/2022 15:26:29,Hank_Malaysia_115,Finalized pages synchronization for the 'Hank_Malaysia_115' account.
+11/04/2022 15:26:30,Hank_Malaysia_115,Synchronizing Groups for the 'Hank_Malaysia_115' account.
+11/04/2022 15:28:58,Hank_Malaysia_115,Finalized group synchronization for the 'Hank_Malaysia_115' account.
+11/04/2022 15:29:28,Hank_Malaysia_88,Synchronizing Number of Followers for the 'Hank_Malaysia_88' account
+11/04/2022 15:29:51,Hank_Malaysia_88,Finalized Number of Followers synchronization for the 'Hank_Malaysia_88' account.
+11/04/2022 15:29:53,Hank_Malaysia_88,Synchronizing Groups for the 'Hank_Malaysia_88' account.
+11/04/2022 15:32:30,Hank_Malaysia_88,Finalized group synchronization for the 'Hank_Malaysia_88' account.
+11/04/2022 15:32:30,Hank_Malaysia_88,Synchronizing Pages for the 'Hank_Malaysia_88' account.
+11/04/2022 15:33:30,Hank_Malaysia_88,Finalized pages synchronization for the 'Hank_Malaysia_88' account.
+11/04/2022 15:34:01,Hank_Malaysia_129,Synchronizing Groups for the 'Hank_Malaysia_129' account.
+11/04/2022 15:36:14,Hank_Malaysia_129,Finalized group synchronization for the 'Hank_Malaysia_129' account.
+11/04/2022 15:37:15,Hank_Malaysia_93,Synchronizing Groups for the 'Hank_Malaysia_93' account.
+11/04/2022 15:39:32,Hank_Malaysia_93,Finalized group synchronization for the 'Hank_Malaysia_93' account.
+11/04/2022 15:40:08,Hank_Malaysia_122,Synchronizing Number of Followers for the 'Hank_Malaysia_122' account
+11/04/2022 15:40:33,Hank_Malaysia_122,Finalized Number of Followers synchronization for the 'Hank_Malaysia_122' account.
+11/04/2022 15:41:08,Hank_Malaysia_104,Synchronizing Groups for the 'Hank_Malaysia_104' account.
+11/04/2022 15:41:08,Hank_Malaysia_122,Birthday Sync - for the 'Hank_Malaysia_122' account URL: https://www.facebook.com/me
+11/04/2022 15:41:51,Hank_Malaysia_122,Checking restrictions for the 'Hank_Malaysia_122' account done. URL: https://www.facebook.com/me
+11/04/2022 15:41:51,Hank_Malaysia_122,Checking restrictions for the 'Hank_Malaysia_122' account
+11/04/2022 15:42:17,Hank_Malaysia_122,Checking restrictions for the 'Hank_Malaysia_122' account done.
+11/04/2022 15:45:11,Hank_Malaysia_104,Finalized group synchronization for the 'Hank_Malaysia_104' account.
+11/04/2022 15:45:11,Hank_Malaysia_104,Synchronizing Pages for the 'Hank_Malaysia_104' account.
+11/04/2022 15:46:11,Hank_Malaysia_104,Finalized pages synchronization for the 'Hank_Malaysia_104' account.
+11/04/2022 15:46:42,Hank_Malaysia_87,Synchronizing Groups for the 'Hank_Malaysia_87' account.
+11/04/2022 15:49:02,Hank_Malaysia_87,Finalized group synchronization for the 'Hank_Malaysia_87' account.
+11/04/2022 15:49:35,Hank_Malaysia_80,Synchronizing Number of Followers for the 'Hank_Malaysia_80' account
+11/04/2022 15:50:00,Hank_Malaysia_80,Finalized Number of Followers synchronization for the 'Hank_Malaysia_80' account.
+11/04/2022 15:50:02,Hank_Malaysia_80,Synchronizing Pages for the 'Hank_Malaysia_80' account.
+11/04/2022 15:51:01,Hank_Malaysia_80,Finalized pages synchronization for the 'Hank_Malaysia_80' account.
+11/04/2022 15:51:33,Hank_Malaysia_99,Synchronizing Number of Followers for the 'Hank_Malaysia_99' account
+11/04/2022 15:51:58,Hank_Malaysia_99,Finalized Number of Followers synchronization for the 'Hank_Malaysia_99' account.
+11/04/2022 15:52:00,Hank_Malaysia_99,Synchronizing Pages for the 'Hank_Malaysia_99' account.
+11/04/2022 15:52:59,Hank_Malaysia_99,Finalized pages synchronization for the 'Hank_Malaysia_99' account.
+11/04/2022 15:53:31,Hank_Malaysia_99,Birthday Sync - for the 'Hank_Malaysia_99' account URL: https://www.facebook.com/me
+11/04/2022 15:53:31,Hank_Malaysia_85,Synchronizing Groups for the 'Hank_Malaysia_85' account.
+11/04/2022 15:54:07,Hank_Malaysia_99,Birthday Sync - Error executing for the 'Hank_Malaysia_99' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 15:54:07,Hank_Malaysia_99,Checking restrictions for the 'Hank_Malaysia_99' account
+11/04/2022 15:54:34,Hank_Malaysia_99,Checking restrictions for the 'Hank_Malaysia_99' account done.
+11/04/2022 15:55:39,Hank_Malaysia_85,Finalized group synchronization for the 'Hank_Malaysia_85' account.
+11/04/2022 15:55:41,Hank_Malaysia_85,Synchronizing Pages for the 'Hank_Malaysia_85' account.
+11/04/2022 15:56:41,Hank_Malaysia_85,Finalized pages synchronization for the 'Hank_Malaysia_85' account.
+11/04/2022 15:57:42,Hank_Malaysia_101,Synchronizing Pages for the 'Hank_Malaysia_101' account.
+11/04/2022 15:58:40,Hank_Malaysia_101,Finalized pages synchronization for the 'Hank_Malaysia_101' account.
+11/04/2022 15:58:40,Hank_Malaysia_101,Birthday Sync - for the 'Hank_Malaysia_101' account URL: https://www.facebook.com/me
+11/04/2022 15:59:21,Hank_Malaysia_101,Checking restrictions for the 'Hank_Malaysia_101' account done. URL: https://www.facebook.com/me
+11/04/2022 15:59:22,Hank_Malaysia_101,Checking restrictions for the 'Hank_Malaysia_101' account
+11/04/2022 15:59:51,Hank_Malaysia_101,Checking restrictions for the 'Hank_Malaysia_101' account done.
+11/04/2022 15:59:53,Hank_Malaysia_101,Synchronizing Number of Followers for the 'Hank_Malaysia_101' account
+11/04/2022 16:00:13,Hank_Malaysia_101,Finalized Number of Followers synchronization for the 'Hank_Malaysia_101' account.
+11/04/2022 16:00:44,Hank_Malaysia_139,Synchronizing Pages for the 'Hank_Malaysia_139' account.
+11/04/2022 16:01:46,Hank_Malaysia_139,Finalized pages synchronization for the 'Hank_Malaysia_139' account.
+11/04/2022 16:01:48,Hank_Malaysia_139,Synchronizing Groups for the 'Hank_Malaysia_139' account.
+11/04/2022 16:04:15,Hank_Malaysia_139,Finalized group synchronization for the 'Hank_Malaysia_139' account.
+11/04/2022 16:05:23,Hank_Malaysia_77,Synchronizing Groups for the 'Hank_Malaysia_77' account.
+11/04/2022 16:07:48,Hank_Malaysia_77,Finalized group synchronization for the 'Hank_Malaysia_77' account.
+11/04/2022 16:07:49,Hank_Malaysia_77,Synchronizing Pages for the 'Hank_Malaysia_77' account.
+11/04/2022 16:08:47,Hank_Malaysia_77,Finalized pages synchronization for the 'Hank_Malaysia_77' account.
+11/04/2022 16:09:19,Hank_Malaysia_83,Synchronizing Groups for the 'Hank_Malaysia_83' account.
+11/04/2022 16:10:35,Hank_Malaysia_83,Finalized group synchronization for the 'Hank_Malaysia_83' account.
+11/04/2022 16:11:09,Hank_Malaysia_117,Synchronizing Groups for the 'Hank_Malaysia_117' account.
+11/04/2022 16:13:40,Hank_Malaysia_117,Finalized group synchronization for the 'Hank_Malaysia_117' account.
+11/04/2022 16:13:40,Hank_Malaysia_117,Synchronizing Pages for the 'Hank_Malaysia_117' account.
+11/04/2022 16:14:40,Hank_Malaysia_117,Finalized pages synchronization for the 'Hank_Malaysia_117' account.
+11/04/2022 16:15:11,Hank_Malaysia_108,Synchronizing Pages for the 'Hank_Malaysia_108' account.
+11/04/2022 16:16:08,Hank_Malaysia_108,Finalized pages synchronization for the 'Hank_Malaysia_108' account.
+11/04/2022 16:16:09,Hank_Malaysia_108,Synchronizing Groups for the 'Hank_Malaysia_108' account.
+11/04/2022 16:18:55,Hank_Malaysia_108,Finalized group synchronization for the 'Hank_Malaysia_108' account.
+11/04/2022 16:19:26,Hank_Malaysia_138,Synchronizing Number of Followers for the 'Hank_Malaysia_138' account
+11/04/2022 16:19:50,Hank_Malaysia_138,Finalized Number of Followers synchronization for the 'Hank_Malaysia_138' account.
+11/04/2022 16:19:51,Hank_Malaysia_138,Synchronizing Groups for the 'Hank_Malaysia_138' account.
+11/04/2022 16:22:53,Hank_Malaysia_138,Finalized group synchronization for the 'Hank_Malaysia_138' account.
+11/04/2022 16:22:55,Hank_Malaysia_138,Synchronizing Pages for the 'Hank_Malaysia_138' account.
+11/04/2022 16:23:55,Hank_Malaysia_138,Finalized pages synchronization for the 'Hank_Malaysia_138' account.
+11/04/2022 16:24:26,Hank_Malaysia_138,Birthday Sync - for the 'Hank_Malaysia_138' account URL: https://www.facebook.com/me
+11/04/2022 16:24:29,Hank_Malaysia_125,Synchronizing Number of Followers for the 'Hank_Malaysia_125' account
+11/04/2022 16:24:53,Hank_Malaysia_125,Finalized Number of Followers synchronization for the 'Hank_Malaysia_125' account.
+11/04/2022 16:24:54,Hank_Malaysia_125,Synchronizing Groups for the 'Hank_Malaysia_125' account.
+11/04/2022 16:25:07,Hank_Malaysia_138,Checking restrictions for the 'Hank_Malaysia_138' account done. URL: https://www.facebook.com/me
+11/04/2022 16:25:09,Hank_Malaysia_138,Checking restrictions for the 'Hank_Malaysia_138' account
+11/04/2022 16:25:36,Hank_Malaysia_138,Checking restrictions for the 'Hank_Malaysia_138' account done.
+11/04/2022 16:27:14,Hank_Malaysia_125,Finalized group synchronization for the 'Hank_Malaysia_125' account.
+11/04/2022 16:27:44,Hank_Malaysia_125,Birthday Sync - for the 'Hank_Malaysia_125' account URL: https://www.facebook.com/me
+11/04/2022 16:27:44,Hank_Malaysia_102,Synchronizing Groups for the 'Hank_Malaysia_102' account.
+11/04/2022 16:28:20,Hank_Malaysia_125,Checking restrictions for the 'Hank_Malaysia_125' account done. URL: https://www.facebook.com/me
+11/04/2022 16:28:20,Hank_Malaysia_125,Checking restrictions for the 'Hank_Malaysia_125' account
+11/04/2022 16:28:46,Hank_Malaysia_125,Checking restrictions for the 'Hank_Malaysia_125' account done.
+11/04/2022 16:30:20,Hank_Malaysia_102,Finalized group synchronization for the 'Hank_Malaysia_102' account.
+11/04/2022 16:30:21,Hank_Malaysia_102,Synchronizing Number of Followers for the 'Hank_Malaysia_102' account
+11/04/2022 16:30:45,Hank_Malaysia_102,Finalized Number of Followers synchronization for the 'Hank_Malaysia_102' account.
+11/04/2022 16:31:16,Hank_Malaysia_121,Synchronizing Groups for the 'Hank_Malaysia_121' account.
+11/04/2022 16:34:06,Hank_Malaysia_121,Finalized group synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 16:34:09,Hank_Malaysia_121,Synchronizing Pages for the 'Hank_Malaysia_121' account.
+11/04/2022 16:35:22,Hank_Malaysia_121,Finalized pages synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 16:35:25,Hank_Malaysia_121,Synchronizing Number of Followers for the 'Hank_Malaysia_121' account
+11/04/2022 16:35:47,Hank_Malaysia_121,Finalized Number of Followers synchronization for the 'Hank_Malaysia_121' account.
+11/04/2022 16:36:19,Hank_Malaysia_84,Synchronizing Number of Followers for the 'Hank_Malaysia_84' account
+11/04/2022 16:36:49,Hank_Malaysia_84,Finalized Number of Followers synchronization for the 'Hank_Malaysia_84' account.
+11/04/2022 16:37:23,Hank_Malaysia_84,Birthday Sync - for the 'Hank_Malaysia_84' account URL: https://www.facebook.com/me
+11/04/2022 16:38:06,Hank_Malaysia_84,Checking restrictions for the 'Hank_Malaysia_84' account done. URL: https://www.facebook.com/me
+11/04/2022 16:38:09,Hank_Malaysia_84,Checking restrictions for the 'Hank_Malaysia_84' account
+11/04/2022 16:38:25,Hank_Malaysia_84,Checking restrictions for the 'Hank_Malaysia_84' account done.
+11/04/2022 16:43:06,Hank_Malaysia_120,Synchronizing Number of Followers for the 'Hank_Malaysia_120' account
+11/04/2022 16:43:31,Hank_Malaysia_120,Finalized Number of Followers synchronization for the 'Hank_Malaysia_120' account.
+11/04/2022 16:52:57,Hank_Malaysia_131,Synchronizing Pages for the 'Hank_Malaysia_131' account.
+11/04/2022 16:54:04,Hank_Malaysia_131,Finalized pages synchronization for the 'Hank_Malaysia_131' account.
+11/04/2022 17:15:37,Hank_Malaysia_105,Synchronizing Number of Followers for the 'Hank_Malaysia_105' account
+11/04/2022 17:16:04,Hank_Malaysia_105,Finalized Number of Followers synchronization for the 'Hank_Malaysia_105' account.
+11/04/2022 17:16:05,Hank_Malaysia_105,Synchronizing Pages for the 'Hank_Malaysia_105' account.
+11/04/2022 17:17:03,Hank_Malaysia_105,Finalized pages synchronization for the 'Hank_Malaysia_105' account.
+11/04/2022 17:17:05,Hank_Malaysia_105,Synchronizing Groups for the 'Hank_Malaysia_105' account.
+11/04/2022 17:19:35,Hank_Malaysia_105,Finalized group synchronization for the 'Hank_Malaysia_105' account.
+11/04/2022 17:20:07,Hank_Malaysia_95,Synchronizing Number of Followers for the 'Hank_Malaysia_95' account
+11/04/2022 17:20:07,Hank_Malaysia_105,Birthday Sync - for the 'Hank_Malaysia_105' account URL: https://www.facebook.com/me
+11/04/2022 17:20:31,Hank_Malaysia_95,Finalized Number of Followers synchronization for the 'Hank_Malaysia_95' account.
+11/04/2022 17:20:31,Hank_Malaysia_95,Synchronizing Groups for the 'Hank_Malaysia_95' account.
+11/04/2022 17:20:47,Hank_Malaysia_105,Checking restrictions for the 'Hank_Malaysia_105' account done. URL: https://www.facebook.com/me
+11/04/2022 17:20:49,Hank_Malaysia_105,Checking restrictions for the 'Hank_Malaysia_105' account
+11/04/2022 17:21:15,Hank_Malaysia_105,Checking restrictions for the 'Hank_Malaysia_105' account done.
+11/04/2022 17:22:50,Hank_Malaysia_95,Finalized group synchronization for the 'Hank_Malaysia_95' account.
+11/04/2022 17:23:21,Hank_Malaysia_95,Birthday Sync - for the 'Hank_Malaysia_95' account URL: https://www.facebook.com/me
+11/04/2022 17:23:56,Hank_Malaysia_95,Birthday Sync - Error executing for the 'Hank_Malaysia_95' account. : code  44  - About tag not found URL: https://www.facebook.com/me
+11/04/2022 17:23:57,Hank_Malaysia_95,Checking restrictions for the 'Hank_Malaysia_95' account
+11/04/2022 17:24:26,Hank_Malaysia_95,Checking restrictions for the 'Hank_Malaysia_95' account done.
+11/04/2022 17:27:39,Hank_Malaysia_134,Synchronizing Pages for the 'Hank_Malaysia_134' account.
+11/04/2022 17:28:38,Hank_Malaysia_134,Finalized pages synchronization for the 'Hank_Malaysia_134' account.
+11/04/2022 17:28:39,Hank_Malaysia_134,Synchronizing Number of Followers for the 'Hank_Malaysia_134' account
+11/04/2022 17:29:00,Hank_Malaysia_134,Finalized Number of Followers synchronization for the 'Hank_Malaysia_134' account.
+11/04/2022 17:29:00,Hank_Malaysia_134,Synchronizing Groups for the 'Hank_Malaysia_134' account.
+11/04/2022 17:31:15,Hank_Malaysia_134,Finalized group synchronization for the 'Hank_Malaysia_134' account.
+11/05/2022 01:42:01,Hank_Malaysia_92,Synchronizing Pages for the 'Hank_Malaysia_92' account.
+11/05/2022 01:43:04,Hank_Malaysia_92,Finalized pages synchronization for the 'Hank_Malaysia_92' account.
+11/05/2022 01:43:05,Hank_Malaysia_92,Synchronizing Groups for the 'Hank_Malaysia_92' account.
+11/05/2022 01:45:24,Hank_Malaysia_92,Finalized group synchronization for the 'Hank_Malaysia_92' account.
+11/05/2022 01:45:55,Hank_Malaysia_72,Synchronizing Number of Followers for the 'Hank_Malaysia_72' account
+11/05/2022 01:46:17,Hank_Malaysia_72,Finalized Number of Followers synchronization for the 'Hank_Malaysia_72' account.
+11/05/2022 01:46:19,Hank_Malaysia_72,Synchronizing Groups for the 'Hank_Malaysia_72' account.
+11/05/2022 01:47:32,Hank_Malaysia_72,Finalized group synchronization for the 'Hank_Malaysia_72' account.
+11/05/2022 01:47:35,Hank_Malaysia_72,Synchronizing Pages for the 'Hank_Malaysia_72' account.
+11/05/2022 01:48:30,Hank_Malaysia_72,Finalized pages synchronization for the 'Hank_Malaysia_72' account.
+11/05/2022 01:48:59,Hank_Malaysia_72,Birthday Sync - for the 'Hank_Malaysia_72' account URL: https://www.facebook.com/me
+11/05/2022 01:49:40,Hank_Malaysia_72,Checking restrictions for the 'Hank_Malaysia_72' account done. URL: https://www.facebook.com/me
+11/05/2022 01:49:42,Hank_Malaysia_72,Checking restrictions for the 'Hank_Malaysia_72' account
+11/05/2022 01:50:08,Hank_Malaysia_72,Checking restrictions for the 'Hank_Malaysia_72' account done.
+11/05/2022 02:47:29,Hank_Malaysia_100,Synchronizing Number of Followers for the 'Hank_Malaysia_100' account
+11/05/2022 02:47:50,Hank_Malaysia_100,Finalized Number of Followers synchronization for the 'Hank_Malaysia_100' account.
+11/05/2022 02:47:51,Hank_Malaysia_100,Synchronizing Pages for the 'Hank_Malaysia_100' account.
+11/05/2022 02:48:51,Hank_Malaysia_100,Finalized pages synchronization for the 'Hank_Malaysia_100' account.
+11/05/2022 02:48:54,Hank_Malaysia_100,Synchronizing Groups for the 'Hank_Malaysia_100' account.
+11/05/2022 02:51:03,Hank_Malaysia_100,Finalized group synchronization for the 'Hank_Malaysia_100' account.
+11/05/2022 02:51:35,Hank_Malaysia_100,Birthday Sync - for the 'Hank_Malaysia_100' account URL: https://www.facebook.com/me
+11/05/2022 02:52:15,Hank_Malaysia_100,Checking restrictions for the 'Hank_Malaysia_100' account done. URL: https://www.facebook.com/me
+11/05/2022 02:52:18,Hank_Malaysia_100,Checking restrictions for the 'Hank_Malaysia_100' account
+11/05/2022 02:52:44,Hank_Malaysia_100,Checking restrictions for the 'Hank_Malaysia_100' account done.
