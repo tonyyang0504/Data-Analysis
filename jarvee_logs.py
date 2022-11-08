@@ -2,6 +2,8 @@ import pandas as pd
 
 
 pd.set_option('mode.chained_assignment', None)
+
+
 class LogsProcess(object):
     def __init__(self, data):
         self.data = data.copy()
@@ -14,13 +16,13 @@ class LogsProcess(object):
 
     def df_finished(self):
         df = self.data
-        finished = df[df['Status'].str.contains('Finished') & df['Status'].str.contains('\*FINALIZED\* a post')]
+        finished = df[df['Status'].str.contains('Finished')]
         finished.reset_index(drop=True, inplace=True)
         return finished
     
     def df_error(self):
         df = self.data
-        error = df[df['Status'].str.contains('Error')].drop_duplicates('Status', ignore_index= True)
+        error = df[df['Status'].str.contains('Error')].drop_duplicates('Status', ignore_index=True)
         error['Code'] = error['Status'].apply(lambda x: x.split(',')[0].split(':')[1].split('-')[0].replace(' ', ''))
         return error
     
@@ -166,7 +168,8 @@ class GroupJoiner(LogsProcess):
 
     def logs_related(self):
         df = self.data
-        logs_related = df[(df['Status'].str.contains('Group Joiner')) & ~(df['Status'].isna())].drop_duplicates(['Status', 'Robot'])
+        logs_related = df[(df['Status'].str.contains('Group Joiner')) &
+                          ~(df['Status'].isna())].drop_duplicates(['Status', 'Robot'])
         logs_related.reset_index(drop=True, inplace=True)
         return logs_related
         
@@ -262,7 +265,8 @@ class GroupJoiner(LogsProcess):
     def count_specified_by_robot(self, urls):
         count_specified_error = self.count_specified_error_by_robot(urls)
         count_specified_total = self.count_specified_total_by_robot(urls)
-        count_specified = pd.concat([count_specified_error, count_specified_total], axis=1, ignore_index=True).fillna(0).astype('int64')
+        count_specified = pd.concat([count_specified_error, count_specified_total],
+                                    axis=1, ignore_index=True).fillna(0).astype('int64')
         count_specified.columns = ['Error', 'Total']
         count_specified.insert(0, 'Finished', count_specified['Total'] - count_specified['Error'])
         count_specified['Success Rate'] = count_specified['Finished'] / count_specified['Total']
@@ -272,7 +276,6 @@ class GroupJoiner(LogsProcess):
         count_specified = self.count_specified_by_robot(urls)
         count_specified_finished = count_specified['Finished']
         return count_specified_finished
-
 
     def count_specified_error_by_account(self, urls):
         df = self.df_specified_error(urls)
@@ -289,7 +292,8 @@ class GroupJoiner(LogsProcess):
     def count_specified_by_account(self, urls):
         count_specified_error = self.count_specified_error_by_account(urls)
         count_specified_total = self.count_specified_total_by_account(urls)
-        count_specified = pd.concat([count_specified_error, count_specified_total], axis=1, ignore_index=True).fillna(0).astype('int64')
+        count_specified = pd.concat([count_specified_error, count_specified_total],
+                                    axis=1, ignore_index=True).fillna(0).astype('int64')
         count_specified.columns = ['Error', 'Total']
         count_specified.insert(0, 'Finished', count_specified['Total'] - count_specified['Error'])
         count_specified['Success Rate'] = count_specified['Finished'] / count_specified['Total']
@@ -420,7 +424,3 @@ def count_before_error(df, code):
     df_code = df.loc[:index]
     count = df_code.shape[0] - 1
     return count
-
-
-
-        

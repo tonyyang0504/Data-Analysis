@@ -1,18 +1,15 @@
-import pandas as pd
-import os
-import streamlit as st
-from jarvee_website_app import *
+from streamlit_tools import *
 
 
 def fetch_files(path, name_list):
     files_dict = {}
     for name in name_list:
-        dict = {}
+        dict_ = {}
         for root, dirs, files in os.walk(os.path.join(path, name)):
             if files:
                 date = root.split('\\')[-1]
-                dict[date] = files
-        files_dict[name] = dict
+                dict_[date] = files
+        files_dict[name] = dict_
     return files_dict
 
 
@@ -43,7 +40,6 @@ def main():
     urls = set(url_file['GroupLink'])
     name_list = [name.split('/')[-1] for name in os.listdir(path)]
 
-
     files = fetch_files(path, name_list)
     data = fetch_data(path, files)
 
@@ -52,8 +48,8 @@ def main():
     st.success('🐼Number of Joined Specified Groups per person daily🐻‍')
     daily_data_list = []
     for i in list(daily_data):
-        activity = confirm_activity('Group Joiner',i[1])
-        data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
+        activity = confirm_activity('Group Joiner', i[1])
+        data_analysis = open_data_analysis(activity=activity, urls=urls, type_='Robot')
         result = data_analysis.count_specified_by_robot()
         result['Export Date'] = i[0][0]
         result['Name'] = i[0][1]
@@ -83,8 +79,8 @@ def main():
     st.error('🐪Number of joined the specified groups🦘')
     daily_data_list = []
     for i in list(daily_data):
-        activity = confirm_activity('Group Joiner',i[1])
-        data_analysis = open_data_analysis(activity=activity, urls=urls, type='Robot')
+        activity = confirm_activity('Group Joiner', i[1])
+        data_analysis = open_data_analysis(activity=activity, urls=urls, type_='Robot')
         result = data_analysis.count_specified_urls_total()
         daily_data_list.append(result)
     urls_data = pd.concat(daily_data_list)

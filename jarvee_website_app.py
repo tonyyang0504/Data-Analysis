@@ -1,7 +1,7 @@
 from streamlit_tools import *
 
-
 st.set_page_config(layout="wide")
+
 
 def main():
     st.title('🎊Jarvee Logs Analysis App🎉')
@@ -20,7 +20,7 @@ def main():
     urls = set(url_file['GroupLink'])
 
     activity = confirm_activity(activity_selectbox, data)
-    data_analysis = open_data_analysis(activity=activity, urls=urls, type=type_selectbox)
+    data_analysis = open_data_analysis(activity=activity, urls=urls, type_=type_selectbox)
 
     st.info('🍅Original Data🍎')
     check_words = '👈Click on me to see the original data👇'
@@ -74,7 +74,7 @@ def main():
         urls_selected = st.multiselect('👇👇👇👇👇👇👇👇👇👇', urls)
 
         if urls_selected:
-            data_analysis_specified = open_data_analysis(activity=activity, urls=urls_selected, type=type_selectbox)
+            data_analysis_specified = open_data_analysis(activity=activity, urls=urls_selected, type_=type_selectbox)
             count_selected = type_select(
                                          type_selectbox,
                                          data_analysis_specified.count_specified_by_robot,
@@ -85,7 +85,8 @@ def main():
             st.download_button(
                                 label=f'♻📥Click me to download the result📥♻️',
                                 data=count_selected.to_csv(),
-                                file_name=f'Number of {activity_selectbox} Joined Selected Groups by {type_selectbox.lower()}.csv',
+                                file_name=f'Number of {activity_selectbox} Joined Selected Groups '
+                                          f'by {type_selectbox.lower()}.csv',
                                 mime='txt/csv')
 
         st.success('🥪Number of joined the specified groups🍔')
@@ -103,7 +104,7 @@ def main():
         file_name = f'Number of Joined Specified Groups by {type_selectbox}.csv'
         layout(check_words=check_words, data=count_specified_urls, file_name=file_name)
 
-################################### Data Visualization ###################################
+    # ************************ Data Visualization ************************
 
     st.info('🎨Data Visualization🧩')
     error_distribution = type_select(
@@ -135,15 +136,14 @@ def main():
     if robots:
         plot_bars(robots_selected.T)
 
-################################### Comparison between Task Result and Real Data ###################################
+    # ************************ Comparison between Task Result and Real Data ************************
 
     if mode_selectbox == 'Default Data':
         st.success('Groups Report')
         df = pd.read_excel('./facebook_groups_report.xlsx')
 
-        filtered = df.loc[:,['Url', 'Number of Members']].dropna()
+        filtered = df.loc[:, ['Url', 'Number of Members']].dropna()
         filtered.iloc[:, 0] = filtered.iloc[:, 0].str.strip('/')
-        # filtered.columns = ['Url', 'Number of Members']
 
         count_specified_urls_finished = data_analysis.count_specified_urls_finished()
         count_specified_urls_finished = pd.DataFrame(count_specified_urls_finished)
@@ -155,6 +155,7 @@ def main():
         results = simplify_index(results, '/')
         plot_bars(results[['Number of Members', 'Number of Finished Url']])
         plot_bars(results['Diff'])
+
 
 if __name__ == '__main__':
     main()
