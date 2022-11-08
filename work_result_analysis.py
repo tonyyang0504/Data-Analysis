@@ -96,9 +96,8 @@ def main():
     urls_data = simplify_index(urls_data, '/')
     plot_bars(urls_data)
 
-    st.success('🐧Groups Report Result🐥')
+    st.success('🐧Group report results🐥')
     report = pd.read_excel('./Final report.xlsx', index_col=3)
-    pd.set_option('expand_frame_repr', False)
     report = report.iloc[:, 8:-1].dropna(how='all')
     report.index = report.index.map(lambda x: x.strip('/')).rename('Url')
     check_words = f'👈Click on me to see the report👇'
@@ -106,6 +105,7 @@ def main():
     layout(check_words=check_words, data=report, file_name=file_name)
     report = simplify_index(report, '/')
     plot_lines(report.T)
+
 
 if __name__ == '__main__':
     main()
