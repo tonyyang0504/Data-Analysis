@@ -6,7 +6,6 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 from jarvee_logs import GroupJoiner, Publishing, Bump
 
-
 class DataAnalysis(object):
     def __init__(self, activity, urls=None, type=None):
         self.activity = activity
@@ -107,6 +106,10 @@ def subplots_box(df):
 st.cache(suppress_st_warning=True)
 def plot_bars(df):
     fig = px.bar(df, barmode='group', height=500, width=800)
+    st.plotly_chart(fig)
+
+def plot_lines(df):
+    fig = px.line(df, height=500, width=800)
     st.plotly_chart(fig)
 
 @st.cache(suppress_st_warning=True)

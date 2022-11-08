@@ -73,14 +73,14 @@ def main():
     layout(check_words=check_words, data=date_result, file_name=file_name)
     plot_bars(date_result['Finished'])
 
-    st.warning('🍏Number of Joined Specified Groups per person🍑')
+    st.warning('🦅Number of Joined Specified Groups per person🦇')
     name_result = df.groupby(['Name']).sum()[['Finished', 'Error', 'Total']]
     check_words = '👈Click on me to see the data per person👇'
     file_name = 'Number of Joined Specified Groups per person.csv'
     layout(check_words=check_words, data=name_result, file_name=file_name)
     plot_bars(name_result['Finished'])
 
-    st.error('🥪Number of joined the specified groups🍔')
+    st.error('🐪Number of joined the specified groups🦘')
     daily_data_list = []
     for i in list(daily_data):
         activity = confirm_activity('Group Joiner',i[1])
@@ -96,6 +96,16 @@ def main():
     urls_data = simplify_index(urls_data, '/')
     plot_bars(urls_data)
 
+    st.success('🐧Groups Report Result🐥')
+    report = pd.read_excel('./Final report.xlsx', index_col=3)
+    pd.set_option('expand_frame_repr', False)
+    report = report.iloc[:, 8:-1].dropna(how='all')
+    report.index = report.index.map(lambda x: x.strip('/')).rename('Url')
+    check_words = f'👈Click on me to see the report👇'
+    file_name = f'Groups report.csv'
+    layout(check_words=check_words, data=report, file_name=file_name)
+    report = simplify_index(report, '/')
+    plot_lines(report.T)
 
 if __name__ == '__main__':
     main()
