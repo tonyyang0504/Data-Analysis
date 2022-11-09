@@ -333,7 +333,7 @@ class Publishing(LogsProcess):
         
     def df_total(self):
         df = self.data
-        total = df[df['Status'].str.contains('\*FINALIZED\* a post')].reset_index(drop=True)
+        total = df[df['Status'].str.contains('*FINALIZED* a post')].reset_index(drop=True)
         return total
     
     def df_error(self):
