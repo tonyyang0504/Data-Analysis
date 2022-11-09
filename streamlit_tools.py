@@ -110,13 +110,18 @@ def subplots_box(df):
 
 
 st.cache(suppress_st_warning=True)
-def plot_bars(df):
-    fig = px.bar(df, barmode='group', height=500, width=800)
+def plot_bar(df, title=None, x=None, y=None):
+    fig = px.bar(df, barmode='group', height=600, width=1000, title=title, x=x, y=y)
     st.plotly_chart(fig)
 
 
-def plot_lines(df):
-    fig = px.line(df, height=500, width=800)
+def plot_line(df, title=None, x=None, y=None):
+    fig = px.line(df, height=600, width=1000, title=title, x=x, y=y)
+    st.plotly_chart(fig)
+
+
+def plot_area(df, title=None, x=None, y=None):
+    fig = px.area(df, height=600, width=1000, title=title, x=x, y=y)
     st.plotly_chart(fig)
 
 

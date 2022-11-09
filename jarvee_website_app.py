@@ -125,7 +125,7 @@ def main():
     codes_selected = error_distribution.loc[:, codes]
 
     if codes:
-        plot_bars(codes_selected.T)
+        plot_bar(codes_selected.T)
 
     robots = st.multiselect(
                             f'🎁Display the error distribution on the selected {type_selectbox.lower()}🎈',
@@ -134,7 +134,7 @@ def main():
     robots_selected = error_distribution.loc[robots, :]
 
     if robots:
-        plot_bars(robots_selected.T)
+        plot_bar(robots_selected.T)
 
     # ************************ Comparison between Task Result and Real Data ************************
 
@@ -153,8 +153,8 @@ def main():
         results['Diff'] = results['Number of Members'] - results['Number of Finished Url']
         results.set_index('Url', inplace=True)
         results = simplify_index(results, '/')
-        plot_bars(results[['Number of Members', 'Number of Finished Url']])
-        plot_bars(results['Diff'])
+        plot_bar(results[['Number of Members', 'Number of Finished Url']])
+        plot_bar(results['Diff'])
 
 
 if __name__ == '__main__':
