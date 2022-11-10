@@ -70,14 +70,14 @@ def main():
     check_words = '👈Click on me to see the data per day👇'
     file_name = 'Number of Joined Specified Groups per day.csv'
     layout(check_words=check_words, data=date_result, file_name=file_name)
-    plot_bar(date_result['Finished'])
+    plot_bar(date_result['Finished'], color=date_result.index)
 
     st.warning('🦅Number of Joined Specified Groups per person🦇')
     name_result = df.groupby(['Name']).sum()[['Finished', 'Error', 'Total']]
     check_words = '👈Click on me to see the data per person👇'
     file_name = 'Number of Joined Specified Groups per person.csv'
     layout(check_words=check_words, data=name_result, file_name=file_name)
-    plot_bar(name_result['Finished'])
+    plot_bar(name_result['Finished'], color=name_result.index)
 
     st.error('🐪Number of joined the specified groups🦘')
     daily_data_list = []
@@ -93,21 +93,36 @@ def main():
     file_name = f'Number of Joined Specified Groups.csv'
     layout(check_words=check_words, data=urls_data, file_name=file_name)
     urls_data = simplify_index(urls_data, '/')
-    plot_bar(urls_data)
+    plot_bar(urls_data, color_discrete_sequence=['red'])
 
     st.success('🐧Group report results🐥')
     report = pd.read_excel('./Final report.xlsx', index_col=3)
-    report = report.iloc[:, 8:-1].dropna(how='all')
-    report.index = report.index.map(lambda x: x.strip('/')).rename('Url')
-    check_words = f'👈Click on me to see the report👇'
-    file_name = f'Groups report.csv'
-    layout(check_words=check_words, data=report, file_name=file_name)
-    report = simplify_index(report, '/')
-    plot_report = report.T
+    member_no = report.iloc[:, 8:-1].dropna(how='all')
+    member_no.index = member_no.index.map(lambda x: x.strip('/')).rename('Url')
+    check_words = '👈Click on me to see the report👇'
+    file_name = 'Groups report.csv'
+    layout(check_words=check_words, data=member_no, file_name=file_name)
+    plot_report = simplify_index(member_no, '/').T
     plot_report.index.rename('Date', inplace=True)
     plot_line(plot_report)
-    diff = report.diff(axis=1).T
-    plot_bar(diff)
+
+    st.info('🐬Daily change of member of groups🐋')
+    daily_change = member_no.diff(axis=1).dropna(how='all', axis=1)
+    check_words = '👈Click on me to see the daily change👇'
+    file_name = 'Daily change of member of groups.csv'
+    layout(check_words=check_words, data=daily_change, file_name=file_name)
+    plot_daily_change = simplify_index(daily_change, '/').T
+    plot_bar(plot_daily_change)
+
+    st.warning('🦫Number of outside posts🦦')
+    post_outside = report.iloc[:, -1]
+    post_outside.index = post_outside.index.map(lambda x: x.strip('/')).rename('Url')
+    post_outside.rename('Outside Post', inplace=True)
+    check_words = '👈Click on me to see the number of oustside posts👇'
+    file_name = 'Number of outside posts.csv'
+    layout(check_words=check_words, data=post_outside, file_name=file_name)
+    post_outside = simplify_index(post_outside, '/')
+    plot_bar(post_outside, color_discrete_sequence=['purple'])
 
 
 if __name__ == '__main__':

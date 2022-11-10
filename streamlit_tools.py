@@ -110,8 +110,16 @@ def subplots_box(df):
 
 
 st.cache(suppress_st_warning=True)
-def plot_bar(df, title=None, x=None, y=None):
-    fig = px.bar(df, barmode='group', height=600, width=1000, title=title, x=x, y=y)
+def plot_bar(df,title=None, x=None, y=None, color=None, color_discrete_sequence=None):
+    fig = px.bar(df,
+                 barmode='group',
+                 height=600,
+                 width=1000,
+                 title=title,
+                 x=x,
+                 y=y,
+                 color=color,
+                 color_discrete_sequence=color_discrete_sequence)
     st.plotly_chart(fig)
 
 
