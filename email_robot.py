@@ -49,7 +49,7 @@ def run(path, sender, threshold):
             for email in list(filter_email):
                 email_address = email[0]
                 email_data = email[1]
-                contents = f'Dear Mr {recipient_name},\n\n'
+                contents = f'Dear {recipient_name},\n\n'
                 for index in email_data.index:
                     username = email_data.loc[index, 'Username']
                     password = email_data.loc[index, 'Password']
@@ -65,6 +65,7 @@ def run(path, sender, threshold):
                     contents += content
                 contents += '\nPlease renew the bills for these proxies as soon as possible.' \
                             '\n\nBest Regards,\n\nMr Robot'
+
             if email_address:
                 send_email = mail(sender, email_address, contents)
                 print('One email has been sent successfully.' if send_email else 'Failed to send a email.')
@@ -73,8 +74,8 @@ def run(path, sender, threshold):
 if __name__ == '__main__':
     sender_email_address = 'firstrobot0504@outlook.com'
     path = './Proxies Information.xlsx'
-    threshold_reminder = pd.Timedelta('7 days')
-    schedule.every().day.at('11:00').do(run, path, sender_email_address, threshold_reminder)
+    threshold_reminder = pd.Timedelta('27 days')
+    schedule.every().day.at('19:55').do(run, path, sender_email_address, threshold_reminder)
 
     while True:
         schedule.run_pending()
