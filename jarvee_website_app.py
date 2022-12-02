@@ -11,7 +11,7 @@ def main():
     st.sidebar.warning('🪂Please select an activity🚴')
     activity_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇', ('Group Joiner', 'Publishing', 'Bump'))
 
-    st.sidebar.success('🔎Please select the type of data🔍')
+    st.sidebar.success('🔎Please select the type of total_posts🔍')
     type_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇', ('Robot', 'Account'))
 
     data = fetch_data(mode_selectbox)
@@ -23,7 +23,7 @@ def main():
     data_analysis = open_data_analysis(activity=activity, urls=urls, type_=type_selectbox)
 
     st.info('🍅Original Data🍎')
-    check_words = '👈Click on me to see the original data👇'
+    check_words = '👈Click on me to see the original total_posts👇'
     file_name = 'The Original Data.csv'
     layout(check_words=check_words, data=data, file_name=file_name)
 
@@ -66,7 +66,7 @@ def main():
                                       data_analysis.count_specified_by_robot,
                                       data_analysis.count_specified_by_account
                                       )
-        check_words = f'👈Click on me to see the data by {type_selectbox.lower()}👇'
+        check_words = f'👈Click on me to see the total_posts by {type_selectbox.lower()}👇'
         file_name = f'Number of {activity_selectbox} Joined Specified Groups.csv'
         layout(check_words=check_words, data=count_specified, file_name=file_name)
 

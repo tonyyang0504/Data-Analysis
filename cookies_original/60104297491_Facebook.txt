@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "G6jaYjxUEWOFR-ENcT9KLIGi",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-07-21T13:39:14.206Z"
+  },
+  {
+    "name": "datr",
+    "value": "G6jaYtzvwZ_hIQ9e16N-6ugc",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-07-21T13:37:46.262Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100083995740518",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-11-23T10:37:28.34Z"
+  },
+  {
+    "name": "xs",
+    "value": "2%3A4TgETs2UqxopRw%3A2%3A1658497152%3A-1%3A-1%3A%3AAcXAY4NIZ2bnVp3K-l_GaqOKwSP5A2SK_DN5z6AZXOM",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-11-23T10:37:28.34Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1669199861900%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  },
+  {
+    "name": "fr",
+    "value": "05sWOiKtkzjHImze5.AWXRhjsmomOChpXvKJTtJL8Q2kA.Bjfffp.pD.AAA.0.0.Bjffvz.AWWl_Eh3JUM",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-02-21T10:54:42.549Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x509",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-30T10:54:49Z"
+  },
+  {
+    "name": "IDE",
+    "value": "AHWqTUnAO4N2bl8ZDF4gVOsyGdfmglpXu4bm8grtUruO5-GD6DQ_ZPx42GCR_Oa_",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".doubleclick.net",
+    "url": "https://www.facebook.net",
+    "expires": "2023-12-18T10:37:39.483Z"
+  }
+]

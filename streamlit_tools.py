@@ -110,16 +110,26 @@ def subplots_box(df):
 
 
 st.cache(suppress_st_warning=True)
-def plot_bar(df,title=None, x=None, y=None, color=None, color_discrete_sequence=None):
+def plot_bar(df,
+             barmode='group',
+             title=None,
+             x=None,
+             y=None,
+             height=600,
+             width=1000,
+             color=None,
+             color_discrete_sequence=None
+             ):
     fig = px.bar(df,
-                 barmode='group',
-                 height=600,
-                 width=1000,
+                 barmode=barmode,
+                 height=height,
+                 width=width,
                  title=title,
                  x=x,
                  y=y,
                  color=color,
-                 color_discrete_sequence=color_discrete_sequence)
+                 color_discrete_sequence=color_discrete_sequence
+                 )
     st.plotly_chart(fig)
 
 
@@ -128,8 +138,24 @@ def plot_line(df, title=None, x=None, y=None):
     st.plotly_chart(fig)
 
 
-def plot_area(df, title=None, x=None, y=None):
-    fig = px.area(df, height=600, width=1000, title=title, x=x, y=y)
+def plot_area(df,
+             title=None,
+             x=None,
+             y=None,
+             height=600,
+             width=1000,
+             color=None,
+             color_discrete_sequence=None
+             ):
+    fig = px.area(df,
+                 height=height,
+                 width=width,
+                 title=title,
+                 x=x,
+                 y=y,
+                 color=color,
+                 color_discrete_sequence=color_discrete_sequence
+                 )
     st.plotly_chart(fig)
 
 
@@ -225,7 +251,7 @@ def fetch_data(mode):
         files = {file for file in os.listdir(path) if file.endswith('.csv') or file.endswith('.txt')}
         return concat_default_data(path=path, files=files)
     else:
-        st.error('Please select the data mode')
+        st.error('Please select the total_posts mode')
 
 
 st.cache(suppress_st_warning=True)

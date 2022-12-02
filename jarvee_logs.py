@@ -329,7 +329,7 @@ class Publishing(LogsProcess):
         self.activity = 'Publishing'
 
     def df_finished(self):
-        return print('df finished is included in df total.')
+        return print('total_posts finished is included in total_posts total.')
         
     def df_total(self):
         df = self.data

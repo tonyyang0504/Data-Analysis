@@ -60,21 +60,21 @@ def main():
     df = pd.concat(daily_data_list)
 
     dn_result = df.groupby(['Export Date', 'Name']).sum()[['Finished', 'Error', 'Total']]
-    check_words = '👈Click on me to see the data per person daily👇'
+    check_words = '👈Click on me to see the total_posts per person daily👇'
     file_name = 'Number of Joined Specified Groups per person daily.csv'
     layout(check_words=check_words, data=dn_result, file_name=file_name)
     plot_bar(dn_result.unstack(fill_value=0)['Finished'])
 
     st.info('🐢Number of Joined Specified Groups per day🦖')
     date_result = df.groupby(['Export Date']).sum()[['Finished', 'Error', 'Total']]
-    check_words = '👈Click on me to see the data per day👇'
+    check_words = '👈Click on me to see the total_posts per day👇'
     file_name = 'Number of Joined Specified Groups per day.csv'
     layout(check_words=check_words, data=date_result, file_name=file_name)
     plot_bar(date_result['Finished'], color=date_result.index)
 
     st.warning('🦅Number of Joined Specified Groups per person🦇')
     name_result = df.groupby(['Name']).sum()[['Finished', 'Error', 'Total']]
-    check_words = '👈Click on me to see the data per person👇'
+    check_words = '👈Click on me to see the total_posts per person👇'
     file_name = 'Number of Joined Specified Groups per person.csv'
     layout(check_words=check_words, data=name_result, file_name=file_name)
     plot_bar(name_result['Finished'], color=name_result.index)
