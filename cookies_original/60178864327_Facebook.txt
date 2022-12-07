@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "qqcFY3bbB6-fL-Z7uJb0a1Ye",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T04:24:59.947Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x477",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T04:26:01Z"
+  },
+  {
+    "name": "datr",
+    "value": "qqcFY-wbHRiGWAJaChKa1ZyL",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T04:23:14.727Z"
+  },
+  {
+    "name": "locale",
+    "value": "en_GB",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T04:24:59.947Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100085186620291",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T04:24:33.947Z"
+  },
+  {
+    "name": "xs",
+    "value": "24%3AmlJhtPBo5xZjRw%3A2%3A1661315100%3A-1%3A-1",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T04:24:33.947Z"
+  },
+  {
+    "name": "fr",
+    "value": "0P9PLttoiDK5PPDwl.AWVBbPUAXDgaDx7iEsnVDzNF4X0.BjBaeq.GV.AAA.0.0.BjBah8.AWVe3eaqUqw",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-22T04:26:33.3Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661315202525%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  }
+]

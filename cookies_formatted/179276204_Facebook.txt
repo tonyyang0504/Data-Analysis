@@ -1,0 +1,8 @@
+.facebook.com	TRUE	/	TRUE	1724380020	sb	WsQFYxkz5oIDkA52pmw8-5Ix
+.facebook.com	TRUE	/	TRUE	1661912823	wd	924x477
+.facebook.com	TRUE	/	TRUE	1724379903	datr	WsQFY1P28p_DWmd0jgJM4l2j
+.facebook.com	TRUE	/	TRUE	1661912820	locale	en_GB
+.facebook.com	TRUE	/	TRUE	1692843963	c_user	100085132052646
+.facebook.com	TRUE	/	TRUE	1692843963	xs	2%3ATFihp_lO09fC1Q%3A2%3A1661322422%3A-1%3A-1
+.facebook.com	TRUE	/	TRUE	1669084025	fr	0HeH206TDGptQEPFb.AWWak-_w2AxtomluKfbQPNwhcf0.BjBcRa.lu.AAA.0.0.BjBcTv.AWX1PPO7QTc
+.facebook.com	TRUE	/	TRUE	0	presence	C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661322485396%2C%22v%22%3A1%7D

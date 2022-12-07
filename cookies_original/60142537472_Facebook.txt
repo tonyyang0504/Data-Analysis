@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "3NEFY8lrQ4wW7Ve1gpJ8qBx_",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T07:26:46.18Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x477",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T07:26:54Z"
+  },
+  {
+    "name": "datr",
+    "value": "a9IFY0lN8VR5Epa7RK3R7K7G",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T07:25:35.963Z"
+  },
+  {
+    "name": "locale",
+    "value": "en_GB",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T07:26:46.18Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100084772518591",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T07:26:17.18Z"
+  },
+  {
+    "name": "xs",
+    "value": "21%3AMUriOBS-OXPFHQ%3A2%3A1661326007%3A-1%3A-1",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T07:26:17.18Z"
+  },
+  {
+    "name": "fr",
+    "value": "0TBFFbvsaYy1UbDaq.AWXSsG8TXmONPdgAGAOxqotzimk.BjBdHc.nC.AAA.0.0.BjBdMJ.AWXPKKv8d2o",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-22T07:28:05.338Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661326097542%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  }
+]

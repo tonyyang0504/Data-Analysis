@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "N8IFY8kLV5WP14aGPwQ5cVro",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T06:19:04.838Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x477",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T06:19:51Z"
+  },
+  {
+    "name": "datr",
+    "value": "N8IFY3a3owBqiFLjpe7LdxJu",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T06:16:41.945Z"
+  },
+  {
+    "name": "locale",
+    "value": "en_GB",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T06:19:04.838Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100084513177953",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T06:22:57.926Z"
+  },
+  {
+    "name": "xs",
+    "value": "43%3A20COAb1gMsCGCQ%3A2%3A1661321945%3A-1%3A-1%3A%3AAcXftFoxGxAtFK9owEFEFMiTaslx-hEbfYH0dMQsGQ",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T06:22:57.927Z"
+  },
+  {
+    "name": "fr",
+    "value": "0zba0QJ7kNoNJkMBk.AWXUgpKYCEnzfdsVtTLppnCxZd0.BjBcPF.H8.AAA.0.0.BjBcPF.AWWcYRrwJE4",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-22T06:22:56.927Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661322253450%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  }
+]

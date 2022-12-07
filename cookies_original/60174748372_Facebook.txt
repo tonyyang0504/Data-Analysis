@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "ENcFYybVxvU3FSmMAyYEbzXe",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T07:47:06.642Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x477",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T07:47:49Z"
+  },
+  {
+    "name": "datr",
+    "value": "LtcFY6CSO4n6Ozj1HMOaW7dX",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T07:46:04.069Z"
+  },
+  {
+    "name": "locale",
+    "value": "en_GB",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T07:47:06.642Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100085066355968",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T07:46:42.642Z"
+  },
+  {
+    "name": "xs",
+    "value": "18%3AigIHu4I2kzYLxg%3A2%3A1661327227%3A-1%3A-1",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T07:46:42.642Z"
+  },
+  {
+    "name": "fr",
+    "value": "0hFrWBxIho0USCn12.AWUG-e07wkslpDV3sSH92XG_itU.BjBdcQ.jW.AAA.0.0.BjBdfh.AWXXGMzfvDg",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-22T07:48:46.035Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661327337611%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  }
+]

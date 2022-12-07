@@ -13,7 +13,7 @@ def convert_to_timestamp(x):
 
 
 def format_cookies(original_file, formatted_file):
-    with open(f'C:/Facebook Group Scraper/cookies_original/{original_file}', 'r', encoding='utf-8-sig') as f:
+    with open(f'./cookies_original/{original_file}', 'r', encoding='utf-8-sig') as f:
         df = f.read()
 
     df = json.loads(df)
@@ -23,14 +23,14 @@ def format_cookies(original_file, formatted_file):
     data['expires'] = data['expires'].apply(lambda x: convert_to_timestamp(x[:18]))
     data['secure'], data['httpOnly'] = 'TRUE', 'TRUE'
 
-    if not os.path.exists(f'C:/Facebook Group Scraper/cookies_formatted'):
-        os.makedirs(f'C:/Facebook Group Scraper/cookies_formatted')
+    if not os.path.exists('./cookies_formatted'):
+        os.makedirs('./cookies_formatted')
 
-    data.to_csv(f'C:/Facebook Group Scraper/cookies_formatted/{formatted_file}', index=False, header=False, sep='\t')
+    data.to_csv(f'./cookies_formatted/{formatted_file}', index=False, header=False, sep='\t')
 
 
 if __name__ == '__main__':
-    files = os.listdir('C:/Facebook Group Scraper/cookies_original')
+    files = os.listdir('./cookies_original')
     for file in files:
         format_cookies(file, file)
 

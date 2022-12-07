@@ -1,0 +1,82 @@
+﻿[
+  {
+    "name": "sb",
+    "value": "NMIFYwfpzOKeQaPYMnwJ4774",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T06:17:58.341Z"
+  },
+  {
+    "name": "wd",
+    "value": "924x477",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T06:18:40Z"
+  },
+  {
+    "name": "datr",
+    "value": "NMIFY7OiEFc1iwiP4iWF_wvA",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2024-08-23T06:16:30.27Z"
+  },
+  {
+    "name": "locale",
+    "value": "en_GB",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-08-31T06:17:58.341Z"
+  },
+  {
+    "name": "c_user",
+    "value": "100084919632139",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T06:17:36.342Z"
+  },
+  {
+    "name": "xs",
+    "value": "41%3AKiDvPJ3dZ8rYKw%3A2%3A1661321879%3A-1%3A-1",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2023-08-24T06:17:36.342Z"
+  },
+  {
+    "name": "fr",
+    "value": "04roP0O1gghXx7akZ.AWXg--GgKUTRFs5BVNwD85GSgyU.BjBcI0.m4.AAA.0.0.BjBcLZ.AWUFtkkL2Lo",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": "2022-11-22T06:19:01.259Z"
+  },
+  {
+    "name": "presence",
+    "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1661321951222%2C%22v%22%3A1%7D",
+    "path": "/",
+    "secure": true,
+    "httpOnly": false,
+    "domain": ".facebook.com",
+    "url": "https://www.facebook.com",
+    "expires": null
+  }
+]
