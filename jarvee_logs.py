@@ -23,7 +23,8 @@ class LogsProcess(object):
     def df_error(self):
         df = self.data
         error = df[df['Status'].str.contains('Error')].drop_duplicates('Status', ignore_index=True)
-        error['Code'] = error['Status'].apply(lambda x: x.split(',')[0].split(':')[1].split('-')[0].replace(' ', ''))
+        if error:
+            error['Code'] = error['Status'].apply(lambda x: x.split(',')[0].split(':')[1].split('-')[0].replace(' ', ''))
         return error
     
     def df_total(self):
