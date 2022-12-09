@@ -47,6 +47,7 @@ def main():
 
     files = fetch_files(path, name_list)
     data = fetch_data(path, files)
+    pd.set_option('expand_frame_repr', False)
 
     daily_data = data.groupby(['Export Date', 'Name'])
 
