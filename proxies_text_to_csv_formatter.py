@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_name = 'Webshare 500 proxies.txt'
+file_name = 'Webshare 70 proxies.txt'
 website_name = file_name.split(' ')[0]
 
 df = pd.read_table(f'./{file_name}',
