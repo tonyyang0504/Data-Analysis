@@ -162,7 +162,7 @@ posts_count = pd.concat([outside_posts_count, total_posts_count], axis=1)
 posts_count['outside posts / total posts'] = posts_count['number of outside posts'].\
                                                         div(posts_count['number of total posts'])
 total_posts_count_check_words = 'Number of total posts'
-total_posts_count_data = posts_count[['number of total posts']].T
+total_posts_count_data = posts_count[['number of total posts']].T.sort_values('number of total posts', axis=1)
 total_posts_count_file_name = 'number of total posts.csv'
 layout(total_posts_count_check_words,
        total_posts_count_data,
@@ -178,7 +178,7 @@ layout(total_posts_statistics_check_words,
 plot_bar(total_posts_statistics_data.drop(index='count'), color_discrete_sequence=['red'])
 
 outside_posts_count_check_words = 'Number of outside posts'
-outside_posts_count_data = posts_count[['number of outside posts']].T
+outside_posts_count_data = posts_count[['number of outside posts']].T.sort_values('number of outside posts', axis=1)
 outside_posts_count_file_name = 'number of outside posts.csv'
 layout(outside_posts_count_check_words,
        outside_posts_count_data,
@@ -194,7 +194,8 @@ layout(outside_posts_statistics_check_words,
 plot_bar(outside_posts_statistics_data.drop(index='count'), color_discrete_sequence=['green'])
 
 outside_posts_by_total_rate_check_words = 'Rate of outside posts by total'
-outside_posts_by_total_rate_data = posts_count[['outside posts / total posts']].T
+outside_posts_by_total_rate_data = posts_count[['outside posts / total posts'
+                                                ]].T.sort_values('outside posts / total posts', axis=1)
 outside_posts_by_total_rate_file_name = 'rate of outside posts posted by total.csv'
 layout(outside_posts_by_total_rate_check_words,
        outside_posts_by_total_rate_data,
@@ -222,7 +223,8 @@ profiles_count.rename(columns={'total': 'number of total profiles posted',
                       inplace=True)
 
 total_profiles_count_check_words = 'Number of total profiles posted'
-total_profiles_count_data = profiles_count[['number of total profiles posted']].T
+total_profiles_count_data = profiles_count[['number of total profiles posted'
+                                            ]].T.sort_values('number of total profiles posted', axis=1)
 total_profiles_count_file_name = 'number of total profiles posted.csv'
 layout(total_profiles_count_check_words,
        total_profiles_count_data,
@@ -238,7 +240,8 @@ layout(total_profiles_statistics_check_words,
 plot_bar(total_profiles_statistics_data.drop(index='count'), color_discrete_sequence=['red'])
 
 outside_profiles_count_check_words = 'Number of outside profiles posted'
-outside_profiles_count_data = profiles_count[['number of outside profiles posted']].T
+outside_profiles_count_data = profiles_count[['number of outside profiles posted'
+                                              ]].T.sort_values('number of outside profiles posted', axis=1)
 outside_profiles_count_file_name = 'number of outside profiles posted.csv'
 layout(outside_profiles_count_check_words,
        outside_profiles_count_data,
@@ -254,7 +257,9 @@ layout(outside_profiles_statistics_check_words,
 plot_bar(outside_profiles_statistics_data.drop(index='count'), color_discrete_sequence=['green'])
 
 outside_profiles_by_total_rate_check_words = 'Rate of outside profiles posted by total'
-outside_profiles_by_total_rate_data = profiles_count[['outside profiles posted / total profiles posted']].T
+outside_profiles_by_total_rate_data = profiles_count[['outside profiles posted / total profiles posted'
+                                                      ]].T.sort_values('outside profiles posted / total '
+                                                                       'profiles posted', axis=1)
 outside_profiles_by_total_rate_file_name = 'rate of outside profiles posted by total.csv'
 layout(outside_profiles_by_total_rate_check_words,
        outside_profiles_by_total_rate_data,
@@ -262,7 +267,8 @@ layout(outside_profiles_by_total_rate_check_words,
 plot_bar(outside_profiles_by_total_rate_data)
 
 outside_profiles_by_total_rate_statistics_check_words = 'Statistics of outside profiles posted by total rate'
-outside_profiles_by_total_rate_statistics_data = profiles_count[['outside profiles posted / total profiles posted']].describe()
+outside_profiles_by_total_rate_statistics_data = profiles_count[['outside profiles posted / '
+                                                                 'total profiles posted']].describe()
 outside_profiles_by_total_rate_statistics_file_name = 'statistics of outside profiles posted by total rate.csv'
 layout(outside_profiles_by_total_rate_statistics_check_words,
        outside_profiles_by_total_rate_statistics_data,

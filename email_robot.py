@@ -18,7 +18,7 @@ def mail(sender_email_adderss, sender_email_password, recipient_email_address, c
         server.ehlo()
         server.starttls()
         server.login(sender_email_adderss, sender_email_password)
-        server.sendmail(sender_email_adderss, [recipient_email_address,sender_email_adderss], msg.as_string())
+        server.sendmail(sender_email_adderss, [recipient_email_address, sender_email_adderss], msg.as_string())
         server.quit()
         ret = True
     except Exception as e:
@@ -76,7 +76,7 @@ def run(path, sender_email_address, sender_email_password, threshold):
 if __name__ == '__main__':
     sender_email_address = 'firstrobot0504@outlook.com'
     sender_email_password = 'Thefirstone'
-    path = 'C:/Email Sending Robot/Proxies Information.xlsx'
+    path = './Proxies Information.xlsx'
     threshold_reminder = pd.Timedelta('7 days')
     # schedule.every().day.at('23:11').do(run, path, sender_email_address, password, threshold_reminder)
     # schedule.every().day.do(run, path, sender_email_address, password, threshold_reminder)
