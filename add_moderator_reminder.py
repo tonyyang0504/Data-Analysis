@@ -1,7 +1,10 @@
 from tools import send_email
 import pandas as pd
 import datetime
-from email_robot import mail
+import logging
+
+
+logging.basicConfig(filename='./task_logs.txt', format='%(asctime)s %(message)s', level=logging.ERROR)
 
 
 def get_data(path):
@@ -28,8 +31,8 @@ def run(path, sender_email_address, sender_email_password, threshold):
     group_base_url = 'https://www.facebook.com/groups/'
     groups_urls = list(map(lambda x: group_base_url + str(x), df_reminder.index))
     content = f"Dear {recipient_name}, \n\nThis email is to notify you that the " \
-              f"number of the below groups' moderators is less than 2, please arrange for more moderators " \
-              f"for these groups\n\n to keep 3 or more moderators in every group, Thank you!\n\n" \
+              f"number of the below groups' moderators is less than 2, please arrange more moderators " \
+              f"for these groups to keep 3 or more moderators in every group, Thank you!\n\n" \
               f"Group urls: {groups_urls}\n\nBest Regards, \n\n Mr. Robot"
 
     try:
@@ -39,6 +42,7 @@ def run(path, sender_email_address, sender_email_password, threshold):
                   f'{datetime.datetime.now()}' if result else f'Failed to send a email. {datetime.datetime.now()}')
     except Exception as e:
         print(e, datetime.datetime.now())
+        logging.error(e)
 
 
 if __name__ == '__main__':
