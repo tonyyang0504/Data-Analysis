@@ -119,7 +119,7 @@ def main():
 
     codes = st.multiselect(
                             f'🧋Display the rate of selected error codes on the {type_selectbox.lower()}🍫',
-                            error_distribution.columns.unique(),
+                            error_distribution.columns.unique()
                             )
 
     codes_selected = error_distribution.loc[:, codes]

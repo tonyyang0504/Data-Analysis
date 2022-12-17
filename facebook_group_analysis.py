@@ -111,6 +111,8 @@ layout(total_posts_daily_count_check_words,
        total_posts_daily_count_data,
        total_posts_daily_count_file_name)
 plot_area(total_posts_daily_count_data)
+multiselect_plot_line('Number of selected groups total posts daily',
+                      total_posts_daily_count_data)
 
 total_posts_daily_statistics_check_words = 'Statistics of total posts daily'
 total_posts_daily_statistcs_data = posts_daily_count.unstack()['number of total posts daily'].T.describe()
@@ -119,6 +121,8 @@ layout(total_posts_daily_statistics_check_words,
        total_posts_daily_statistcs_data,
        total_posts_daily_statistics_file_name)
 plot_bar(total_posts_daily_statistcs_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups total posts daily',
+                     total_posts_daily_statistcs_data.drop(index='count'))
 
 outside_posts_daily_count_check_words = 'Number of outside posts daily'
 outside_posts_daily_count_data = posts_daily_count.unstack()['number of outside posts daily'].T
@@ -127,6 +131,8 @@ layout(outside_posts_daily_count_check_words,
        outside_posts_daily_count_data,
        outside_posts_daily_count_file_name)
 plot_area(outside_posts_daily_count_data)
+multiselect_plot_line('Number of selected groups outside posts daily',
+                      outside_posts_daily_count_data)
 
 outside_posts_daily_statistics_check_words = 'Statistics of outside posts daily'
 outside_posts_daily_statistcs_data = posts_daily_count.unstack()['number of outside posts daily'].T.describe()
@@ -135,6 +141,8 @@ layout(outside_posts_daily_statistics_check_words,
        outside_posts_daily_statistcs_data,
        outside_posts_daily_statistics_file_name)
 plot_bar(outside_posts_daily_statistcs_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups outside posts daily',
+                     total_posts_daily_statistcs_data.drop(index='count'))
 
 outside_by_total_posts_daily_rate_check_words = 'Rate of outside posts daily by total'
 outside_by_total_posts_daily_rate_data = posts_daily_count.unstack()['outside posts daily / total posts daily'].T
@@ -143,6 +151,8 @@ layout(outside_by_total_posts_daily_rate_check_words,
        outside_by_total_posts_daily_rate_data,
        outside_by_total_posts_daily_rate_file_name)
 plot_bar(outside_by_total_posts_daily_rate_data)
+multiselect_plot_line('Rate of selected groups outside posts daily by total',
+                      outside_by_total_posts_daily_rate_data)
 
 outside_by_total_posts_daily_rate_statistics_check_words = 'Statistics of outside posts daily by total rate'
 outside_by_total_posts_daily_rate_statistics_data = posts_daily_count.unstack()[
@@ -152,6 +162,8 @@ layout(outside_by_total_posts_daily_rate_statistics_check_words,
        outside_by_total_posts_daily_rate_statistics_data,
        outside_by_total_posts_daily_rate_statistics_file_name)
 plot_bar(outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups outside posts daily by total rate',
+                     outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
 
 st.warning('🐬Posts data🐋')
 outside_posts_count = outside_posts.groupby(['group id'])['post id'].count()

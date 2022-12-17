@@ -159,6 +159,18 @@ def plot_area(df,
     st.plotly_chart(fig)
 
 
+def multiselect_plot_line(title, df):
+    multiselect = st.multiselect(title, df.columns.unique())
+    multiselect_data = df.loc[:, multiselect]
+    if multiselect:
+        plot_line(multiselect_data)
+
+
+def multiselect_plot_bar(title, df):
+    multiselect = st.multiselect(title, df.columns.unique())
+    multiselect_data = df.loc[:, multiselect]
+    if multiselect:
+        plot_bar(multiselect_data)
 @st.cache(suppress_st_warning=True)
 def concat_uploaded_data(files):
     if files:
@@ -273,7 +285,7 @@ st.cache(suppress_st_warning=True)
 def layout(check_words, data, file_name):
     col1, col2 = st.columns(2)
     with col1:
-        checkbox = st.checkbox(check_words)
+        checkbox = st.markdown(check_words)
     with col2:
         st.download_button(
                             label='📥Click on me to download the result📥',
