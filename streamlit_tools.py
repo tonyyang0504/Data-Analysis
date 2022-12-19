@@ -132,9 +132,43 @@ def plot_bar(df,
                  )
     st.plotly_chart(fig)
 
+def plot_hist(df,
+             title=None,
+             x=None,
+             y=None,
+             height=600,
+             width=1000,
+             color=None,
+             color_discrete_sequence=None
+             ):
+    fig = px.histogram(df,
+                 height=height,
+                 width=width,
+                 title=title,
+                 x=x,
+                 y=y,
+                 color=color,
+                 color_discrete_sequence=color_discrete_sequence
+                 )
+    st.plotly_chart(fig)
 
-def plot_line(df, title=None, x=None, y=None):
-    fig = px.line(df, height=600, width=1000, title=title, x=x, y=y)
+
+def plot_line(df,
+              title=None,
+              x=None,
+              y=None,
+              height=600,
+              width=1000,
+              color=None,
+              ):
+    fig = px.line(df,
+                  height=height,
+                  width=width,
+                  title=title,
+                  x=x,
+                  y=y,
+                  color=color
+                  )
     st.plotly_chart(fig)
 
 
@@ -171,6 +205,22 @@ def multiselect_plot_bar(title, df):
     multiselect_data = df.loc[:, multiselect]
     if multiselect:
         plot_bar(multiselect_data)
+
+
+def multiselect_plot_hist(title, df):
+    multiselect = st.multiselect(title, df.columns.unique())
+    multiselect_data = df.loc[:, multiselect]
+    if multiselect:
+        plot_hist(multiselect_data)
+
+
+def multiselect_plot_area(title, df):
+    multiselect = st.multiselect(title, df.columns.unique())
+    multiselect_data = df.loc[:, multiselect]
+    if multiselect:
+        plot_area(multiselect_data)
+
+
 @st.cache(suppress_st_warning=True)
 def concat_uploaded_data(files):
     if files:

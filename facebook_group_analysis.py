@@ -1,8 +1,10 @@
 import pandas as pd
 import streamlit
+import streamlit.proto.openmetrics_data_model_pb2
 
 import streamlit_tools
 from streamlit_tools import *
+import numpy as np
 
 
 st.set_page_config(layout='wide')
@@ -55,7 +57,27 @@ group_members_count_daily_file_name = "number of group members daily.csv"
 layout(group_members_count_daily_check_words,
        group_members_count_daily_data,
        group_members_count_daily_file_name)
-plot_line(plot_group_members_daily_count)
+plot_line(group_members_count_daily_data)
+
+group_members_count_change_daily_check_words = "Number of group members change daily"
+group_members_count_change_daily_data = group_members_count_daily_data.diff(axis=0).dropna(how='all', axis=0)
+group_members_count_change_daily_file_name = "number of group members change daily.csv"
+layout(group_members_count_change_daily_check_words,
+       group_members_count_change_daily_data,
+       group_members_count_change_daily_file_name)
+plot_area(group_members_count_change_daily_data)
+multiselect_plot_bar('Number of selected groups members change daily',
+                      group_members_count_change_daily_data)
+
+group_members_count_change_daily_statistics_check_words = 'Statistics of group members change daily'
+group_members_count_change_daily_statistcs_data = group_members_count_change_daily_data.describe()
+group_members_count_change_daily_statistics_file_name = 'statistics of group members change daily.csv'
+layout(group_members_count_change_daily_statistics_check_words,
+       group_members_count_change_daily_statistcs_data,
+       group_members_count_change_daily_statistics_file_name)
+plot_bar(group_members_count_change_daily_statistcs_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups group members change daily',
+                     group_members_count_change_daily_statistcs_data.drop(index='count'))
 
 st.error('🐪Group posts information🦘')
 total_posts = pd.read_csv('group_posts.csv')
@@ -96,7 +118,7 @@ layout(outside_posts_check_words,
        outside_posts_data,
        outside_posts_file_name)
 
-st.info('🐧Posts data daily🐥')
+st.warning('🦊Posts data daily🐱')
 total_posts_daily_count = total_posts.groupby(['group id', 'published date'])['post id'].count()
 outside_posts_daily_count = outside_posts.groupby(['group id', 'published date'])['post id'].count()
 posts_daily_count = concat_df(total_posts_daily_count, outside_posts_daily_count).fillna(0)
@@ -151,8 +173,15 @@ layout(outside_by_total_posts_daily_rate_check_words,
        outside_by_total_posts_daily_rate_data,
        outside_by_total_posts_daily_rate_file_name)
 plot_bar(outside_by_total_posts_daily_rate_data)
-multiselect_plot_line('Rate of selected groups outside posts daily by total',
-                      outside_by_total_posts_daily_rate_data)
+outside_by_total_posts_daily_rate_data_hist = outside_by_total_posts_daily_rate_data.applymap(lambda x: np.nan if x==0 else x)
+outside_by_total_posts_daily_rate_data_hist = outside_by_total_posts_daily_rate_data_hist.applymap(lambda x: np.nan if x==1 else x)
+posts_daily_count_mean = outside_by_total_posts_daily_rate_data_hist.mean()
+outside_by_total_posts_daily_rate_data_hist.fillna(posts_daily_count_mean, inplace=True)
+
+st.dataframe(outside_by_total_posts_daily_rate_data_hist)
+plot_hist(outside_by_total_posts_daily_rate_data_hist, title='Distribution of rate of outside posts daily by total')
+multiselect_plot_hist('Distribution of rate of selected groups outside posts daily by total',
+                      outside_by_total_posts_daily_rate_data_hist)
 
 outside_by_total_posts_daily_rate_statistics_check_words = 'Statistics of outside posts daily by total rate'
 outside_by_total_posts_daily_rate_statistics_data = posts_daily_count.unstack()[
@@ -165,7 +194,7 @@ plot_bar(outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
 multiselect_plot_bar('Statistics of selected groups outside posts daily by total rate',
                      outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
 
-st.warning('🐬Posts data🐋')
+st.success('🐬Posts data🐋')
 outside_posts_count = outside_posts.groupby(['group id'])['post id'].count()
 outside_posts_count.rename('number of outside posts', inplace=True)
 total_posts_count = total_posts.groupby(['group id'])['post id'].count()
@@ -222,6 +251,84 @@ layout(outside_posts_by_total_rate_statistics_check_words,
        outside_posts_by_total_rate_statistics_file_name)
 plot_bar(outside_posts_by_total_rate_statistics_data.drop(index='count'), color_discrete_sequence=['blue'])
 
+
+st.info('🐧Profiles posted data daily🐥')
+total_profiles_unique_daily = total_posts.groupby(['group id', 'published date'])['user id'].unique()
+outside_profiles_unique_daily = outside_posts.groupby(['group id', 'published date'])['user id'].unique()
+total_profiles_daily_count = total_profiles_unique_daily.map(lambda x: len(x))
+outside_profiles_daily_count = outside_profiles_unique_daily.map(lambda x: len(x))
+profiles_daily_count = concat_df(total_profiles_daily_count, outside_profiles_daily_count).fillna(0)
+profiles_daily_count.rename(columns={'total': 'number of total profiles posted daily',
+                                     'partial': 'number of outside profiles posted daily',
+                                     'partial / total': 'outside profiles posted daily / total profiles posted daily'},
+                            inplace=True)
+
+total_profiles_daily_count_check_words = 'Number of total profiles posted daily'
+total_profiles_daily_count_data = profiles_daily_count.unstack()['number of total profiles posted daily'].T
+total_profiles_daily_count_file_name = 'number of total profiles posted daily.csv'
+layout(total_profiles_daily_count_check_words,
+       total_profiles_daily_count_data,
+       total_profiles_daily_count_file_name)
+plot_area(total_profiles_daily_count_data)
+multiselect_plot_line('Number of selected groups total profiles posted daily',
+                      total_profiles_daily_count_data)
+
+total_profiles_daily_statistics_check_words = 'Statistics of total profiles posted daily'
+total_profiles_daily_statistcs_data = total_profiles_daily_count_data.describe()
+total_profiles_daily_statistics_file_name = 'statistics of total profiles posted daily.csv'
+layout(total_profiles_daily_statistics_check_words,
+       total_profiles_daily_statistcs_data,
+       total_profiles_daily_statistics_file_name)
+plot_bar(total_profiles_daily_statistcs_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups total profiles posted daily',
+                     total_profiles_daily_statistcs_data.drop(index='count'))
+
+outside_profiles_daily_count_check_words = 'Number of outside profiles posted daily'
+outside_profiles_daily_count_data = profiles_daily_count.unstack()['number of outside profiles posted daily'].T
+outside_profiles_daily_count_file_name = 'number of outside profiles posted daily.csv'
+layout(outside_profiles_daily_count_check_words,
+       outside_profiles_daily_count_data,
+       outside_profiles_daily_count_file_name)
+plot_area(outside_profiles_daily_count_data)
+multiselect_plot_line('Number of selected groups outside profiles posted daily',
+                      outside_profiles_daily_count_data)
+
+outside_profiles_daily_statistics_check_words = 'Statistics of outside profiles posted daily'
+outside_profiles_daily_statistcs_data = profiles_daily_count.unstack()['number of outside profiles posted daily'].T.describe()
+outside_profiles_daily_statistics_file_name = 'statistics of outside profiles posted daily.csv'
+layout(outside_profiles_daily_statistics_check_words,
+       outside_profiles_daily_statistcs_data,
+       outside_profiles_daily_statistics_file_name)
+plot_bar(outside_profiles_daily_statistcs_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups outside profiles posted daily',
+                     outside_profiles_daily_statistcs_data.drop(index='count'))
+
+outside_by_total_profiles_daily_rate_check_words = 'Rate of outside profiles daily by total'
+outside_by_total_profiles_daily_rate_data = profiles_daily_count.unstack()['outside profiles posted daily / ' \
+                                                                           'total profiles posted daily'].T
+outside_by_total_profiles_daily_rate_file_name = 'the rate of outside profiles daily by total.csv'
+layout(outside_by_total_profiles_daily_rate_check_words,
+       outside_by_total_profiles_daily_rate_data,
+       outside_by_total_profiles_daily_rate_file_name)
+plot_bar(outside_by_total_profiles_daily_rate_data)
+outside_by_total_profiles_daily_rate_data_hist = outside_by_total_profiles_daily_rate_data.applymap(lambda x: np.nan if x==0 else x)
+outside_by_total_profiles_daily_rate_data_hist = outside_by_total_profiles_daily_rate_data_hist.applymap(lambda x: np.nan if x==1 else x)
+posts_daily_count_mean = outside_by_total_profiles_daily_rate_data_hist.mean()
+outside_by_total_profiles_daily_rate_data_hist.fillna(posts_daily_count_mean, inplace=True)
+plot_hist(outside_by_total_profiles_daily_rate_data_hist, title='Distribution of rate of outside_profiles daily by total')
+multiselect_plot_hist('Distribution of rate of selected groups outside _profiles daily by total',
+                      outside_by_total_profiles_daily_rate_data_hist)
+
+outside_by_total_profiles_daily_rate_statistics_check_words = 'Statistics of outside profiles daily by total rate'
+outside_by_total_profiles_daily_rate_statistics_data = profiles_daily_count.unstack()['outside profiles posted daily / ' \
+                                                                                      'total profiles posted daily'].T.describe()
+outside_by_total_profiles_daily_rate_statistics_file_name = 'statistics of outside profiles daily by total rate.csv'
+layout(outside_by_total_profiles_daily_rate_statistics_check_words,
+       outside_by_total_profiles_daily_rate_statistics_data,
+       outside_by_total_profiles_daily_rate_statistics_file_name)
+plot_bar(outside_by_total_profiles_daily_rate_statistics_data.drop(index='count'))
+multiselect_plot_bar('Statistics of selected groups outside profiles daily by total rate',
+                     outside_by_total_profiles_daily_rate_statistics_data.drop(index='count'))
 
 st.success('🦫Profiles posted data🦦')
 total_profiles_unique = total_posts.groupby('group id')['user id'].unique()
