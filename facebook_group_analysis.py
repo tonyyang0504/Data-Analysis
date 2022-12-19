@@ -75,8 +75,8 @@ group_members_count_change_daily_statistics_file_name = 'statistics of group mem
 layout(group_members_count_change_daily_statistics_check_words,
        group_members_count_change_daily_statistcs_data,
        group_members_count_change_daily_statistics_file_name)
-plot_bar(group_members_count_change_daily_statistcs_data.drop(index='count'))
-multiselect_plot_bar('Statistics of selected groups group members change daily',
+plot_hist(group_members_count_change_daily_statistcs_data.loc['mean', :], title='Mean of group members change daily')
+multiselect_plot_hist('Statistics of selected groups group members change daily',
                      group_members_count_change_daily_statistcs_data.drop(index='count'))
 
 st.error('🐪Group posts information🦘')
@@ -142,7 +142,7 @@ total_posts_daily_statistics_file_name = 'statistics of total posts daily.csv'
 layout(total_posts_daily_statistics_check_words,
        total_posts_daily_statistcs_data,
        total_posts_daily_statistics_file_name)
-plot_bar(total_posts_daily_statistcs_data.drop(index='count'))
+plot_hist(total_posts_daily_statistcs_data.loc['mean', :], title='Mean of total posts daily')
 multiselect_plot_bar('Statistics of selected groups total posts daily',
                      total_posts_daily_statistcs_data.drop(index='count'))
 
@@ -162,7 +162,7 @@ outside_posts_daily_statistics_file_name = 'statistics of outside posts daily.cs
 layout(outside_posts_daily_statistics_check_words,
        outside_posts_daily_statistcs_data,
        outside_posts_daily_statistics_file_name)
-plot_bar(outside_posts_daily_statistcs_data.drop(index='count'))
+plot_hist(outside_posts_daily_statistcs_data.loc['mean', :], title='Mean of outside posts daily')
 multiselect_plot_bar('Statistics of selected groups outside posts daily',
                      total_posts_daily_statistcs_data.drop(index='count'))
 
@@ -173,12 +173,11 @@ layout(outside_by_total_posts_daily_rate_check_words,
        outside_by_total_posts_daily_rate_data,
        outside_by_total_posts_daily_rate_file_name)
 plot_bar(outside_by_total_posts_daily_rate_data)
+
 outside_by_total_posts_daily_rate_data_hist = outside_by_total_posts_daily_rate_data.applymap(lambda x: np.nan if x==0 else x)
 outside_by_total_posts_daily_rate_data_hist = outside_by_total_posts_daily_rate_data_hist.applymap(lambda x: np.nan if x==1 else x)
 posts_daily_count_mean = outside_by_total_posts_daily_rate_data_hist.mean()
 outside_by_total_posts_daily_rate_data_hist.fillna(posts_daily_count_mean, inplace=True)
-
-st.dataframe(outside_by_total_posts_daily_rate_data_hist)
 plot_hist(outside_by_total_posts_daily_rate_data_hist, title='Distribution of rate of outside posts daily by total')
 multiselect_plot_hist('Distribution of rate of selected groups outside posts daily by total',
                       outside_by_total_posts_daily_rate_data_hist)
@@ -190,7 +189,7 @@ outside_by_total_posts_daily_rate_statistics_file_name = 'statistics of outside 
 layout(outside_by_total_posts_daily_rate_statistics_check_words,
        outside_by_total_posts_daily_rate_statistics_data,
        outside_by_total_posts_daily_rate_statistics_file_name)
-plot_bar(outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
+plot_hist(outside_by_total_posts_daily_rate_statistics_data.loc['mean', :], title='Mean of outside posts daily by total rate')
 multiselect_plot_bar('Statistics of selected groups outside posts daily by total rate',
                      outside_by_total_posts_daily_rate_statistics_data.drop(index='count'))
 
@@ -279,7 +278,7 @@ total_profiles_daily_statistics_file_name = 'statistics of total profiles posted
 layout(total_profiles_daily_statistics_check_words,
        total_profiles_daily_statistcs_data,
        total_profiles_daily_statistics_file_name)
-plot_bar(total_profiles_daily_statistcs_data.drop(index='count'))
+plot_hist(total_profiles_daily_statistcs_data.loc['mean', :], title='Mean of total profiles posted daily')
 multiselect_plot_bar('Statistics of selected groups total profiles posted daily',
                      total_profiles_daily_statistcs_data.drop(index='count'))
 
@@ -299,7 +298,7 @@ outside_profiles_daily_statistics_file_name = 'statistics of outside profiles po
 layout(outside_profiles_daily_statistics_check_words,
        outside_profiles_daily_statistcs_data,
        outside_profiles_daily_statistics_file_name)
-plot_bar(outside_profiles_daily_statistcs_data.drop(index='count'))
+plot_hist(outside_profiles_daily_statistcs_data.loc['mean', :], title='Mean of outside profiles posted daily')
 multiselect_plot_bar('Statistics of selected groups outside profiles posted daily',
                      outside_profiles_daily_statistcs_data.drop(index='count'))
 
@@ -326,7 +325,7 @@ outside_by_total_profiles_daily_rate_statistics_file_name = 'statistics of outsi
 layout(outside_by_total_profiles_daily_rate_statistics_check_words,
        outside_by_total_profiles_daily_rate_statistics_data,
        outside_by_total_profiles_daily_rate_statistics_file_name)
-plot_bar(outside_by_total_profiles_daily_rate_statistics_data.drop(index='count'))
+plot_hist(outside_by_total_profiles_daily_rate_statistics_data.loc['mean', :], title='Mean of outside profiles daily by total rate')
 multiselect_plot_bar('Statistics of selected groups outside profiles daily by total rate',
                      outside_by_total_profiles_daily_rate_statistics_data.drop(index='count'))
 
