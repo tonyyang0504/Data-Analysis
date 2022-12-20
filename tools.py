@@ -1,6 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 import os
+import numpy as np
 
 
 def send_email(sender_email_address,
@@ -41,6 +42,14 @@ def split_csv_by_rows(df, unit_no, save_dir):
             start_row_index = end_row_index
         else:
             data.to_csv(file_path, index=False)
+
+
+def value_replacement(df, targeted_values):
+    replacement = df.copy()
+    for value in targeted_values:
+        replacement = replacement.applymap(lambda x: np.nan if x == value else x)
+    return replacement
+
 
 
 
