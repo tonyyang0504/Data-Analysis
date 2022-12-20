@@ -6,10 +6,6 @@ import streamlit_tools
 import numpy as np
 from streamlit_tools import *
 import numpy as np
-from tools import value_replacement
-
-
-st.set_page_config(layout='wide')
 
 
 def concat_df(total_df, partial_df):
@@ -17,6 +13,14 @@ def concat_df(total_df, partial_df):
     df.columns = ['total', 'partial']
     df['partial / total'] = df['partial'].values / df['total'].values
     return df
+
+
+def value_replacement(df, targeted_values):
+    replacement = df.copy()
+    for value in targeted_values:
+        replacement = replacement.applymap(lambda x: np.nan if x == value else x)
+    return replacement
+
 
 
 st.cache(suppress_st_warning=True)
@@ -448,6 +452,7 @@ if __name__ == '__main__':
     group_info_file_path = './group_info.csv'
     group_post_file_path = './group_posts.csv'
 
+    st.set_page_config(layout='wide')
     st.title('🎊Facebook Group Analysis App🎉')
     st.sidebar.success("🪂Select the section you'd like🚴")
     section_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇',
