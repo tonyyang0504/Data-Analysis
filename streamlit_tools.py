@@ -132,6 +132,8 @@ def plot_bar(df,
                  )
     st.plotly_chart(fig)
 
+
+st.cache(suppress_st_warning=True)
 def plot_hist(df,
              title=None,
              x=None,
@@ -153,6 +155,29 @@ def plot_hist(df,
     st.plotly_chart(fig)
 
 
+st.cache(suppress_st_warning=True)
+def plot_box(df,
+             title=None,
+             x=None,
+             y=None,
+             height=600,
+             width=1000,
+             color=None,
+             color_discrete_sequence=None
+             ):
+    fig = px.box(df,
+                 height=height,
+                 width=width,
+                 title=title,
+                 x=x,
+                 y=y,
+                 color=color,
+                 color_discrete_sequence=color_discrete_sequence
+                 )
+    st.plotly_chart(fig)
+
+
+st.cache(suppress_st_warning=True)
 def plot_line(df,
               title=None,
               x=None,
@@ -172,6 +197,7 @@ def plot_line(df,
     st.plotly_chart(fig)
 
 
+st.cache(suppress_st_warning=True)
 def plot_area(df,
              title=None,
              x=None,
@@ -193,6 +219,7 @@ def plot_area(df,
     st.plotly_chart(fig)
 
 
+st.cache(suppress_st_warning=True)
 def multiselect_plot_line(title, df):
     multiselect = st.multiselect(title, df.columns.unique())
     multiselect_data = df.loc[:, multiselect]
@@ -200,6 +227,7 @@ def multiselect_plot_line(title, df):
         plot_line(multiselect_data)
 
 
+st.cache(suppress_st_warning=True)
 def multiselect_plot_bar(title, df):
     multiselect = st.multiselect(title, df.columns.unique())
     multiselect_data = df.loc[:, multiselect]
@@ -207,6 +235,7 @@ def multiselect_plot_bar(title, df):
         plot_bar(multiselect_data)
 
 
+st.cache(suppress_st_warning=True)
 def multiselect_plot_hist(title, df):
     multiselect = st.multiselect(title, df.columns.unique())
     multiselect_data = df.loc[:, multiselect]
@@ -214,6 +243,15 @@ def multiselect_plot_hist(title, df):
         plot_hist(multiselect_data)
 
 
+st.cache(suppress_st_warning=True)
+def multiselect_plot_box(title, df):
+    multiselect = st.multiselect(title, df.columns.unique())
+    multiselect_data = df.loc[:, multiselect]
+    if multiselect:
+        plot_box(multiselect_data)
+
+
+st.cache(suppress_st_warning=True)
 def multiselect_plot_area(title, df):
     multiselect = st.multiselect(title, df.columns.unique())
     multiselect_data = df.loc[:, multiselect]
