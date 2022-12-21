@@ -237,6 +237,7 @@ def posts_data_analysis(total_posts, outside_posts):
            total_posts_count_data,
            total_posts_count_file_name)
     plot_bar(total_posts_count_data)
+    plot_hist(total_posts_count_data, title='Distribution of number of total posts')
 
     total_posts_statistics_check_words = 'Statistics of total posts'
     total_posts_statistics_data = posts_count[['number of total posts']].describe()
@@ -253,6 +254,7 @@ def posts_data_analysis(total_posts, outside_posts):
            outside_posts_count_data,
            outside_posts_count_file_name)
     plot_bar(outside_posts_count_data)
+    plot_hist(outside_posts_count_data, title='Distribution of number of outside posts')
 
     outside_posts_statistics_check_words = 'Statistics of outside posts'
     outside_posts_statistics_data = posts_count[['number of outside posts']].describe()
@@ -270,6 +272,7 @@ def posts_data_analysis(total_posts, outside_posts):
            outside_posts_by_total_rate_data,
            outside_posts_by_total_rate_file_name)
     plot_bar(outside_posts_by_total_rate_data)
+    plot_hist(outside_posts_by_total_rate_data, title='Distribution of rate of outside posts posted by total')
 
     outside_posts_by_total_rate_statistics_check_words = 'Statistics of outside posts by total rate'
     outside_posts_by_total_rate_statistics_data = posts_count[['outside posts / total posts']].describe()
@@ -385,6 +388,7 @@ def profiles_data_analysis(total_posts, outside_posts):
            total_profiles_count_data,
            total_profiles_count_file_name)
     plot_bar(total_profiles_count_data)
+    plot_hist(total_profiles_count_data, title='Distribution of number of total profiles posted')
 
     total_profiles_statistics_check_words = 'Statistics of total profiles posted'
     total_profiles_statistics_data = profiles_count[['number of total profiles posted']].describe()
@@ -401,7 +405,8 @@ def profiles_data_analysis(total_posts, outside_posts):
     layout(outside_profiles_count_check_words,
            outside_profiles_count_data,
            outside_profiles_count_file_name)
-    plot_bar(outside_profiles_count_data, title='number of outside profiles posted')
+    plot_bar(outside_profiles_count_data)
+    plot_hist(outside_profiles_count_data, title='Distribution of number of outside profiles posted')
 
     outside_profiles_statistics_check_words = 'Statistics of outside profiles posted'
     outside_profiles_statistics_data = profiles_count[['number of outside profiles posted']].describe()
@@ -420,6 +425,7 @@ def profiles_data_analysis(total_posts, outside_posts):
            outside_profiles_by_total_rate_data,
            outside_profiles_by_total_rate_file_name)
     plot_bar(outside_profiles_by_total_rate_data)
+    plot_hist(outside_profiles_by_total_rate_data, title='Distribution of rate of outside profiles posted by total')
 
     outside_profiles_by_total_rate_statistics_check_words = 'Statistics of outside profiles posted by total rate'
     outside_profiles_by_total_rate_statistics_data = profiles_count[['outside profiles posted / '
@@ -446,6 +452,20 @@ def reactions_and_comments_analysis(total_posts):
     layout(reactions_and_comments_check_words,
            reactions_and_comments_data,
            reactions_and_comments_file_name)
+    reactions_and_comments_data_hist = value_replacement(reactions_and_comments_data, [0]).T
+    plot_hist(reactions_and_comments_data_hist.loc['reactions', :],
+              title='Distribution of reactions')
+    plot_hist(reactions_and_comments_data_hist.loc['comments', :],
+              title='Distribution of comments')
+    plot_hist(reactions_and_comments_data_hist.loc['comments / reactions', :],
+              title='Distribution of rate of comments by reactions')
+
+    reactions_and_comments_data_statistics_check_words = 'Statistics of reactions and comments'
+    reactions_and_comments_data_statistics_data = reactions_and_comments_data.describe()
+    reactions_and_comments_data_statistics_file_name = 'statistics of reactions and comments.csv'
+    layout(reactions_and_comments_data_statistics_check_words,
+           reactions_and_comments_data_statistics_data,
+           reactions_and_comments_data_statistics_file_name)
 
 
 if __name__ == '__main__':
@@ -456,26 +476,26 @@ if __name__ == '__main__':
     st.title('🎊Facebook Group Analysis App🎉')
     st.sidebar.success("🪂Select the section you'd like🚴")
     section_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇',
-                                             ('Group Info',
-                                              'Posts Data',
-                                              'Profiles Posted Data',
-                                              'Reactions and Comments'))
+                                             ('Group Info Analysis',
+                                              'Posts Data Analysis',
+                                              'Profiles Posted Data Analysis',
+                                              'Reactions and Comments Analysis'))
 
     group_info = group_info(group_info_file_path)
     total_posts, outside_posts = group_posts_info(group_post_file_path, group_info)
 
 
-    if section_selectbox == 'Group Info':
+    if section_selectbox == 'Group Info Analysis':
         group_info_analysis(group_info)
-    elif section_selectbox == 'Posts Data':
+    elif section_selectbox == 'Posts Data Analysis':
         posts_data_display(total_posts, outside_posts)
         posts_data_daily_analysis(total_posts, outside_posts)
         posts_data_analysis(total_posts, outside_posts)
-    elif section_selectbox == 'Profiles Posted Data':
+    elif section_selectbox == 'Profiles Posted Data Analysis':
         posts_data_display(total_posts, outside_posts)
         profiles_data_daily_analysis(total_posts, outside_posts)
         profiles_data_analysis(total_posts, outside_posts)
-    elif section_selectbox == 'Reactions and Comments':
+    elif section_selectbox == 'Reactions and Comments Analysis':
         posts_data_display(total_posts, outside_posts)
         reactions_and_comments_analysis(total_posts)
 
