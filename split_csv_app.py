@@ -2,21 +2,20 @@ import os.path
 
 import streamlit_tools
 from streamlit_tools import *
-from tools import split_csv_by_rows
+from tools import split_csv_by_rows, compress_file, delete_files_and_subdirs
 import zipfile
 
 
-df = pd.read_csv('./group members/new files/1.csv')
+df = pd.read_csv('./group members/new files/2.csv')
 save_dir = './group members/splited_csv_files'
+unit_no = 2500
+
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
-unit_no = 2500
-split_csv_by_rows(df, unit_no, save_dir)
 
-z = zipfile.ZipFile('zipfiles.zip', 'w', zipfile.ZIP_DEFLATED)
-for file in os.listdir(save_dir):
-    z.write(os.path.join(save_dir, file))
-z.close()
+split_csv_by_rows(df, unit_no, save_dir)
+compress_file(save_dir)
+delete_files_and_subdirs(save_dir)
 
 
 def main(unit_no):

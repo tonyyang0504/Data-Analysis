@@ -1,6 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 import os
+import zipfile
+import shutil
 import numpy as np
 
 
@@ -42,6 +44,33 @@ def split_csv_by_rows(df, unit_no, save_dir):
             start_row_index = end_row_index
         else:
             data.to_csv(file_path, index=False)
+
+
+def compress_file(dir):
+    z = zipfile.ZipFile('zipfiles.zip', 'w', zipfile.ZIP_DEFLATED)
+    for file in os.listdir(dir):
+        z.write(os.path.join(dir, file))
+    z.close()
+
+
+def delete_files_and_subdirs(path):
+    ls = os.listdir(path)
+    for i in ls:
+        i_path = os.path.join(path, i)
+        if os.path.isdir(i_path):
+            shutil.rmtree(i_path)
+        else:
+            os.remove(i_path)
+
+
+def delete_files(path):
+    ls = os.listdir(path)
+    for i in ls:
+        i_path = os.path.join(path, i)
+        if os.path.isdir(i_path):
+            delete_files_and_subdirs(i_path)
+        else:
+            os.remove(i_path)
 
 
 def value_replacement(df, targeted_values):
