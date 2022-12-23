@@ -46,7 +46,7 @@ def split_csv_by_rows(df, unit_no, save_dir):
             data.to_csv(file_path, index=False)
 
 
-def compress_file(dir):
+def compress_files(dir):
     z = zipfile.ZipFile('zipfiles.zip', 'w', zipfile.ZIP_DEFLATED)
     for file in os.listdir(dir):
         z.write(os.path.join(dir, file))

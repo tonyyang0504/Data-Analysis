@@ -2,7 +2,7 @@ import os.path
 
 import streamlit_tools
 from streamlit_tools import *
-from tools import split_csv_by_rows, compress_file, delete_files_and_subdirs
+from tools import split_csv_by_rows, compress_files, delete_files_and_subdirs
 import zipfile
 
 
@@ -14,7 +14,7 @@ if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
 split_csv_by_rows(df, unit_no, save_dir)
-compress_file(save_dir)
+compress_files(save_dir)
 delete_files_and_subdirs(save_dir)
 
 
