@@ -359,23 +359,26 @@ def reactions_and_comments_analysis(total_posts):
 
 
 def main():
-    old_group_info_file_path = './old_groups_data/group_info.csv'
-    old_group_post_file_path = './old_groups_data/group_posts.csv'
-    new_group_info_file_path = './new_groups_data/group_info.csv'
-    new_group_post_file_path = './new_groups_data/group_posts.csv'
+    old_group_info_file_path = './groups_data/old_groups_data/group_info.csv'
+    old_group_post_file_path = './groups_data/old_groups_data/group_posts.csv'
+    new_group_info_file_path = './groups_data/new_groups_data/group_info.csv'
+    new_group_post_file_path = './groups_data/new_groups_data/group_posts.csv'
 
     st.set_page_config(layout='wide')
     st.title('🎊Facebook Group Analysis App🎉')
     st.sidebar.error("🍩Select the groups you'd like🍧")
-    data_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇',
-                                          ('Old Groups',
-                                           'New Groups'))
+    data_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇', ('Old Groups', 'New Groups'))
     st.sidebar.success("🪂Select the section you'd like🚴")
     section_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇',
                                              ('Group Info Analysis',
                                               'Posts Data Analysis',
                                               'Profiles Posted Data Analysis',
                                               'Reactions and Comments Analysis'))
+    if section_selectbox in ['Posts Data Analysis', 'Profiles Posted Data Analysis']:
+        st.sidebar.info("🎨Select data type you'd like🧩")
+        type_selectbox = st.sidebar.selectbox('👇👇👇👇👇👇👇👇👇👇', ('Data Analysis', 'Data Daily Analysis'))
+    else:
+        type_selectbox = None
 
     if data_selectbox == 'Old Groups':
         group_info = group_info_transform(old_group_info_file_path)
@@ -388,19 +391,25 @@ def main():
         group_info_analysis(group_info)
     elif section_selectbox == 'Posts Data Analysis':
         posts_data_display(total_posts, outside_posts, own_posts)
-        count = data_count(total_posts, outside_posts, 'posts')
-        daily_count = data_daily_count(total_posts, outside_posts, 'posts')
-        data_daily_analysis(daily_count, 'posts')
-        data_analysis(count, 'posts')
+        if type_selectbox == 'Data Analysis':
+            count = data_count(total_posts, outside_posts, 'posts')
+            data_analysis(count, 'posts')
+        elif type_selectbox == 'Data Daily Analysis':
+            daily_count = data_daily_count(total_posts, outside_posts, 'posts')
+            data_daily_analysis(daily_count, 'posts')
     elif section_selectbox == 'Profiles Posted Data Analysis':
         posts_data_display(total_posts, outside_posts, own_posts)
-        count = data_count(total_posts, outside_posts, 'profiles')
-        daily_count = data_daily_count(total_posts, outside_posts, 'profiles')
-        data_daily_analysis(daily_count, 'profiles')
-        data_analysis(count, 'profiles')
+        if type_selectbox == 'Data Analysis':
+            count = data_count(total_posts, outside_posts, 'profiles')
+            data_analysis(count, 'profiles')
+        elif type_selectbox == 'Data Daily Analysis':
+            daily_count = data_daily_count(total_posts, outside_posts, 'profiles')
+            data_daily_analysis(daily_count, 'profiles')
     elif section_selectbox == 'Reactions and Comments Analysis':
         posts_data_display(total_posts, outside_posts, own_posts)
         reactions_and_comments_analysis(total_posts)
+
+    st.snow()
 
 
 if __name__ == '__main__':
