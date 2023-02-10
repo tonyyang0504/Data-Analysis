@@ -21,7 +21,7 @@ def scrape_data(return_df=True):
         df_old = pd.read_csv(file_path)
         max_id = df_old['id'].max()
     else:
-        df_old = None
+        df_old = pd.DataFrame()
         max_id = 0
 
     login_url = 'https://good.gd999.in/HjyZmOnRuT.php/index/login'
@@ -56,8 +56,7 @@ def scrape_data(return_df=True):
             print(e)
             break
 
-    if any(df_old):
-        df_list.append(df_old)
+    df_list.append(df_old)
 
     total_data = pd.concat(df_list, ignore_index=True)
     total_data.to_csv(file_path, index=False)
