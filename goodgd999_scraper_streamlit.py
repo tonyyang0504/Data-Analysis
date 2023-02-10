@@ -16,7 +16,15 @@ selected = st.selectbox(
 )
 
 file_path = './total_data.csv'
-if selected == 'Existing data':
+if selected == 'Latest data':
+   st.download_button(
+        label='📥Click on me to download the data📥',
+        data=scrape_data().to_csv(index=False),
+        file_name='total_data.csv',
+        mime='txt/csv'
+    )
+    st.success('Latest data prepared, please click the button above to download')
+else:
     st.download_button(
         label='📥Click on me to download the data📥',
         data=pd.read_csv(file_path).to_csv(index=False),
@@ -24,11 +32,3 @@ if selected == 'Existing data':
         mime='txt/csv'
     )
     st.success('Existing data prepared, please click the button above to download')
-else:
-    st.download_button(
-        label='📥Click on me to download the data📥',
-        data=scrape_data().to_csv(index=False),
-        file_name='total_data.csv',
-        mime='txt/csv'
-    )
-    st.success('Latest data prepared, please click the button above to download')
