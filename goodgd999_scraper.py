@@ -59,6 +59,7 @@ def scrape_data(return_df=True):
     df_list.append(df_old)
 
     total_data = pd.concat(df_list, ignore_index=True)
+    total_data.drop_duplicates('id', inplace=True, ignore_index=True)
     total_data.to_csv(file_path, index=False)
     print(f'The task was carried out successfully, the total number of page scraped: {count}.', datetime.datetime.now())
 
