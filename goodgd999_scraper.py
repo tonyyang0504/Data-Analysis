@@ -63,7 +63,7 @@ def scrape_data(return_df=True):
     total_data.to_csv(file_path, index=False)
     print(f'The task was carried out successfully, the total number of page scraped: {count}.', datetime.datetime.now())
 
-    if return_df == True:
+    if return_df is True:
         return total_data
 
 
