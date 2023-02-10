@@ -10,8 +10,8 @@ st.error("Please select the data you'd like to download")
 selected = st.selectbox(
     '👇👇👇👇👇👇👇👇👇👇',
     (
+        'Latest data',
         'Existing data',
-        'Latest data'
     )
 )
 
